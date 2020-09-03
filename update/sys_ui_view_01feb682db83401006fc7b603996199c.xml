@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>QS_Catalog</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-20 09:08:58</sys_created_on>
+        <sys_id>01feb682db83401006fc7b603996199c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Qs_catalog</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_ui_view_01feb682db83401006fc7b603996199c</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-20 09:08:58</sys_updated_on>
+        <title>Qs_catalog</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

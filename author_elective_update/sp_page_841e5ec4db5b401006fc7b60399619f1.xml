@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>hello_marek</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 11:53:06</sys_created_on>
+        <sys_id>841e5ec4db5b401006fc7b60399619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>hello_marek</sys_name>
+        <sys_package display_value="Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sp_page_841e5ec4db5b401006fc7b60399619f1</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 11:53:06</sys_updated_on>
+        <title>Hello Marek - Test Page</title>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=841e5ec4db5b401006fc7b60399619f1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</application>
+        <file_path/>
+        <instance_id>c6c265c7db783f0042b321c40596199a</instance_id>
+        <instance_name>dev81817</instance_name>
+        <name>sp_page_841e5ec4db5b401006fc7b60399619f1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>hello_marek</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>marek.polasik</sys_created_by><sys_created_on>2020-02-26 11:53:06</sys_created_on><sys_id>841e5ec4db5b401006fc7b60399619f1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>hello_marek</sys_name><sys_package display_value="Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package><sys_policy/><sys_scope display_value="Examer">163db7a7db7a001006fc7b603996198f</sys_scope><sys_update_name>sp_page_841e5ec4db5b401006fc7b60399619f1</sys_update_name><sys_updated_by>marek.polasik</sys_updated_by><sys_updated_on>2020-02-26 11:53:06</sys_updated_on><title>Hello Marek - Test Page</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=841e5ec4db5b401006fc7b60399619f1"/></record_update>]]></payload>
+        <payload_hash>-1959170291</payload_hash>
+        <record_name>hello_marek</record_name>
+        <reverted_from/>
+        <source>623d77a7db7a001006fc7b60399619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 11:53:07</sys_created_on>
+        <sys_id>481e1ac8db5b401006fc7b6039961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1708157e8bc0000001</sys_recorded_at>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 11:53:07</sys_updated_on>
+        <type>Page</type>
+        <update_guid>401e1ac81f5b4010e032a64a1e70e728</update_guid>
+        <update_guid_history>401e1ac81f5b4010e032a64a1e70e728:-1959170291</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="hello_marek">ceb72ac4db9b401006fc7b60399619fd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 12:35:18</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>5f3fc1ea2ae44284a6d510c90e882790</sys_id>
+        <sys_metadata>841e5ec4db5b401006fc7b60399619f1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>hello_marek</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_scope_delete display_value="">263069dd00f64bf8ae7d6c4f81b09040</sys_scope_delete>
+        <sys_update_name>sp_page_841e5ec4db5b401006fc7b60399619f1</sys_update_name>
+        <sys_update_version display_value="sp_page_841e5ec4db5b401006fc7b60399619f1">481e1ac8db5b401006fc7b6039961928</sys_update_version>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 12:35:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

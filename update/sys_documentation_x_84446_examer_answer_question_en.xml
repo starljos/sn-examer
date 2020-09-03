@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="question" label="Question" language="en" table="x_84446_examer_answer">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>question</element>
+            <help/>
+            <hint/>
+            <label>Question</label>
+            <language>en</language>
+            <name>x_84446_examer_answer</name>
+            <plural>Questions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-02-12 19:23:15</sys_created_on>
+            <sys_id>11deb36bdb7a001006fc7b6039961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Question</sys_name>
+            <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+            <sys_update_name>sys_documentation_x_84446_examer_answer_question_en</sys_update_name>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-02-12 19:23:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

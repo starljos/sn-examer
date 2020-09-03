@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Question" max_length="40" name="x_84446_examer_question" type="collection">
+        <element label="Category" max_length="100" name="category" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element label="Question" max_length="500" name="question" type="string"/>
+    </element>
+</database>

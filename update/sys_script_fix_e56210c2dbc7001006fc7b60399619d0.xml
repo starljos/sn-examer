@@ -1,0 +1,4868 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>Load Exam Data</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>false</run_once>
+        <script><![CDATA[var category = "SPL Zasady Lotu";
+var data = [{
+    "question": "PL080-0001 Czy profile klasyczne są dużo bardziej 'wrażliwe' na zabrudzenia od profili laminarnych?",
+    "answers": [{
+        "text": "a. nie, ale tylko na małych kątach natarcia",
+        "isCorrect": false
+    }, {
+        "text": "b. tak",
+        "isCorrect": false
+    }, {
+        "text": "c. tak, ale tylko na dużych kątach natarcia",
+        "isCorrect": false
+    }, {
+        "text": "d. nie",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0002 Aby szybowiec znalazł się w fazie lotu nazwanym autorotacją skrzydła musi powstać zaburzenie, które spowoduje, że oba skrzydła opływane będą:",
+    "answers": [{
+        "text": "a. pod takim samym kątem natarcia, przy czym musi to być kąt nadkrytyczny",
+        "isCorrect": false
+    }, {
+        "text": "b. pod różnym kątem natarcia, przy czym co najmniej jedno pod krytycznym kątem natarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. pod różnym kątem natarcia, przy oba muszą być opływane pod kątem nadkrytycznym",
+        "isCorrect": false
+    }, {
+        "text": "d. pod różnym kątem natarcia, przy czym co najmniej jedno pod kątem nadkrytycznym",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0003 Aby zapobiec zjawisku flatteru giętno-lotkowemu należy:",
+    "answers": [{
+        "text": "a. - zastosować kompensację aerodynamiczną; - przesunąć środek ciężkości skrzydła jak najbliżej osi skrętnej",
+        "isCorrect": false
+    }, {
+        "text": "b. - zastosować klapkę dociążającą; - zastosować wyważenia masowe lotek",
+        "isCorrect": false
+    }, {
+        "text": "c. - zastosować klapkę odciążającą; - zwiększyć sztywność skrętną skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "d. - zwiększyć sztywność giętną skrzydła; - zastosować wyważenia masowe lotek",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0004 Aby zapobiec zjawisku flatteru giętno-skrętnemu należy:",
+    "answers": [{
+        "text": "a. - zastosować klapkę dociążającą; - zastosować wyważenia masowe lotek",
+        "isCorrect": false
+    }, {
+        "text": "b. - zastosować klapkę odciążającą; - zwiększyć sztywność skrętną skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. - zwiększyć sztywność skrętną skrzydła; - przesunąć środek ciężkości skrzydła jak najbliżej osi skrętnej",
+        "isCorrect": true
+    }, {
+        "text": "d. - zastosować kompensację aerodynamiczną; - przesunąć środek ciężkości skrzydła jak najbliżej osi skrętnej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0005 Aby zapobiec zjawisku odwrotnego działania lotek należy",
+    "answers": [{
+        "text": "a. zastosować klapkę dociążającą",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększyć sztywność skrętną skrzydła",
+        "isCorrect": true
+    }, {
+        "text": "c. zastosować kompensację aerodynamiczną",
+        "isCorrect": false
+    }, {
+        "text": "d. zastosować klapkę odciążającą",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0006 Aby zapobiec zjawisku trzepotania usterzeń należy:",
+    "answers": [{
+        "text": "a. - zwiększyć sztywność giętną usterzenia; - zwiększyć sztywność skrętną usterzenia",
+        "isCorrect": false
+    }, {
+        "text": "b. - zastosować klapkę wyważającą; - starannie opracować przejście skrzydło-kadłub",
+        "isCorrect": false
+    }, {
+        "text": "c. - zastosować usterzenia typu T; - starannie opracować przejście skrzydło-kadłub",
+        "isCorrect": true
+    }, {
+        "text": "d. - zastosować usterzenia typu T; - zastosować klapkę wyważającą",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0007 Aerodynamiczna krawędź natarcia to linia łącząca punkty płata lotniczego w których:",
+    "answers": [{
+        "text": "a. prędkość strumienia jest równa zeru, a ciśnienie osiąga wartość minimalną",
+        "isCorrect": false
+    }, {
+        "text": "b. prędkość strumienia jest równa zeru",
+        "isCorrect": false
+    }, {
+        "text": "c. prędkość strumienia jest równa zeru, a ciśnienie – ciśnieniu spiętrzenia",
+        "isCorrect": true
+    }, {
+        "text": "d. ciśnienie jest większe od ciśnienia spiętrzenia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0008 Brak wyważenia masowego lotek na dużych prędkościach lotu jest bezpośrednią przyczyną występowania:",
+    "answers": [{
+        "text": "a. flatteru giętno-skrętnego",
+        "isCorrect": false
+    }, {
+        "text": "b. odwrotnego działania lotek",
+        "isCorrect": false
+    }, {
+        "text": "c. dywergencji skrętnej skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "d. flatteru lotkowego",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0009 Buffeting to inaczej:",
+    "answers": [{
+        "text": "a. trzepotanie usterzeń",
+        "isCorrect": true
+    }, {
+        "text": "b. flatter usterzenia",
+        "isCorrect": false
+    }, {
+        "text": "c. flatter lotkowy",
+        "isCorrect": false
+    }, {
+        "text": "d. drgania giętno-skrętne",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0010 Ciało porusza się po okręgu z prędkością 'υ'. Jeżeli zwiększymy dwukrotnie prędkość ciała to:",
+    "answers": [{
+        "text": "a. -prędkość kątowa 'ω' wzrośnie dwukrotnie -przyśpieszenie dośrodkowe \"ar\" wzrośnie dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "b. -prędkość kątowa 'ω' wzrośnie czterokrotnie -przyśpieszenie dośrodkowe \"ar\" wzrośnie czterokrotnie",
+        "isCorrect": false
+    }, {
+        "text": "c. -prędkość kątowa 'ω' wzrośnie dwukrotnie -przyśpieszenie dośrodkowe \"ar\" wzrośnie czterokrotnie",
+        "isCorrect": true
+    }, {
+        "text": "d. -prędkość kątowa 'ω' wzrośnie czterokrotnie -przyśpieszenie dośrodkowe \"ar\" wzrośnie dwukrotnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0011 Ciało porusza się po okręgu z prędkością 'υ'. Jeżeli zwiększymy dwukrotnie promień okręgu to:",
+    "answers": [{
+        "text": "a. -prędkość kątowa 'ω' zmaleje dwukrotnie -droga przebyta przez ciało w czasie okresu 'T' wzrośnie dwukrotnie -przyśpieszenie dośrodkowe 'ar' wzrośnie dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "b. -prędkość kątowa 'ω' zmaleje dwukrotnie -droga przebyta przez ciało w czasie okresu 'T' wzrośnie dwukrotnie -przyśpieszenie dośrodkowe 'ar' zmaleje dwukrotnie",
+        "isCorrect": true
+    }, {
+        "text": "c. -prędkość kątowa 'ω' zmaleje dwukrotnie -droga przebyta przez ciało w czasie okresu 'T' zmaleje dwukrotnie -przyśpieszenie dośrodkowe 'ar' zmaleje dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "d. -prędkość kątowa 'ω' zmaleje dwukrotnie -droga przebyta przez ciało w czasie okresu \"T\" wzrośnie dwukrotnie -przyśpieszenie dośrodkowe 'ar' nie zmieni się",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0012 Ciało porusza się ze stałą prędkością 'υ' po okręgu o promieniu 'R'. Wypadkowy wektor przyśpieszenia działającego na to ciało jest zawsze skierowany:",
+    "answers": [{
+        "text": "a. w stronę środka okręgu",
+        "isCorrect": true
+    }, {
+        "text": "b. skoro prędkość 'υ' jest stała, to na ciało nie działa żadne przyśpieszenie",
+        "isCorrect": false
+    }, {
+        "text": "c. na zewnątrz okręgu",
+        "isCorrect": false
+    }, {
+        "text": "d. stycznie do okręgu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0014 Ciśnienie statyczne w punkcie przejścia z opływu laminarnego w turbulentny jest:",
+    "answers": [{
+        "text": "a. minimalne na górnej powierzchni i maksymalne na dolnej powierzchni",
+        "isCorrect": true
+    }, {
+        "text": "b. minimalne na górnej powierzchni i minimalne na dolnej powierzchni",
+        "isCorrect": false
+    }, {
+        "text": "c. maksymalne na górnej powierzchni i minimalne na dolnej powierzchni",
+        "isCorrect": false
+    }, {
+        "text": "d. maksymalne na górnej powierzchni i maksymalne na dolnej powierzchni",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0015 Co jest 'równanie stanu powietrza' ?",
+    "answers": [{
+        "text": "a. Równanie określające równowagę między ciśnieniem powietrza i przyspieszeniem ziemskim.",
+        "isCorrect": false
+    }, {
+        "text": "b. Związek istniejący pomiędzy ciśnieniem powietrza i jego temperaturą.",
+        "isCorrect": false
+    }, {
+        "text": "c. Równanie określające równowagę między ciśnieniem powietrza i jego wilgotnością.",
+        "isCorrect": false
+    }, {
+        "text": "d. Związek między ciśnieniem statycznym, gęstością, temperaturą i stałą gazową powietrza p = ρ.g.R.T [Pa]",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0016 \"Co się rozumie pod pojęciem 'sterowności' obiektu latającego (samolotu,\nśmigłowca, szybowca, lotni etc) ?\"",
+    "answers": [{
+        "text": "a. Zapewnianie uzyskiwania osiągów przewidzianych projektem obiektu.",
+        "isCorrect": false
+    }, {
+        "text": "b. Zdolność do 'odpowiadania' przez obiekt na zadawane przez pilota impulsy sterujące.",
+        "isCorrect": true
+    }, {
+        "text": "c. Zapewnienie, że obiekt jest stateczny statycznie i dynamicznie.",
+        "isCorrect": false
+    }, {
+        "text": "d. Zapewnianie możliwości wykonywania manewrów akrobatycznych.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0017 Co to jest 'ciśnienie spiętrzeniowe'?",
+    "answers": [{
+        "text": "a. różnica ciśnienia dynamicznego i ciśnienia statycznego",
+        "isCorrect": true
+    }, {
+        "text": "b. suma ciśnienia dynamicznego i statycznego",
+        "isCorrect": false
+    }, {
+        "text": "c. najniższe zmierzone ciśnienie",
+        "isCorrect": false
+    }, {
+        "text": "d. najwyższe zmierzone ciśnienie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0018 Co to jest 'opływ laminarny'?",
+    "answers": [{
+        "text": "a. niezaburzony opływ od krawędzi natarcia do punktu przejściowego",
+        "isCorrect": true
+    }, {
+        "text": "b. opływ zaburzony (turbulentny) wzdłuż całej cięciwy profilu",
+        "isCorrect": false
+    }, {
+        "text": "c. opływ zaburzony (turbulentny) wzdłuż całej cięciwy profilu, ale z zachowaniem przylegania strug do profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. opływ niezaburzony wzdłuż całej cięciwy, ze strugami powietrza przylegającymi do profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0019 Co to jest 'pułap teoretyczny' statku powietrznego (śmigłowca, samolotu, szybowca etc)?",
+    "answers": [{
+        "text": "a. Największa wysokość na którą teoretycznie statek powietrzny może się wznieść.",
+        "isCorrect": true
+    }, {
+        "text": "b. Wysokość, na której statek powietrzny dysponuje jeszcze prędkością wznoszenia 0,5 m/s.",
+        "isCorrect": false
+    }, {
+        "text": "c. Wysokość granicy atmosfery otaczającej Ziemię.",
+        "isCorrect": false
+    }, {
+        "text": "d. Pułap obliczony w projekcie konstrukcyjnym statku powietrznego.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0020 Co to jest 'stateczność statyczna' obiektu (samolotu, śmigłowca, szybowca, lotni etc)?",
+    "answers": [{
+        "text": "a. Istnienie tendencji (w postaci działania siły lub momentu) do powrotu do równowagi po wytrąceniu z niej.",
+        "isCorrect": true
+    }, {
+        "text": "b. Stan równowagi spoczynkowej.",
+        "isCorrect": false
+    }, {
+        "text": "c. Wykonywanie przez obiekt statecznych wahań wokół osi poprzecznej.",
+        "isCorrect": false
+    }, {
+        "text": "d. Brak reakcji na zakłócenia równowagi.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0021 Co to jest 'środek parcia profilu' ?",
+    "answers": [{
+        "text": "a. Wyobrażalny punkt na cięciwie profilu, w którym działa wypadkowa wszystkich sił aerodynamicznych występujących na profilu",
+        "isCorrect": true
+    }, {
+        "text": "b. Punkt przyłożenia oporu.",
+        "isCorrect": false
+    }, {
+        "text": "c. Środek długości cięciwy profilu.",
+        "isCorrect": false
+    }, {
+        "text": "d. Punkt, w którym wielkość ciśnienia jest średnia.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0022 Co to jest 'warstwa przyścienna'?",
+    "answers": [{
+        "text": "a. Część strumienia powietrza opływającego tę część statku powietrznego, na której występuje cyrkulacja",
+        "isCorrect": false
+    }, {
+        "text": "b. Warstwa powietrza opływającego dowolny element statku powietrznego, w której prędkość zmienia się od zera do prędkości opływu",
+        "isCorrect": true
+    }, {
+        "text": "c. Obszar zawirowań powstających w okolicy mocowania elementów struktury statku powietrznego do ściany kadłuba",
+        "isCorrect": false
+    }, {
+        "text": "d. Część strumienia powietrza, która zmienia charakter z laminarnego na turbulentny",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0023 Co to jest 'wydłużenie' skrzydła samolotu lub szybowca albo łopaty nośnej?",
+    "answers": [{
+        "text": "a. Stosunek rozpiętości do średniej cięciwy geometrycznej.",
+        "isCorrect": true
+    }, {
+        "text": "b. Stosunek rozpiętości skrzydeł (średnicy wirnika) do długości samolotu (śmigłowca)",
+        "isCorrect": false
+    }, {
+        "text": "c. Stosunek średniej cięciwy aerodynamicznej do długości skrzydła lub łopaty.",
+        "isCorrect": false
+    }, {
+        "text": "d. Stosunek długości skrzydła lub łopaty do cięciwy u nasady.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0024 Co to jest elewacja lotniska?",
+    "answers": [{
+        "text": "a. Kątowe pochylenie nawierzchni głównej drogi startowej.",
+        "isCorrect": false
+    }, {
+        "text": "b. Nawierzchnia płyty lotniska.",
+        "isCorrect": false
+    }, {
+        "text": "c. Fasada budynku portowego lotniska.",
+        "isCorrect": false
+    }, {
+        "text": "d. Fizyczne wzniesienie (wysokość) płyty lotniska nad umowny poziom morza wg. ISA.",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0025 Co to jest gęstość powietrza?",
+    "answers": [{
+        "text": "a. Liczba molekuł tlenu i azotu w 1 cm? objętości.",
+        "isCorrect": false
+    }, {
+        "text": "b. Ilość masy powietrza zawartej w 1 m? objętości.",
+        "isCorrect": true
+    }, {
+        "text": "c. Przeciwieństwo lepkości atmosferycznej.",
+        "isCorrect": false
+    }, {
+        "text": "d. Ciężar 1 m? powietrza.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0026 Co to jest Międzynarodowa Atmosfera Wzorcowa ISA (International Standard Atmosphere)?",
+    "answers": [{
+        "text": "a. Zbiór intormacji o parametrach atmosfery w siedzibie ONZ w Nowym Jorku.",
+        "isCorrect": false
+    }, {
+        "text": "b. Zbiór uznawanych za wzorcowe wielkości ciśnienia statycznego p, temperatur t i T oraz gęstości powietrza ρ na różnych wysokościach.",
+        "isCorrect": true
+    }, {
+        "text": "c. Zestaw składu chemicznego powietrza na różnych wysokościach.",
+        "isCorrect": false
+    }, {
+        "text": "d. Zbiór intormacji o parametrach atmosfery w siedzibie ICAO w Montrealu.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0027 Co to jest wysokość ciśnieniowa nad poziomem lotniska?",
+    "answers": [{
+        "text": "a. Wysokość odczytywana na wysokościomierzu ciśnieniowym ustawionym na aktualne ciśnienie na poziomie morza QNH.",
+        "isCorrect": false
+    }, {
+        "text": "b. Wysokość wskazywana radiowysokościomierzem.",
+        "isCorrect": false
+    }, {
+        "text": "c. Wysokość odczytywana na wysokościomierzu ciśnieniowym stawionym na aktualne ciśnienie na poziomie lotniska QFE.",
+        "isCorrect": true
+    }, {
+        "text": "d. Wysokość elewacji lotniska.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0028 Co to jest wysokość ciśnieniowa nad poziomem morza? .",
+    "answers": [{
+        "text": "a. Wysokość odczytywana na wysokościomierzu ciśnieniowym ustawionym na aktualne ciśnienie na poziomie morza QNH",
+        "isCorrect": true
+    }, {
+        "text": "b. Wysokość odczytywana na wysokościomierzu ciśnieniowym ustawionym na aktualne ciśnienie na poziomie lotniska QFE",
+        "isCorrect": false
+    }, {
+        "text": "c. Wysokość wskazywana radiowysokościomierzem.",
+        "isCorrect": false
+    }, {
+        "text": "d. Wysokość elewacji lotniska.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0029 Co to jest wysokość gęstościowa?",
+    "answers": [{
+        "text": "a. Wysokość zgodna z Międzynarodową Atmosferą Wzorcową ISA (International Standard Atmosphere)",
+        "isCorrect": false
+    }, {
+        "text": "b. Wysokość ciśnieniowa z poprawką na wilgotność powietrza",
+        "isCorrect": false
+    }, {
+        "text": "c. Wysokość elewacji lotniska z poprawką na aktualną gęstość powietrza",
+        "isCorrect": false
+    }, {
+        "text": "d. Wysokość pozorna, na której gęstość powietrza jest równa wartości standardowej wg. atmosfery ISA.",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0030 Co to jest wysokość standardowa?",
+    "answers": [{
+        "text": "a. Wysokość elewacji lotniska.",
+        "isCorrect": false
+    }, {
+        "text": "b. Wysokość odczytywana nawysokościomierzu ciśnieniowymustawionym na standardową wartośćna poziomie morza (QNH), tj. po =1013,25 hPa = 760 mm Hg.",
+        "isCorrect": true
+    }, {
+        "text": "c. Wysokość odczytywana na standardowym wysokościomierzu radiowym",
+        "isCorrect": false
+    }, {
+        "text": "d. Wysokość gęstościowa skorygowana o wpływ temperatury otoczenia.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0031 Czy między ciśnieniem statycznym powietrza p, jego temperaturą bezwzględną T i gęstością ρ istnieje jakiś związek?",
+    "answers": [{
+        "text": "a. Nie ma takiego związku.",
+        "isCorrect": false
+    }, {
+        "text": "b. Tak, związek ma postać Prawa Pałki p = ƒR.g. ρ?.dT [Pa], gdzie g oznacza przyspieszenie ziemskie g = 9,81 m/s? zaś R stałą gazową powietrza R = 29,2746 m/K.",
+        "isCorrect": false
+    }, {
+        "text": "c. Tak, związek ma postać Prawa Pałkip = ƒR.g. ρ?.dT [Pa], gdzieg oznacza przyspieszenie ziemskie g= 9,81 m/s? zaś R stałą gazowąpowietrza R = 29,2746 m/K.",
+        "isCorrect": false
+    }, {
+        "text": "d. Tak, wyrażony tzw. równaniem stanu p = ρ.g.R.T [Pa], w którym g oznacza przyspieszenie ziemskie g = 9,81 m/s? zaś R stałą gazową powietrza R = 29,2746 m/K.",
+        "isCorrect": true
+    }, {
+        "text": "e. Związek ma postać krakowiana f[Å, g, p, ρ, T]",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0032 Czy obiekt (samolot, śmigłowiec, szybowiec, lotnia etc) niestateczny statycznie może być stateczny dynamicznie?",
+    "answers": [{
+        "text": "a. Nie.",
+        "isCorrect": true
+    }, {
+        "text": "b. Stateczność statyczna dla stateczności dynamicznej nie ma znaczenia.",
+        "isCorrect": false
+    }, {
+        "text": "c. Tak.",
+        "isCorrect": false
+    }, {
+        "text": "d. \"Obiekt-stałopłat – tak, obiekt-wiropłat\n– nie.\"",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0034 Czy wzrost stateczności powoduje zmianę sterowności?",
+    "answers": [{
+        "text": "a. tak, sterowność maleje",
+        "isCorrect": true
+    }, {
+        "text": "b. tak, na dużych kątach natarcia sterowność rośnie, a na małych maleje",
+        "isCorrect": false
+    }, {
+        "text": "c. nie, zamiany stateczności nie powodują zmian sterowności",
+        "isCorrect": false
+    }, {
+        "text": "d. tak, sterowność rośnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0035 Czym się różnią stateczność statyczna i stateczność dynamiczna obiektu (samolotu, śmigłowca, szybowca, lotni etc)?",
+    "answers": [{
+        "text": "a. Nie ma żadnej różnicy, zjawisko jest to samo, tylko inne nazwy.",
+        "isCorrect": false
+    }, {
+        "text": "b. Stateczność statyczna dotyczy równowagi na ziemi, stateczność dynamiczna – równowagi w locie.",
+        "isCorrect": false
+    }, {
+        "text": "c. Stateczność statyczna uwzględnia tylko tendencję do powrotu do równowagi, stateczność dynamiczna uwzględnia charakter ruchu obiektu.",
+        "isCorrect": true
+    }, {
+        "text": "d. Wymienione stateczności różnią się ważnością, ważniejsza jest stateczność dynamiczna..",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0036 Czym się wyraża 'niestateczność statyczna' obiektu (samolotu, śmigłowca, szybowca, lotni etc)?",
+    "answers": [{
+        "text": "a. Istnieniem tendencji (w postaci działania siły lub momentu) do pogłębiania odejścia od stanu równowagi po wytrąceniu z niej.",
+        "isCorrect": true
+    }, {
+        "text": "b. Stanem równowagi spoczynkowej.",
+        "isCorrect": false
+    }, {
+        "text": "c. Wykonywaniem przez obiekt statecznych wahań wokół osi poprzecznej.",
+        "isCorrect": false
+    }, {
+        "text": "d. Brakiem jakiejkolwiek reakcji obiektu na wytrącenie go z równowagi.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0037 \"Czym się wyraża 'stateczność statyczna obojętna' obiektu (samolotu,\nśmigłowca, szybowca, lotni etc)?\"",
+    "answers": [{
+        "text": "a. Brakiem jakiejkolwiek reakcji obiektu na wytrącenie go z równowagi.",
+        "isCorrect": true
+    }, {
+        "text": "b. Wykonywaniem przez obiekt statecznych wahań wokół osi poprzecznej.",
+        "isCorrect": false
+    }, {
+        "text": "c. Istnieniem tendencji (w postaci działania siły lub momentu) do powrotu do równowagi po wytrąceniu z niej.",
+        "isCorrect": false
+    }, {
+        "text": "d. Stanem równowagi spoczynkowej.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0038 Dla płata o jakim profilu nie powstaje opór indukowany na zerowym kącie natarcia?",
+    "answers": [{
+        "text": "a. płasko-wypukłym",
+        "isCorrect": false
+    }, {
+        "text": "b. dwuwypukłym symetrycznym",
+        "isCorrect": true
+    }, {
+        "text": "c. wklęsło-wypukłym",
+        "isCorrect": false
+    }, {
+        "text": "d. dwuwypukłym niesymetrycznym",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0039 Dla ruchu jednostajnie przyśpieszonego dwukrotne zwiększenie czasu przy stałym przyspieszeniu powoduje:",
+    "answers": [{
+        "text": "a. dwukrotne zmniejszenie przebytej drogi",
+        "isCorrect": false
+    }, {
+        "text": "b. czterokrotne zmniejszenie przebytej drogi",
+        "isCorrect": false
+    }, {
+        "text": "c. czterokrotne zwiększenie przebytej drogi",
+        "isCorrect": true
+    }, {
+        "text": "d. dwukrotne zwiększenie przebytej drogi",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0040 Dla ruchu jednostajnie przyśpieszonego dwukrotne zwiększenie przyśpieszenia w stałym czasie t powoduje:",
+    "answers": [{
+        "text": "a. czterokrotne zmniejszenie przebytej drogi",
+        "isCorrect": false
+    }, {
+        "text": "b. czterokrotne zwiększenie przebytej drogi",
+        "isCorrect": false
+    }, {
+        "text": "c. dwukrotne zwiększenie przebytej drogi",
+        "isCorrect": true
+    }, {
+        "text": "d. dwukrotne zmniejszenie przebytej drogi",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0041 Dla skrzydła o obrysie prostokątnym prawdą jest, że:",
+    "answers": [{
+        "text": "a. cięciwa geometryczna nie zmienia się wzdłuż rozpiętości",
+        "isCorrect": true
+    }, {
+        "text": "b. cięciwa geometryczna zwiększa się wzdłuż rozpiętości",
+        "isCorrect": false
+    }, {
+        "text": "c. cięciwa geometryczna wzdłuż rozpiętości najpierw rośnie, potem maleje",
+        "isCorrect": false
+    }, {
+        "text": "d. cięciwa geometryczna maleje wzdłuż rozpiętości",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0042 Dla trzech skrzydeł o tej samej powierzchni i tej samej rozpiętości, ale różnym obrysie (prostokątnym, trapezowym i eliptycznym), wydłużenie jest:",
+    "answers": [{
+        "text": "a. największe dla obrysu eliptycznego, a najmniejsze dla trapezowego",
+        "isCorrect": false
+    }, {
+        "text": "b. największe dla obrysu eliptycznego, a najmniejsze dla prostokątnego",
+        "isCorrect": false
+    }, {
+        "text": "c. największe dla obrysu prostokątnego, a najmniejsze dla eliptycznego",
+        "isCorrect": false
+    }, {
+        "text": "d. takie same dla wszystkich skrzydeł",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0043 Dla ustalonego lotu nurkowego prawdziwe jest równanie:",
+    "answers": [{
+        "text": "a. Q=Q",
+        "isCorrect": false
+    }, {
+        "text": "b. Px=Q",
+        "isCorrect": true
+    }, {
+        "text": "c. PZ=Q",
+        "isCorrect": false
+    }, {
+        "text": "d. Pz=Px",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0044 Do jakiego wykresu odnosi się potoczna nazwa 'Krzywa Lilienthala'?",
+    "answers": [{
+        "text": "a. Do biegunowej autorotacji.",
+        "isCorrect": false
+    }, {
+        "text": "b. Do krzywej biegunowej pokazującej zależność siły nośnej od oporu..",
+        "isCorrect": true
+    }, {
+        "text": "c. \"Do wykresu zwanego w Polsce\n'krzywą Tytusa Hubera'\"",
+        "isCorrect": false
+    }, {
+        "text": "d. Do wykresu mocy potrzebnej.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0046 Do urządzeń powiększających powierzchnię skrzydła możemy zaliczyć:",
+    "answers": [{
+        "text": "a. poszerzasz i klapę przednią",
+        "isCorrect": true
+    }, {
+        "text": "b. sloty (skrzela) i klapę krokodylową",
+        "isCorrect": false
+    }, {
+        "text": "c. klapę wysklepiającą i klapę krokodylową",
+        "isCorrect": false
+    }, {
+        "text": "d. winglet i klapę wysklepiającą",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0047 Do urządzeń przeszkadzających odrywaniu się strug powietrza na grzbiecie skrzydła możemy zaliczyć:",
+    "answers": [{
+        "text": "a. klapę wysklepiająca",
+        "isCorrect": false
+    }, {
+        "text": "b. sloty (skrzela)",
+        "isCorrect": true
+    }, {
+        "text": "c. klapę krokodylową",
+        "isCorrect": false
+    }, {
+        "text": "d. poszerzacz",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0048 Do urządzeń wysklepiających profil mało wysklepiony na mocno wysklepiony możemy zaliczyć:",
+    "answers": [{
+        "text": "a. klapę przednią",
+        "isCorrect": true
+    }, {
+        "text": "b. winglet",
+        "isCorrect": false
+    }, {
+        "text": "c. poszerzacz",
+        "isCorrect": false
+    }, {
+        "text": "d. sloty (skrzela)",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0049 Dodatni skos skrzydła powoduje:",
+    "answers": [{
+        "text": "a. zwiększenie stateczności statycznej podłużnej",
+        "isCorrect": true
+    }, {
+        "text": "b. zmniejszenie stateczności statycznej podłużnej",
+        "isCorrect": false
+    }, {
+        "text": "c. zwiększenie stateczności statycznej podłużnej na dodatnich kątach natarcia, a zmniejszenie na ujemnych",
+        "isCorrect": false
+    }, {
+        "text": "d. zmniejszenie stateczności statycznej podłużnej na dodatnich kątach natarcia, a zwiększenie na ujemnych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0050 Doskonałość profilu:",
+    "answers": [{
+        "text": "a. zawsze rośnie przy zmniejszaniu kąta natarcia",
+        "isCorrect": false
+    }, {
+        "text": "b. jest stałą charakterystyczną dla profilu i odpowiada wartości (Cz/Cx)max",
+        "isCorrect": false
+    }, {
+        "text": "c. zmienia się w zależności od kąta natarcia",
+        "isCorrect": true
+    }, {
+        "text": "d. zawsze rośnie przy zwiększaniu kąta natarcia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0051 Dwukrotne zwiększenie prędkości przepływu w zamkniętym tunelu spowoduje:",
+    "answers": [{
+        "text": "a. dwukrotny spadek ciśnienia statycznego",
+        "isCorrect": false
+    }, {
+        "text": "b. czterokrotny spadek ciśnienia statycznego",
+        "isCorrect": true
+    }, {
+        "text": "c. dwukrotny wzrost ciśnienia statycznego",
+        "isCorrect": false
+    }, {
+        "text": "d. czterokrotny wzrost ciśnienia statycznego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0052 Flatter jest to nazwa zjawiska związanego z:",
+    "answers": [{
+        "text": "a. powstawaniem siły oporu",
+        "isCorrect": false
+    }, {
+        "text": "b. powstawaniem siły nośnej",
+        "isCorrect": false
+    }, {
+        "text": "c. odwrotnym działaniem usterzeń",
+        "isCorrect": false
+    }, {
+        "text": "d. powstawaniem drgań samowzbudnych",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0053 Gdy powietrze wpada z prędkością V do kanału o zmiennej powierzchni przekroju, zmianie ulega tej prędkości. Jak?",
+    "answers": [{
+        "text": "a. prędkość V zmienia się tak samo jak ciśnienie statyczne",
+        "isCorrect": false
+    }, {
+        "text": "b. prędkość V nie zmienia się wcale",
+        "isCorrect": false
+    }, {
+        "text": "c. przy maleniu powierzchni przekroju prędkość V maleje a przy zwiększaniu powierzchni rośnie",
+        "isCorrect": false
+    }, {
+        "text": "d. przy maleniu powierzchni przekroju prędkość V zwiększa się",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0054 Grubość profilu to:",
+    "answers": [{
+        "text": "a. średnia odległość pomiędzy górnym i dolnym obrysem profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. największa odległość między górnym i dolnym obrysem profilu, prostopadła do jego cięciwy",
+        "isCorrect": true
+    }, {
+        "text": "c. odległość pomiędzy górnym i dolnym obrysem profilu w 50% cięciwy aerodynamicznej",
+        "isCorrect": false
+    }, {
+        "text": "d. największa odległość między górnym obrysem profilu i cięciwą aerodynamiczną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0055 Im większa lepkość powietrza tym:",
+    "answers": [{
+        "text": "a. opór tarcia większy, a warstwa przyścienna cieńsza",
+        "isCorrect": false
+    }, {
+        "text": "b. opór tarcia mniejszy, a warstwa przyścienna grubsza",
+        "isCorrect": false
+    }, {
+        "text": "c. opór tarcia mniejszy, a warstwa przyścienna cieńsza",
+        "isCorrect": false
+    }, {
+        "text": "d. opór tarcia większy, a warstwa przyścienna grubsza",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0056 Istnienie na płatowcu niezbędnych powierzchni sterowych powoduje powstawanie głównie:",
+    "answers": [{
+        "text": "a. oporu falowego",
+        "isCorrect": false
+    }, {
+        "text": "b. oporu tarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. oporu szczelinowego",
+        "isCorrect": true
+    }, {
+        "text": "d. oporu indukcyjnego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0057 Jak inaczej nazywamy flettner?",
+    "answers": [{
+        "text": "a. klapka dociążająca",
+        "isCorrect": false
+    }, {
+        "text": "b. klapka odciążająca",
+        "isCorrect": true
+    }, {
+        "text": "c. klapka wyważająca",
+        "isCorrect": false
+    }, {
+        "text": "d. trymer",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0058 Jak musi zmienić się prędkość lotu w zakręcie prawidłowym, aby przy tym samym przechyleniu promień zakrętu wzrósł czterokrotnie?",
+    "answers": [{
+        "text": "a. zwiększyć ośmiokrotnie",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększyć dwukrotnie",
+        "isCorrect": true
+    }, {
+        "text": "c. zmniejszyć czterokrotnie",
+        "isCorrect": false
+    }, {
+        "text": "d. zwiększyć czterokrotnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0059 Jak nazywa się klapka wyważająca, której położenie można zmieniać podczas lotu niezależnie?",
+    "answers": [{
+        "text": "a. klapka dociążająca",
+        "isCorrect": false
+    }, {
+        "text": "b. flettner",
+        "isCorrect": false
+    }, {
+        "text": "c. klapka odciążająca",
+        "isCorrect": false
+    }, {
+        "text": "d. trymer",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0060 Jak nazywa się punkt, w którym przepływ powietrza zmienia charakter z laminarnego na turbulentny?",
+    "answers": [{
+        "text": "a. punkt oderwania strug",
+        "isCorrect": false
+    }, {
+        "text": "b. punkt przejściowy",
+        "isCorrect": true
+    }, {
+        "text": "c. punkt ciśnieniowy",
+        "isCorrect": false
+    }, {
+        "text": "d. punkt turbulencyjny",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0061 Jak nazywa się wykres przedstawiający zależność współczynnika siły nośnej Cz od współczynnika oporu Cx statku powietrznego?",
+    "answers": [{
+        "text": "a. Biegunowa prędkości.",
+        "isCorrect": false
+    }, {
+        "text": "b. Krzywa doskonałości.",
+        "isCorrect": false
+    }, {
+        "text": "c. Biegunowa.",
+        "isCorrect": true
+    }, {
+        "text": "d. Wykres sprawności",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0062 Jak się nazywa prędkość statku powietrznego (śmigłowca, samolotu, szybowca etc) oznaczana VNE?",
+    "answers": [{
+        "text": "a. Maksymalna prędkość dopuszczalna",
+        "isCorrect": true
+    }, {
+        "text": "b. Prędkość ekonomiczna.",
+        "isCorrect": false
+    }, {
+        "text": "c. Prędkość przelotowa.",
+        "isCorrect": false
+    }, {
+        "text": "d. Prędkość optymalna.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0063 Jak się nazywają i jakie w układzie SI mają symbole jednostki masy, długości i czasu?",
+    "answers": [{
+        "text": "a. Tona (t), metr (m) i minuta (min).",
+        "isCorrect": false
+    }, {
+        "text": "b. Kilogram (kg), metr (m) i sekunda (sec)",
+        "isCorrect": true
+    }, {
+        "text": "c. Kilogram (kg), kilometr (km) i sekunda (sec).",
+        "isCorrect": false
+    }, {
+        "text": "d. Kilogram (kg), mila morska (nm) i godzina (h).",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0064 Jak się nazywają i jakie w układzie SI mają symbole jednostki siły, ciśnienia i temperatury?",
+    "answers": [{
+        "text": "a. Pond (Po), atmosfera (at), stopień Fahrenheita (°F)",
+        "isCorrect": false
+    }, {
+        "text": "b. Niuton (N), Paskal (Pa), Kelwin (K)",
+        "isCorrect": true
+    }, {
+        "text": "c. Dyna (D), Bar (b), stopień Celsiusza (°C)",
+        "isCorrect": false
+    }, {
+        "text": "d. Kilogram-siła (kG), atmosfera (at), Kelwin (K)",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0065 Jak w jednostkach podstawowych układu SI można zapisać wielkość ciśnienia 1000 hPa ?",
+    "answers": [{
+        "text": "a. 100000 N/m?",
+        "isCorrect": true
+    }, {
+        "text": "b. 1000 N/m?",
+        "isCorrect": false
+    }, {
+        "text": "c. 1000000 N/m?",
+        "isCorrect": false
+    }, {
+        "text": "d. 10000 N/m?",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0066 Jak zmieni się promień zakrętu prawidłowego, jeżeli przy stałym przechyleniu zwiększymy prędkość dwukrotnie?",
+    "answers": [{
+        "text": "a. wzrośnie ośmiokrotnie",
+        "isCorrect": false
+    }, {
+        "text": "b. wzrośnie dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "c. wzrośnie czterokrotnie",
+        "isCorrect": true
+    }, {
+        "text": "d. nie zmieni się",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0067 Jak zmienia się doskonałość szybowca \"d\" w krążeniu z przechyleniem \"j\", jeżeli lot odbywa się na stałym kącie natarcia?",
+    "answers": [{
+        "text": "a. maleje ze wzrostem przechylenia",
+        "isCorrect": true
+    }, {
+        "text": "b. rośnie ze wzrostem przechylenia",
+        "isCorrect": false
+    }, {
+        "text": "c. wzrasta tym bardziej, im szybciej się wznosimy",
+        "isCorrect": false
+    }, {
+        "text": "d. maleje tym bardziej, im szybciej opadamy",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0068 Jak zmienia się wysokość gęstościowa w sytuacji, gdy temperatura powietrza jest wyższa od standardowej wartości ISA?",
+    "answers": [{
+        "text": "a. Nieznacznie maleje",
+        "isCorrect": false
+    }, {
+        "text": "b. Nie zmienia się.",
+        "isCorrect": false
+    }, {
+        "text": "c. Wzrasta.",
+        "isCorrect": true
+    }, {
+        "text": "d. Maleje w proporcji do odwrotności gęstości względnej σ.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0069 Jaka jest różnica pomiędzy korkociągiem płaskim i stromym?",
+    "answers": [{
+        "text": "a. większa prędkość opadania w korkociągu płaskim",
+        "isCorrect": false
+    }, {
+        "text": "b. w czasie lotu pilot nie widzi żadnej różnicy",
+        "isCorrect": false
+    }, {
+        "text": "c. większa kątowa zmiana kierunku w korkociągu stromym",
+        "isCorrect": false
+    }, {
+        "text": "d. większa kątowa zmiana kierunku w korkociągu płaskim",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0072 Jaka wzorcowa wielkość ciśnienia powietrza na poziomie morza wyrażona w starych jednostkach 'milimetrów słupa rtęci' odpowiada po = 1013,25 hPa?.",
+    "answers": [{
+        "text": "a. 750 mm Hg",
+        "isCorrect": false
+    }, {
+        "text": "b. 860 mm Hg",
+        "isCorrect": false
+    }, {
+        "text": "c. 800 mm Hg",
+        "isCorrect": false
+    }, {
+        "text": "d. 760 mm Hg.",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0073 Jaką nazwę nosi stosunek ciśnienia statycznego na dowolnej wysokości do wzorcowego ciśnienia na poziomie morza δ = p/ po ?",
+    "answers": [{
+        "text": "a. ciśnienie modułowe",
+        "isCorrect": false
+    }, {
+        "text": "b. ciśnienie standardowe",
+        "isCorrect": false
+    }, {
+        "text": "c. liczba Hipokryta",
+        "isCorrect": false
+    }, {
+        "text": "d. ciśnienie względne.",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0074 Jaką nazwę nosi stosunek gęstości powietrza na dowolnej wysokości do wzorcowej (standardowej) gęstości na poziomie morza σ = ρ/ ρo?",
+    "answers": [{
+        "text": "a. Stała Laplace'a",
+        "isCorrect": false
+    }, {
+        "text": "b. Gęstość powietrza względna.",
+        "isCorrect": true
+    }, {
+        "text": "c. Współczynnik M&S",
+        "isCorrect": false
+    }, {
+        "text": "d. Współczynnik Piccarda.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0075 Jaką nazwę nosi stosunek temperatury powietrza na dowolnej wysokości, wyrażonej w Kelwinach (K), do wzorcowej temperatury na poziomie morza, również wyrażonej w Kelwinach (K) Θ = T/To?",
+    "answers": [{
+        "text": "a. Bezwymiarowa temperatura względna.",
+        "isCorrect": true
+    }, {
+        "text": "b. Stała don Pedra.",
+        "isCorrect": false
+    }, {
+        "text": "c. Temperatura absolutna.",
+        "isCorrect": false
+    }, {
+        "text": "d. Współczynnik d'Amore'a",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0076 Jaką wielkość ma wzorcowe (standardowe) ciśnienie statyczne na poziomie morza?",
+    "answers": [{
+        "text": "a. P0 = 100025 N/m2 = 1000,25 hPa",
+        "isCorrect": false
+    }, {
+        "text": "b. P0 = 111325 N/m2 = 1113,25 hPa",
+        "isCorrect": false
+    }, {
+        "text": "c. P0 = 100000 N/m2 = 1000,00 hPa",
+        "isCorrect": false
+    }, {
+        "text": "d. P0 = 101325 N/m2 = 1013,25 hPa",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0077 Jaką wielkość, wyrażoną w Kelwinach (K) ma wzorcowa (standardowa) temperatura powietrza na poziomie morza?",
+    "answers": [{
+        "text": "a. To = 277 K",
+        "isCorrect": false
+    }, {
+        "text": "b. To = 258 K",
+        "isCorrect": false
+    }, {
+        "text": "c. To = 301 K",
+        "isCorrect": false
+    }, {
+        "text": "d. To = 288 K",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0078 Jaką wielkość, wyrażoną w kg/m?, ma wzorcowa (standardowa) gęstość powietrza ρo na poziomie morza?",
+    "answers": [{
+        "text": "a. ρo = 1,0255 kg/m2.",
+        "isCorrect": false
+    }, {
+        "text": "b. ρo = 1,0000 kg/m2.",
+        "isCorrect": false
+    }, {
+        "text": "c. ρo = 1,2255 kg/m2.",
+        "isCorrect": true
+    }, {
+        "text": "d. ρo = 1,2000 kg/m2.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0079 Jaką wielkość, wyrażoną w stopniach Celsiusza (?C) ma wzorcowa (standardowa) temperatura powietrza na poziomie morza?",
+    "answers": [{
+        "text": "a. t = +16,50 C",
+        "isCorrect": false
+    }, {
+        "text": "b. t = +150 C",
+        "isCorrect": true
+    }, {
+        "text": "c. t = +200 C",
+        "isCorrect": false
+    }, {
+        "text": "d. t = +100 C",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0080 Jaki istnieje związek między wielkością temperatury powietrza t wyrażonej w stopniach Celsiusza (< sup>?< / sup> C) i temperatury T wyrażonej w Kelwinach (K)?",
+    "answers": [{
+        "text": "a. T = t + 273",
+        "isCorrect": true
+    }, {
+        "text": "b. T = t + 233",
+        "isCorrect": false
+    }, {
+        "text": "c. T = t + 283",
+        "isCorrect": false
+    }, {
+        "text": "d. T = t + 373",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0082 Jakie główne cechy ma gruby profil w porównaniu z cieńszym przy takiej samej prędkości opływu?",
+    "answers": [{
+        "text": "a. większy opór i mniejszy współczynnik siły nośnej",
+        "isCorrect": false
+    }, {
+        "text": "b. taki sam opór i większy współczynnik siły nośnej",
+        "isCorrect": false
+    }, {
+        "text": "c. większy opór i taki sam współczynnik siły nośnej",
+        "isCorrect": false
+    }, {
+        "text": "d. większy opór i większy współczynnik siły nośnej",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0083 Jakie parametry służą określeniu fizycznego stanu powietrza?",
+    "answers": [{
+        "text": "a. Ciśnienie statyczne, temperatura i gęstość.",
+        "isCorrect": true
+    }, {
+        "text": "b. Proporcje zawartości azotu i tlenu.",
+        "isCorrect": false
+    }, {
+        "text": "c. Temperatura, gęstość i kinematyczna lepkość",
+        "isCorrect": false
+    }, {
+        "text": "d. Wilgotność i ciśnienie dynamiczne",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0084 Jakie przedrostki w symbolach jednostek miar SI oznaczają zwielokrotnienie o 10, 100 i 1000?",
+    "answers": [{
+        "text": "a. Mega- (M), giga- (G), piko- (p)",
+        "isCorrect": false
+    }, {
+        "text": "b. Kilo- (k), mega- (m), deka- (da)",
+        "isCorrect": false
+    }, {
+        "text": "c. Deka- (da), hekto- (h), kilo- (k).",
+        "isCorrect": true
+    }, {
+        "text": "d. Decy- (dc), hekto- (h), mega- (M)",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0085 Jakie wielkości musimy znać w celu obliczenia przeciążenia \"n\" w prawidłowym zakręcie?",
+    "answers": [{
+        "text": "a. musimy znać prędkość, promień zakrętu i przechylenie",
+        "isCorrect": false
+    }, {
+        "text": "b. musimy znać prędkość i przechylenie",
+        "isCorrect": false
+    }, {
+        "text": "c. musimy znać promień zakrętu i przechylenie",
+        "isCorrect": false
+    }, {
+        "text": "d. wystarczy znać przechylenie",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0086 Jakiemu celowi służy tzw. 'mechanizacja skrzydła' (klapy, sloty, interceptory etc)?",
+    "answers": [{
+        "text": "a. Celem jest zwiększanie udźwigu statku powietrznego.",
+        "isCorrect": false
+    }, {
+        "text": "b. Celem jest zwiększanie osiągów przelotowych i przez to ekonomii użytkowania statku powietrznego.",
+        "isCorrect": false
+    }, {
+        "text": "c. Celem jest zwiększanie prędkości statku powietrznego.",
+        "isCorrect": false
+    }, {
+        "text": "d. Celem jest zmienianie współczynników aerodynamicznych w celu wywierania wpływu na osiągi (np. prędkość podejścia do lądowania)",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0087 Jakim przyrządem mierzona jest wysokość rzeczywista, czyli oddalenie statku powietrznego od powierzchni ziemi?",
+    "answers": [{
+        "text": "a. Wysokościomierzem ciśnieniowym.",
+        "isCorrect": false
+    }, {
+        "text": "b. Dalmierzem optycznym.",
+        "isCorrect": false
+    }, {
+        "text": "c. Wysokościomierzem radiowym (radarowym).",
+        "isCorrect": true
+    }, {
+        "text": "d. Przyrządem DME.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0088 Jedną z miar stateczności dynamicznej obiektu (samolotu, śmigłowca, szybowca, lotni etc) jest 'czas połówkowy'. Co to jest za wielkość?",
+    "answers": [{
+        "text": "a. Czas połowy okresu własnych drgań konstrukcji (struktury) obiektu.",
+        "isCorrect": false
+    }, {
+        "text": "b. Czas połowy okresu wahań fugoidalnych wywołanych odchyleniem.",
+        "isCorrect": false
+    }, {
+        "text": "c. Czas jaki upływa od odchylenia od równowagi o jakąś wielkość do chwili zmalenia tego odchylenia do połowy (50%).",
+        "isCorrect": true
+    }, {
+        "text": "d. Czas połowy okresu drgań flatterowych wywołanych wytrąceniem z równowagi.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0089 Jeżeli ciało wytrącone ze stanu równowagi krótkotrwałym impulsem zewnętrznym porusza się ruchem jednostajnym, to mamy do czynienia z:",
+    "answers": [{
+        "text": "a. równowagą dynamiczną",
+        "isCorrect": false
+    }, {
+        "text": "b. równowagą chwiejną",
+        "isCorrect": false
+    }, {
+        "text": "c. równowagą stałą",
+        "isCorrect": false
+    }, {
+        "text": "d. równowagą obojętną",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0090 Jeżeli ciało wytrącone ze stanu równowagi krótkotrwałym impulsem zewnętrznym porusza się ruchem przyśpieszonym zwiększając odchylenie, to mamy do czynienia z:",
+    "answers": [{
+        "text": "a. równowagą chwiejną",
+        "isCorrect": true
+    }, {
+        "text": "b. równowagą dynamiczną",
+        "isCorrect": false
+    }, {
+        "text": "c. równowagą obojętną",
+        "isCorrect": false
+    }, {
+        "text": "d. równowagą stałą",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0091 Jeżeli dodamy do siebie opory wszystkich części płatowca (tj. skrzydeł, kadłuba, usterzenia, itd.), to otrzymana suma ta będzie:",
+    "answers": [{
+        "text": "a. mniejsza od oporu płatowca zmontowanego z tych części",
+        "isCorrect": true
+    }, {
+        "text": "b. równa oporowi płatowca zmontowanego z tych części",
+        "isCorrect": false
+    }, {
+        "text": "c. do prawidłowej odpowiedzi potrzebne są dodatkowe dane z tunelu aerodynamicznego",
+        "isCorrect": false
+    }, {
+        "text": "d. większa od oporu płatowca zmontowanego z tych części",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0092 Jeżeli dwukrotnie zwiększymy prędkość przepływu, to siła nośna:",
+    "answers": [{
+        "text": "a. wzrośnie czterokrotnie",
+        "isCorrect": true
+    }, {
+        "text": "b. zmaleje dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "c. wzrośnie dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "d. zmaleje czterokrotnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0093 Jeżeli dwukrotnie zwiększymy prędkość przepływu, to siła oporu:",
+    "answers": [{
+        "text": "a. wzrośnie dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "b. zmaleje czterokrotnie",
+        "isCorrect": false
+    }, {
+        "text": "c. zmaleje czterokrotnie",
+        "isCorrect": false
+    }, {
+        "text": "d. wzrośnie czterokrotnie",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0094 Jeżeli zmniejszymy temperaturę przepływającego powietrza, nie zmieniając kąta natarcia, powierzchni skrzydła i prędkości przepływu to:",
+    "answers": [{
+        "text": "a. doskonałość skrzydła wzrośnie",
+        "isCorrect": false
+    }, {
+        "text": "b. siły aerodynamiczne na skrzydle wzrosną",
+        "isCorrect": true
+    }, {
+        "text": "c. siły aerodynamiczne na skrzydle zmaleją",
+        "isCorrect": false
+    }, {
+        "text": "d. siły aerodynamiczne na skrzydle nie zmienią się, bo nie zależą od temperatury",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0095 Jeżeli zwiększymy powierzchnię statecznika poziomego to:",
+    "answers": [{
+        "text": "a. sterowność podłużna wzrośnie",
+        "isCorrect": false
+    }, {
+        "text": "b. stateczność statyczna podłużna wzrośnie",
+        "isCorrect": true
+    }, {
+        "text": "c. sterowność podłużna nie zmieni się",
+        "isCorrect": false
+    }, {
+        "text": "d. stateczność statyczna podłużna zmaleje",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0096 Każde ciało ma swój własny, stały i niezmienny współczynnik oporu kształtu cxkszt",
+    "answers": [{
+        "text": "a. zawsze prawda",
+        "isCorrect": false
+    }, {
+        "text": "b. fałsz, współczynnik oporu kształtu zależy również od ustawienia ciała",
+        "isCorrect": true
+    }, {
+        "text": "c. fałsz, współczynnik oporu kształtu nie zależy od kształtu ciała",
+        "isCorrect": false
+    }, {
+        "text": "d. prawda tylko dla profili lotniczych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0097 \"Kąt natarcia dla którego Cx  = Cxmin  zawsze jest:",
+    "answers": [{
+        "text": "a. \"równy kątowi natarcia dla Cz <0\"",
+        "isCorrect": false
+    }, {
+        "text": "b. \"większy od kąta natarcia dla Cz = 0\"",
+        "isCorrect": false
+    }, {
+        "text": "c. mniejszy od kąta natarcia dla optymalnego Cx",
+        "isCorrect": false
+    }, {
+        "text": "d. mniejszy od kąta natarcia dla(Cz/Cx)max",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0098 Kąt natarcia płata o profilu wklęsło-wypukłym, dla którego nie powstaje opór indukowany ma wartość:",
+    "answers": [{
+        "text": "a. dodatnią",
+        "isCorrect": false
+    }, {
+        "text": "b. krytyczną",
+        "isCorrect": false
+    }, {
+        "text": "c. ujemną",
+        "isCorrect": true
+    }, {
+        "text": "d. zerową",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0099 Kąt natarcia profilu to kąt zawarty między:",
+    "answers": [{
+        "text": "a. cięciwą geometryczną profilu i kierunkiem wektora opadania",
+        "isCorrect": false
+    }, {
+        "text": "b. cięciwą geometryczną profilu i kierunkiem napływu strumienia niezaburzonego",
+        "isCorrect": true
+    }, {
+        "text": "c. szkieletową profilu i kierunkiem wektora prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "d. cięciwą aerodynamiczną profilu i kierunkiem wektora prędkości lotu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0100 Kąt zawarty między cięciwą geometryczną profilu i kierunkiem napływu strumienia niezaburzonego to:",
+    "answers": [{
+        "text": "a. kąt wzniosu profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. kąt skosu płata",
+        "isCorrect": false
+    }, {
+        "text": "c. kąt natarcia profilu",
+        "isCorrect": true
+    }, {
+        "text": "d. kąt zbieżności profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0101 Kiedy wysokość wskazywana na ziemi przez wysokościomierz ciśnieniowy jest wysokością standardową równą elewacji lotniska?",
+    "answers": [{
+        "text": "a. Gdy wysokościomierz radiowy wskazuje 0.",
+        "isCorrect": false
+    }, {
+        "text": "b. W warunkach zgodnych z podanymi w tabeli Międzynarodowej Atmosfery Wzorcowej ISA.",
+        "isCorrect": true
+    }, {
+        "text": "c. W warunkach arktycznych.",
+        "isCorrect": false
+    }, {
+        "text": "d. W warunkach tropikalnych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0102 Klapy stosuje się w celu:",
+    "answers": [{
+        "text": "a. poprawienia stateczności w pełnym zakresie kątów natarcia",
+        "isCorrect": false
+    }, {
+        "text": "b. poprawienia sterowności w pełnym zakresie kątów natarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. zmniejszenia siły oporu na małych prędkościach",
+        "isCorrect": false
+    }, {
+        "text": "d. zwiększenia CZmax",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0103 Kompensacja aerodynamiczna steru ma za zadanie:",
+    "answers": [{
+        "text": "a. zwiększenie sił używanych przez pilota",
+        "isCorrect": false
+    }, {
+        "text": "b. zmniejszenie sił używanych przez pilota",
+        "isCorrect": true
+    }, {
+        "text": "c. wyważenie powierzchni sterowej w pozycji neutralnej",
+        "isCorrect": false
+    }, {
+        "text": "d. wyważenie masowe powierzchni sterowej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0104 Kompensacja aerodynamiczna steru nazywa się również wyważeniem aerodynamicznym steru.",
+    "answers": [{
+        "text": "a. prawda, ale tylko wtedy, jeżeli nie zastosowano wyważenia masowego steru",
+        "isCorrect": false
+    }, {
+        "text": "b. FAŁSZ",
+        "isCorrect": false
+    }, {
+        "text": "c. prawda, ale tylko wtedy, jeżeli nie zastosowano klapki wyważającej",
+        "isCorrect": false
+    }, {
+        "text": "d. PRAWDA",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0105 Korkociąg płaski jest:",
+    "answers": [{
+        "text": "a. tak samo niebezpieczny jak korkociąg stromy",
+        "isCorrect": false
+    }, {
+        "text": "b. bardziej niebezpieczny od stromego",
+        "isCorrect": true
+    }, {
+        "text": "c. dużo mniej niebezpieczny od stromego",
+        "isCorrect": false
+    }, {
+        "text": "d. nieznacznie mniej niebezpieczny od stromego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0106 Krytyczna prędkość flatteru jest to prędkość, dla której:",
+    "answers": [{
+        "text": "a. siły wzbudzające drgania są mniejsze od sił tłumiących",
+        "isCorrect": false
+    }, {
+        "text": "b. siły wzbudzające drgania są równe siłom tłumiącym",
+        "isCorrect": true
+    }, {
+        "text": "c. siły wzbudzające drgania są większe od sił tłumiących",
+        "isCorrect": false
+    }, {
+        "text": "d. zanikają siły tłumiące drgania samowzbudne",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0107 Którą oś układu współrzędnych nazywamy osią pionową?",
+    "answers": [{
+        "text": "a. takiej nazwy nie używa się",
+        "isCorrect": false
+    }, {
+        "text": "b. oś OY?",
+        "isCorrect": false
+    }, {
+        "text": "c. oś OX?",
+        "isCorrect": false
+    }, {
+        "text": "d. oś OZ?",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0108 Którą oś układu współrzędnych nazywamy osią podłużną?",
+    "answers": [{
+        "text": "a. takiej nazwy nie używa się",
+        "isCorrect": false
+    }, {
+        "text": "b. oś OZ?",
+        "isCorrect": false
+    }, {
+        "text": "c. oś OX?",
+        "isCorrect": true
+    }, {
+        "text": "d. oś OY?",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0109 Którą oś układu współrzędnych nazywamy osią poprzeczną?",
+    "answers": [{
+        "text": "a. oś OY?",
+        "isCorrect": true
+    }, {
+        "text": "b. oś OX?",
+        "isCorrect": false
+    }, {
+        "text": "c. oś OZ?",
+        "isCorrect": false
+    }, {
+        "text": "d. takiej nazwy nie używa się",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0110 Które urządzenia nie są zaliczane do mechanizacji skrzydła?",
+    "answers": [{
+        "text": "a. wysklepiające profil mało wysklepiony na mocno wysklepiony",
+        "isCorrect": false
+    }, {
+        "text": "b. powiększające powierzchnię skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. zwiększające CZmax poprzez zmniejszenie przepływu indukowanego, np. winglety",
+        "isCorrect": true
+    }, {
+        "text": "d. przeszkadzające odrywaniu się strug powietrza na grzbiecie skrzydła na małych kątach natarcia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0112 Który opis wielkości fizycznej charakteryzuje energię potencjalną?",
+    "answers": [{
+        "text": "a. - iloczyn ciężaru i wysokości ciała- jednostka wat [W]",
+        "isCorrect": false
+    }, {
+        "text": "b. - iloczyn ciężaru i wysokości ciała- jednostka dżul [J]",
+        "isCorrect": true
+    }, {
+        "text": "c. - iloczyn masy i wysokości ciała- jednostka wat [W]",
+        "isCorrect": false
+    }, {
+        "text": "d. - iloczyn masy i wysokości ciała- jednostka dżul [J]",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0116 Linia krzywa przedstawiająca kształt skrzydeł widzianych z góry to:",
+    "answers": [{
+        "text": "a. obrys skrzydła",
+        "isCorrect": true
+    }, {
+        "text": "b. szkieletowa skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. szkieletowa profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. obrys profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0117 Linia łącząca noski profili płata lotniczego to:",
+    "answers": [{
+        "text": "a. geometryczna cięciwa aerodynamiczna",
+        "isCorrect": false
+    }, {
+        "text": "b. geometryczna krawędź spływu",
+        "isCorrect": false
+    }, {
+        "text": "c. szkieletowa płata",
+        "isCorrect": false
+    }, {
+        "text": "d. geometryczna krawędź natarcia",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0118 Linia łącząca ostrza (spływy) profili płata lotniczego to:",
+    "answers": [{
+        "text": "a. geometryczna cięciwa aerodynamiczna",
+        "isCorrect": false
+    }, {
+        "text": "b. szkieletowa płata",
+        "isCorrect": false
+    }, {
+        "text": "c. geometryczna krawędź spływu",
+        "isCorrect": true
+    }, {
+        "text": "d. geometryczna krawędź natarcia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0119 Linia łącząca środki okręgów wpisanych w obrys profilu lotniczego nosi nazwę:",
+    "answers": [{
+        "text": "a. grubość profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. szkieletowa",
+        "isCorrect": true
+    }, {
+        "text": "c. cięciwa profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. strzałka ugięcia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0121 Lot odbywa się na kącie natarcia, dla którego współczynnik siły oporu 'Cx' ma wartość minimalną: α=αCxmin. W wyniku niewielkiego zwiększenia kąta natarcia:",
+    "answers": [{
+        "text": "a. doskonałość płatowca nie zmieni się",
+        "isCorrect": false
+    }, {
+        "text": "b. procentowe zwiększenie \"Cz\" będzie większe od procentowego zwiększenia \"Cx\"",
+        "isCorrect": true
+    }, {
+        "text": "c. procentowe zwiększenie \"Cx\" będzie większe od procentowego zwiększenia \"Cz\"",
+        "isCorrect": false
+    }, {
+        "text": "d. procentowe zwiększenie \"Cx\" będzie takie same jak procentowe zwiększenia \"Cz\"",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0122 Lotki typu 'Fryze' stosuje się w celu:",
+    "answers": [{
+        "text": "a. zniwelowania momentu oporowego lotek",
+        "isCorrect": true
+    }, {
+        "text": "b. zwiększenia momentu przechylającego",
+        "isCorrect": false
+    }, {
+        "text": "c. zmniejszenia oporu szczelinowego",
+        "isCorrect": false
+    }, {
+        "text": "d. zmniejszenia oporu kształtu podczas wychylania lotek",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0123 Lotki zaprojektowane są w celu obracania płatowca względem:",
+    "answers": [{
+        "text": "a. ośi OZ› i ośi OY›",
+        "isCorrect": false
+    }, {
+        "text": "b. ośi OY›",
+        "isCorrect": false
+    }, {
+        "text": "c. ośi OX›",
+        "isCorrect": true
+    }, {
+        "text": "d. ośi OZ›",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0124 Maksymalna dopuszczalna prędkość lotu 'VNE' to:",
+    "answers": [{
+        "text": "a. maksymalna prędkość lotu w atmosferze, w której dochodzi do gwałtownych zmian prędkości pionowej otaczającego powietrza",
+        "isCorrect": false
+    }, {
+        "text": "b. prędkość, do jakiej nie przewiduje się ograniczeń użytkowania statku powietrznego zgodnie z jego przeznaczeniem",
+        "isCorrect": false
+    }, {
+        "text": "c. największa prędkość, z jaką można wykonywać lot w powietrzu spokojnym",
+        "isCorrect": true
+    }, {
+        "text": "d. maksymalna prędkość, przy której można jeszcze użyć pełnych wychyleń sterów bez przekroczenia maksymalnego przeciążenia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0125 Maksymalna doskonałość profilu:",
+    "answers": [{
+        "text": "a. zawsze rośnie przy zmniejszaniu kąta natarcia",
+        "isCorrect": false
+    }, {
+        "text": "b. zawsze rośnie przy zwiększaniu kąta natarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. zmienia się w zależności od kąta natarcia",
+        "isCorrect": false
+    }, {
+        "text": "d. jest stałą charakterystyczną dla profilu i odpowiada wartości (Cz/Cx)max",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0126 Maksymalna prędkość lotu w atmosferze, w której dochodzi do gwałtownych zmian prędkości pionowej otaczającego powietrza oznaczana jest:",
+    "answers": [{
+        "text": "a. Va",
+        "isCorrect": false
+    }, {
+        "text": "b. Vne",
+        "isCorrect": false
+    }, {
+        "text": "c. Vno",
+        "isCorrect": false
+    }, {
+        "text": "d. Vra",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0127 Maksymalna prędkość, przy której można jeszcze użyć pełnych wychyleń sterów bez przekroczenia maksymalnego przeciążenia oznaczana jest:",
+    "answers": [{
+        "text": "a. Vne",
+        "isCorrect": false
+    }, {
+        "text": "b. Vno",
+        "isCorrect": false
+    }, {
+        "text": "c. Va",
+        "isCorrect": true
+    }, {
+        "text": "d. Vra",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0128 Mechanizację skrzydła stosuje się w celu:",
+    "answers": [{
+        "text": "a. zwiększenia CZmax",
+        "isCorrect": true
+    }, {
+        "text": "b. poprawienia sterowności w pełnym zakresie kątów natarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. poprawienia stateczności w pełnym zakresie kątów natarcia",
+        "isCorrect": false
+    }, {
+        "text": "d. zmniejszenia siły oporu na małych prędkościach",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0129 Minimalną wartość współczynnika siły oporu Cx otrzymujemy dla kąta natarcia α = 0°",
+    "answers": [{
+        "text": "a. prawda tylko dla profili symetrycznych",
+        "isCorrect": true
+    }, {
+        "text": "b. zawsze prawda",
+        "isCorrect": false
+    }, {
+        "text": "c. zawsze fałsz",
+        "isCorrect": false
+    }, {
+        "text": "d. prawda tylko dla profili niesymetrycznych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0130 Moment aerodynamiczny mierzony względem środka aerodynamicznego w zakresie prędkości użytkowych:",
+    "answers": [{
+        "text": "a. jest stały i nie zależy od kata natarcia i prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "b. jest proporcjonalny do kata natarcia i kwadratu prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "c. prawie nie zależy od kata natarcia, ale jest proporcjonalny do kwadratu prędkości lotu",
+        "isCorrect": true
+    }, {
+        "text": "d. prawie nie zależy od kata natarcia i prędkości lotu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0132 Moment oporowy lotek powstaje ponieważ:",
+    "answers": [{
+        "text": "a. siła oporu na lotce wychylonej w dół jest mniejsza od siły oporu na lotce wychylonej w górę",
+        "isCorrect": false
+    }, {
+        "text": "b. wychyleniom lotek towarzyszy na obu skrzydłach zwiększenie oporu indukowanego",
+        "isCorrect": false
+    }, {
+        "text": "c. wychyleniom lotek towarzyszy powstanie momentu zawiasowego, który powoduje moment oporowy lotek",
+        "isCorrect": false
+    }, {
+        "text": "d. siła oporu na lotce wychylonej w dół jest większa od siły oporu na lotce wychylonej w górę",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0133 Na dolnej powierzchni płata o skończonym wydłużeniu strugi powietrza opływające go odchylają się w stronę końca płata o kąt, którego wartość jest:",
+    "answers": [{
+        "text": "a. stała w każdym punkcie rozpiętości, ale zależy od kąta natarcia",
+        "isCorrect": false
+    }, {
+        "text": "b. stała w każdym punkcie rozpiętości, ale zależy od prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "c. tym większa im bliżej środka płata",
+        "isCorrect": false
+    }, {
+        "text": "d. tym większa im bliżej końca płata",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0134 Na górnej powierzchni płata o skończonym wydłużeniu strugi powietrza opływające go odchylają się w stronę środka płata o kąt, którego wartość jest:",
+    "answers": [{
+        "text": "a. tym mniejszą im większy kąt natarcia",
+        "isCorrect": false
+    }, {
+        "text": "b. stałą, nie zależną od kąta natarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. tym większą im większy kąt natarcia",
+        "isCorrect": true
+    }, {
+        "text": "d. stałą, ale zależną od prędkości lotu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0139 Na płacie o skończonym wydłużeniu strugi powietrza opływające go:",
+    "answers": [{
+        "text": "a. - odchylają się w stronę środka płata na dolnej powierzchni - odchylają się w stronę końca płata na górnej powierzchni",
+        "isCorrect": false
+    }, {
+        "text": "b. - odchylają się w stronę środka płata na górnej powierzchni - odchylają się w stronę końca płata na dolnej powierzchni",
+        "isCorrect": true
+    }, {
+        "text": "c. - odchylają się w stronę środka płata na górnej i dolnej powierzchni",
+        "isCorrect": false
+    }, {
+        "text": "d. - odchylają się w stronę końca płata na górnej i dolnej powierzchni",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0141 Największa odległość między górnym i dolnym obrysem profilu (prostopadła do cięciwy) to:",
+    "answers": [{
+        "text": "a. grubość względna profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. wysokość względna profilu",
+        "isCorrect": false
+    }, {
+        "text": "c. grubość profilu",
+        "isCorrect": true
+    }, {
+        "text": "d. wysokość profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0142 Największa prędkość, z jaką można wykonywać lot w powietrzu spokojnym oznaczana jest:",
+    "answers": [{
+        "text": "a. VA",
+        "isCorrect": false
+    }, {
+        "text": "b. VNO",
+        "isCorrect": false
+    }, {
+        "text": "c. VNE",
+        "isCorrect": true
+    }, {
+        "text": "d. VRA",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0143 Niekorzystny moment obrotowy względem osi OZ›, który powstaje w wyniku wychylenia lotek o ten sam kąt w przeciwne strony nazywamy:",
+    "answers": [{
+        "text": "a. momentem holendrowania",
+        "isCorrect": false
+    }, {
+        "text": "b. momentem oporowym lotek",
+        "isCorrect": true
+    }, {
+        "text": "c. moment przechylającym lotek",
+        "isCorrect": false
+    }, {
+        "text": "d. momentem zawiasowym lotek",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0144 Niestateczność holendrowania to jeden z rodzajów niestateczności:",
+    "answers": [{
+        "text": "a. dynamicznej bocznej",
+        "isCorrect": true
+    }, {
+        "text": "b. dynamicznej kierunkowej",
+        "isCorrect": false
+    }, {
+        "text": "c. dynamicznej poprzecznej",
+        "isCorrect": false
+    }, {
+        "text": "d. statycznej kierunkowej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0145 Niestateczność spiralna to jeden z rodzajów niestateczności:",
+    "answers": [{
+        "text": "a. dynamicznej poprzecznej",
+        "isCorrect": false
+    }, {
+        "text": "b. dynamicznej kierunkowej",
+        "isCorrect": false
+    }, {
+        "text": "c. statycznej podłużnej",
+        "isCorrect": false
+    }, {
+        "text": "d. dynamicznej bocznej",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0146 Niewielkie zwiększanie kąta natarcia α=α optymalne powoduje:",
+    "answers": [{
+        "text": "a. zwiększanie 'Cx' oraz zmniejszanie 'Cz'",
+        "isCorrect": false
+    }, {
+        "text": "b. zmniejszanie 'Cx' oraz 'Cz'",
+        "isCorrect": false
+    }, {
+        "text": "c. zwiększanie 'Cz' oraz zmniejszanie 'Cx'",
+        "isCorrect": false
+    }, {
+        "text": "d. zwiększanie 'Cx' oraz 'Cz'",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0147 Oblodzenie powierzchni nośnych powoduje:",
+    "answers": [{
+        "text": "a. zmniejszenie prędkości opadania",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększenie siły nośnej",
+        "isCorrect": false
+    }, {
+        "text": "c. zwiększenie prędkości minimalnej",
+        "isCorrect": true
+    }, {
+        "text": "d. zmniejszenie siły oporu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0148 Obrót płatowca względem osi OX realizowany jest za pomocą:",
+    "answers": [{
+        "text": "a. usterzenia kierunku",
+        "isCorrect": false
+    }, {
+        "text": "b. klap",
+        "isCorrect": false
+    }, {
+        "text": "c. usterzenia wysokości",
+        "isCorrect": false
+    }, {
+        "text": "d. lotek",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0149 Obrót płatowca względem osi OY realizowany jest za pomocą:",
+    "answers": [{
+        "text": "a. usterzenia kierunku",
+        "isCorrect": false
+    }, {
+        "text": "b. klap",
+        "isCorrect": false
+    }, {
+        "text": "c. lotek",
+        "isCorrect": false
+    }, {
+        "text": "d. usterzenia wysokości",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0150 Obrót płatowca względem osi OZ realizowany jest za pomocą:",
+    "answers": [{
+        "text": "a. usterzenia wysokości",
+        "isCorrect": false
+    }, {
+        "text": "b. lotek",
+        "isCorrect": false
+    }, {
+        "text": "c. usterzenia kierunku",
+        "isCorrect": true
+    }, {
+        "text": "d. klap",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0151 Odległość pomiędzy położeniem środka ciężkości szybowca i środkiem równowagi obojętnej to:",
+    "answers": [{
+        "text": "a. zapas sterowności dynamicznej podłużnej",
+        "isCorrect": false
+    }, {
+        "text": "b. zapas stateczności statycznej podłużnej",
+        "isCorrect": true
+    }, {
+        "text": "c. zapas sterowności statycznej podłużnej",
+        "isCorrect": false
+    }, {
+        "text": "d. zapas stateczności dynamicznej podłużnej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0152 Opór ciała poruszającego się w powietrzu zależy od:",
+    "answers": [{
+        "text": "a. współczynnika siły nośnej, oporu kształtu i powierzchni nośnej",
+        "isCorrect": false
+    }, {
+        "text": "b. mocy silnika i prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "c. współczynnika oporu, powierzchni odniesienia, gęstości powietrza kwadratu prędkości lotu",
+        "isCorrect": true
+    }, {
+        "text": "d. współczynnika oporu i ciśnienia całkowitego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0153 Opór indukowany wzrasta, gdy:",
+    "answers": [{
+        "text": "a. maleje cięciwa profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. maleje grubość profilu",
+        "isCorrect": false
+    }, {
+        "text": "c. maleje wydłużenie płata",
+        "isCorrect": true
+    }, {
+        "text": "d. wzrasta rozpiętość skrzydła",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0154 Opór interferencyjny powstaje w wyniku:",
+    "answers": [{
+        "text": "a. interferencji falowej w przepływach poddźwiękowych",
+        "isCorrect": false
+    }, {
+        "text": "b. wzajemnego zaburzania opływu przez części sąsiadujące ze sobą",
+        "isCorrect": true
+    }, {
+        "text": "c. wzajemnego interferowania oporów szczelinowych powstających na płatowcu",
+        "isCorrect": false
+    }, {
+        "text": "d. powstawania wirów na końcach skrzydeł",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0155 Opór kształtu zależy tylko od kształtu opływanego ciała.",
+    "answers": [{
+        "text": "a. prawda tylko dla profili lotniczych",
+        "isCorrect": false
+    }, {
+        "text": "b. fałsz, opór kształtu nie zależy od kształtu ciała",
+        "isCorrect": false
+    }, {
+        "text": "c. zawsze prawda",
+        "isCorrect": false
+    }, {
+        "text": "d. fałsz, opór kształtu zależy również od ustawienia ciała",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0156 Opór powstały w wyniku wzajemnego oddziaływania na siebie poszczególnych części szybowca nazywamy oporem:",
+    "answers": [{
+        "text": "a. szczelinowym",
+        "isCorrect": false
+    }, {
+        "text": "b. interferencyjnym",
+        "isCorrect": true
+    }, {
+        "text": "c. indukowanym",
+        "isCorrect": false
+    }, {
+        "text": "d. kształtu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0157 Opór tarci profilu lotniczego na użytkowych kątach natarcia jest najmniejszy w przypadku opływu:",
+    "answers": [{
+        "text": "a. Lilienthala",
+        "isCorrect": false
+    }, {
+        "text": "b. turbulentnego",
+        "isCorrect": false
+    }, {
+        "text": "c. laminarnego",
+        "isCorrect": true
+    }, {
+        "text": "d. burzliwego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0158 Opór tarcia przepływu laminarnego w stosunku do oporu tarcia w przepływie turbulentnym jest:",
+    "answers": [{
+        "text": "a. taki sam dla idealnie czystych powierzchni, w innych przypadkach większy",
+        "isCorrect": false
+    }, {
+        "text": "b. zawsze większy",
+        "isCorrect": false
+    }, {
+        "text": "c. mniejszy",
+        "isCorrect": true
+    }, {
+        "text": "d. zawsze taki sam",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0159 Opór, który jest wynikiem zawirowań na końcach płata lotniczego spowodowanych wyrównywaniem ciśnienia na górnej i dolnej powierzchni nosi nazwę:",
+    "answers": [{
+        "text": "a. oporu falowego",
+        "isCorrect": false
+    }, {
+        "text": "b. oporu indukowanego",
+        "isCorrect": true
+    }, {
+        "text": "c. oporu interferencyjnego",
+        "isCorrect": false
+    }, {
+        "text": "d. oporu wirowego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0160 Płytowe usterzenie wysokości jednocześnie spełnia rolę statecznika poziomego i steru wysokości.",
+    "answers": [{
+        "text": "a. prawda, ale tylko w przypadku, gdy płatowiec jest niestateczny dynamicznie",
+        "isCorrect": false
+    }, {
+        "text": "b. PRAWDA",
+        "isCorrect": true
+    }, {
+        "text": "c. prawda, ale tylko w przypadku, gdy płatowiec jest niestateczny statycznie",
+        "isCorrect": false
+    }, {
+        "text": "d. FAŁSZ",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0161 Po przekroczeniu krytycznej prędkości rozbieżności skrętnej skrzydła następuje:",
+    "answers": [{
+        "text": "a. odwrotne działanie lotek",
+        "isCorrect": false
+    }, {
+        "text": "b. ukręcenie skrzydła",
+        "isCorrect": true
+    }, {
+        "text": "c. flatter",
+        "isCorrect": false
+    }, {
+        "text": "d. buffeting",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0162 Po wychyleniu lotki w górę podczas lotu z dużą prędkością powstaje:",
+    "answers": [{
+        "text": "a. dodatkowa siła nośna, która powoduje tylko przechylenie, bez wpływu na skręcenie i ugięcie skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "b. moment skręcający skrzydło, który powoduje zmniejszenie kąta natarcia skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. moment skręcający skrzydło, który powoduje wzrost kąta natarcia skrzydła",
+        "isCorrect": true
+    }, {
+        "text": "d. dodatkowa siła nośna, która powoduje tylko ugięcie skrzydła, bez wpływu na skręcenie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0163 Podczas zjawiska autorotacji, skrzydło, które opływane jest pod większym kątem natarcia:",
+    "answers": [{
+        "text": "a. wytwarza mniejszą siłę nośną od skrzydła na mniejszym kącie natarcia",
+        "isCorrect": true
+    }, {
+        "text": "b. wytwarza większą siłę nośną od skrzydła na mniejszym kącie natarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. wytwarza taką samą siłę nośną jak skrzydło na mniejszym kącie natarcia",
+        "isCorrect": false
+    }, {
+        "text": "d. nie wytwarza siły nośnej, tylko siłę oporu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0164 Położenie środka parcia na profilu klasycznym niesymetrycznym wraz ze wzrostem kąta natarcia:",
+    "answers": [{
+        "text": "a. przesuwa się do tyłu",
+        "isCorrect": false
+    }, {
+        "text": "b. jest stałe, ale zależy od prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "c. przesuwa się do przodu",
+        "isCorrect": true
+    }, {
+        "text": "d. jest stałe i nie zależy od prędkości lotu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0165 Położenie środka parcia na profilu samostatecznym wraz ze wzrostem kąta natarcia:",
+    "answers": [{
+        "text": "a. przesuwa się do przodu",
+        "isCorrect": false
+    }, {
+        "text": "b. przesuwa się do tyłu",
+        "isCorrect": true
+    }, {
+        "text": "c. jest stałe",
+        "isCorrect": false
+    }, {
+        "text": "d. jest stałe, ale zależy od prędkości lotu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0167 Powierzchnia nośna skrzydła to:",
+    "answers": [{
+        "text": "a. iloczyn rozpiętości skrzydła i szerokości profilu S = b*c",
+        "isCorrect": false
+    }, {
+        "text": "b. powierzchnia dolnej płaszczyzny skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. powierzchnia ograniczona obrysem skrzydła",
+        "isCorrect": true
+    }, {
+        "text": "d. iloczyn średniej cięciwy geometrycznej i wydłużenia skrzydła S= l*Cśr",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0168 Powodem wyślizgu w zakręcie może być:",
+    "answers": [{
+        "text": "a. za duże przechylenie lub za duża prędkość kątowa zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "b. za małe przechylenie lub za duża prędkość kątowa zakrętu",
+        "isCorrect": true
+    }, {
+        "text": "c. za duże przechylenie lub za mała prędkość kątowa zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "d. za małe przechylenie lub za mała prędkość kątowa zakrętu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0169 Powodem ześlizgu w zakręcie może być:",
+    "answers": [{
+        "text": "a. za małe przechylenie lub za mała prędkość kątowa zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "b. za duże przechylenie lub za duża prędkość kątowa zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "c. za małe przechylenie lub za duża prędkość kątowa zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "d. za duże przechylenie lub za mała prędkość kątowa zakrętu",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0170 Prędkość brutalnego sterowania 'VA' to:",
+    "answers": [{
+        "text": "a. największa prędkość, z jaką można wykonywać lot w powietrzu spokojnym",
+        "isCorrect": false
+    }, {
+        "text": "b. maksymalna prędkość lotu w atmosferze, w której dochodzi do gwałtownych zmian prędkości pionowej otaczającego powietrza",
+        "isCorrect": false
+    }, {
+        "text": "c. prędkość, do jakiej nie przewiduje się ograniczeń użytkowania szybowca zgodnie z jego przeznaczeniem",
+        "isCorrect": false
+    }, {
+        "text": "d. maksymalna prędkość, przy której można jeszcze użyć pełnych wychyleń sterów bez przekroczenia maksymalnego przeciążenia",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0172 Prędkość lotu w burzliwej atmosferze 'VRA' to:",
+    "answers": [{
+        "text": "a. maksymalna prędkość, przy której można jeszcze użyć pełnych wychyleń sterów bez przekroczenia maksymalnego przeciążenia",
+        "isCorrect": false
+    }, {
+        "text": "b. prędkość, do jakiej nie przewiduje się ograniczeń użytkowania szybowca zgodnie z jego przeznaczeniem",
+        "isCorrect": false
+    }, {
+        "text": "c. największa prędkość, z jaką można wykonywać lot w powietrzu spokojnym",
+        "isCorrect": false
+    }, {
+        "text": "d. maksymalna prędkość lotu w atmosferze, w której dochodzi do gwałtownych zmian prędkości pionowej otaczającego powietrza",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0173 Prędkość normalnego użytkowania 'VNO' to:",
+    "answers": [{
+        "text": "a. maksymalna prędkość, przy której można jeszcze użyć pełnych wychyleń sterów bez przekroczenia maksymalnego przeciążenia",
+        "isCorrect": false
+    }, {
+        "text": "b. maksymalna prędkość lotu w atmosferze, w której dochodzi do gwałtownych zmian prędkości pionowej otaczającego powietrza",
+        "isCorrect": false
+    }, {
+        "text": "c. największa prędkość, z jaką można wykonywać lot w powietrzu spokojnym",
+        "isCorrect": false
+    }, {
+        "text": "d. prędkość, do jakiej nie przewiduje się ograniczeń użytkowania szybowca zgodnie z jego przeznaczeniem",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0174 Prędkość, do jakiej nie przewiduje się ograniczeń użytkowania szybowca zgodnie z jego przeznaczeniem oznaczana jest:",
+    "answers": [{
+        "text": "a. VA",
+        "isCorrect": false
+    }, {
+        "text": "b. VNO",
+        "isCorrect": true
+    }, {
+        "text": "c. VNE",
+        "isCorrect": false
+    }, {
+        "text": "d. VRA",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0176 Profile laminarne to profile, w których:",
+    "answers": [{
+        "text": "a. punkt przejścia z opływu turbulentnego w laminarny następuje w tylnej części profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. maksymalna grubość profilu znajduje się w przedziale 50%-70% cięciwy",
+        "isCorrect": true
+    }, {
+        "text": "c. dla średnich i dużych prędkości nie następuje przejście z opływu laminarnego w turbulentny",
+        "isCorrect": false
+    }, {
+        "text": "d. maksymalna grubość profilu znajduje się w przedziale 20%-40% cięciwy",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0177 Prosta łącząca środek krzywizny noska profilu z ostrzem (spływem) profilu to:",
+    "answers": [{
+        "text": "a. średnia cięciwa aerodynamiczna",
+        "isCorrect": false
+    }, {
+        "text": "b. cięciwa geometryczna profilu",
+        "isCorrect": true
+    }, {
+        "text": "c. cięciwa aerodynamiczna profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. średnia grubość profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0178 Przeciągnięcie dynamiczne różni się od statycznego tym, że podczas przeciągnięcia dynamicznego:",
+    "answers": [{
+        "text": "a. szybowiec pozostaje stateczny dynamicznie",
+        "isCorrect": false
+    }, {
+        "text": "b. następuje powolna zmiana kąta natarcia skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. szybowiec pozostaje stateczny statycznie",
+        "isCorrect": false
+    }, {
+        "text": "d. następuje szybka zmiana kąta natarcia skrzydła",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0179 Przeciągnięcie statyczne charakteryzuje się:",
+    "answers": [{
+        "text": "a. zachowywaniem statyczności statycznej",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększeniem statyczności statycznej",
+        "isCorrect": false
+    }, {
+        "text": "c. powolną zmianą kąta natarcia skrzydła",
+        "isCorrect": true
+    }, {
+        "text": "d. gwałtowną zmianą kąta natarcia skrzydła",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0181 Przepływ powietrza wokół końcówek skrzydła spowodowany wyrównywaniem ciśnienia na górnej i dolnej powierzchni wytwarza wiry, które:",
+    "answers": [{
+        "text": "a. są tym większe im mniejszy jest kąt natarcia skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "b. są tym większe im większa jest siła nośna na skrzydle",
+        "isCorrect": true
+    }, {
+        "text": "c. są tym większe im mniejsza jest siła nośna na skrzydle",
+        "isCorrect": false
+    }, {
+        "text": "d. są tym większe im większa jest prędkość lotu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0182 Przesunięcie środka ciężkości do przodu:",
+    "answers": [{
+        "text": "a. zwiększa szansę korkociągu płaskiego",
+        "isCorrect": false
+    }, {
+        "text": "b. utrudnia wyprowadzenie z korkociągu",
+        "isCorrect": false
+    }, {
+        "text": "c. zmniejsza szansę korkociągu płaskiego",
+        "isCorrect": true
+    }, {
+        "text": "d. ułatwia wprowadzenie w korkociąg",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0183 Przesunięcie środka ciężkości do tyłu:",
+    "answers": [{
+        "text": "a. zmniejsza szansę korkociągu płaskiego",
+        "isCorrect": false
+    }, {
+        "text": "b. ułatwia wyprowadzenie z korkociągu",
+        "isCorrect": false
+    }, {
+        "text": "c. ułatwia wprowadzenie w korkociąg",
+        "isCorrect": true
+    }, {
+        "text": "d. utrudnia wprowadzenie w korkociąg",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0184 Przy wzroście kąta wzniosu skrzydeł:",
+    "answers": [{
+        "text": "a. prędkość minimalna maleje",
+        "isCorrect": false
+    }, {
+        "text": "b. stateczność statyczna poprzeczna maleje",
+        "isCorrect": false
+    }, {
+        "text": "c. wzrasta różnica sił nośnych wytwarzanych na obu skrzydłach podczas ślizgu",
+        "isCorrect": true
+    }, {
+        "text": "d. sterowność poprzeczna rośnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0185 Przy wzroście przechylenia w zakręcie prawidłowym przeciążenie:",
+    "answers": [{
+        "text": "a. nie zmienia się",
+        "isCorrect": false
+    }, {
+        "text": "b. przeciążenie nie zależy od przechylenia, tylko od prędkości",
+        "isCorrect": false
+    }, {
+        "text": "c. maleje",
+        "isCorrect": false
+    }, {
+        "text": "d. wzrasta",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0186 Przyczyną zjawiska trzepotania usterzeń jest wystąpienie:",
+    "answers": [{
+        "text": "a. drgań giętno-skrętnych usterzenia",
+        "isCorrect": false
+    }, {
+        "text": "b. flatteru usterzenia",
+        "isCorrect": false
+    }, {
+        "text": "c. zjawiska zwanego dywergencją skrętną usterzenia",
+        "isCorrect": false
+    }, {
+        "text": "d. rezonansu pomiędzy drganiami zaburzonych strug zaskrzydłowych z drganiami własnymi powierzchni sterowych",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0188 Punkt na obrysie profilu, który jest położony najdalej w kierunku przeciwnym do kierunku lotu to:",
+    "answers": [{
+        "text": "a. czoło profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. ostrze (spływ) profilu",
+        "isCorrect": true
+    }, {
+        "text": "c. nosek profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. tył profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0189 Punkt na obrysie profilu, który jest wysunięty najdalej w stronę napływających strug powietrza to:",
+    "answers": [{
+        "text": "a. czoło profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. nosek profilu",
+        "isCorrect": true
+    }, {
+        "text": "c. ostrze (spływ) profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. strzałka profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0190 Punkt styczności biegunowej szybowca i prostej poprowadzonej ze środka układu współrzędnych odpowiada kątowi natarcia dla:",
+    "answers": [{
+        "text": "a. prędkości optymalnej",
+        "isCorrect": true
+    }, {
+        "text": "b. Cz maksymalnego",
+        "isCorrect": false
+    }, {
+        "text": "c. prędkości ekonomicznej",
+        "isCorrect": false
+    }, {
+        "text": "d. Cx minimalnego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0191 Punkt, w którym linia działania wypadkowej siły aerodynamicznej przecina cięciwę profilu to:",
+    "answers": [{
+        "text": "a. środek parcia",
+        "isCorrect": true
+    }, {
+        "text": "b. środek aerodynamiczny",
+        "isCorrect": false
+    }, {
+        "text": "c. środek geometryczny",
+        "isCorrect": false
+    }, {
+        "text": "d. środek profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0192 Punkt, względem którego moment aerodynamiczny nie zależy od kąta natarcia (w dużym przedziale zmian kąta natarcia) to:",
+    "answers": [{
+        "text": "a. środek aerodynamiczny",
+        "isCorrect": true
+    }, {
+        "text": "b. środek geometryczny",
+        "isCorrect": false
+    }, {
+        "text": "c. środek parcia",
+        "isCorrect": false
+    }, {
+        "text": "d. środek profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0193 Różnica przyrostów sił oporu powstałych w wyniku wychylenia lotek o ten sam kąt, ale w przeciwne strony powoduje powstanie:",
+    "answers": [{
+        "text": "a. korzystnego momentu odchylającego",
+        "isCorrect": false
+    }, {
+        "text": "b. korzystnego momentu wychylającego",
+        "isCorrect": false
+    }, {
+        "text": "c. niekorzystnego momentu odchylającego",
+        "isCorrect": true
+    }, {
+        "text": "d. niekorzystnego momentu przechylającego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0194 Różnicowe wychylenie lotek stosuje się w celu:",
+    "answers": [{
+        "text": "a. zmniejszenia momentu zawiasowego lotek",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększenia momentu przechylającego",
+        "isCorrect": false
+    }, {
+        "text": "c. zmniejszenia sił niezbędnych do wychylenia lotek",
+        "isCorrect": false
+    }, {
+        "text": "d. zniwelowania momentu oporowego lotek",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0195 Ruch statku powietrznego podczas lotu opisywany jest za pomocą:",
+    "answers": [{
+        "text": "a. jednej osi współrzędnych OX›",
+        "isCorrect": false
+    }, {
+        "text": "b. trzech osi współrzędnych OX›, OY›, OZ›",
+        "isCorrect": true
+    }, {
+        "text": "c. dwóch osi współrzędnych OX› oraz OY›",
+        "isCorrect": false
+    }, {
+        "text": "d. czterech osi współrzędnych OW›, OX›, OY›, OZ›",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0196 Siła oporu skrzydła przemieszczającego się w fazie autorotacji w dół jest:",
+    "answers": [{
+        "text": "a. taka sama jak siła oporu na skrzydle przeciwnym",
+        "isCorrect": false
+    }, {
+        "text": "b. nieznacznie mniejsza od siły oporu na skrzydle przeciwnym",
+        "isCorrect": false
+    }, {
+        "text": "c. dużo mniejsza od siły oporu na skrzydle przeciwnym",
+        "isCorrect": false
+    }, {
+        "text": "d. większa od siły oporu na skrzydle przeciwnym",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0197 Siła wytworzona w wyniku różnicy ciśnień przed i za opływanym przez powietrze ciałem nosi nazwę:",
+    "answers": [{
+        "text": "a. siła oporu kształtu",
+        "isCorrect": true
+    }, {
+        "text": "b. siła oporu interferencyjnego",
+        "isCorrect": false
+    }, {
+        "text": "c. siła oporu indukowanego",
+        "isCorrect": false
+    }, {
+        "text": "d. siła oporu tarcia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0201 Siły aerodynamiczne zależą od gęstości powietrza. Jak się zmieniają, gdy gęstość maleje?",
+    "answers": [{
+        "text": "a. maleją proporcjonalnie do malejącej gęstości",
+        "isCorrect": true
+    }, {
+        "text": "b. zmieniają się proporcjonalnie do kwadratu wielkości gęstości",
+        "isCorrect": false
+    }, {
+        "text": "c. rosną odwrotnie proporcjonalnie do malejącej gęstości",
+        "isCorrect": false
+    }, {
+        "text": "d. pozostają takie same, niezależnie od gęstości powietrza",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0203 Statecznik pionowy odpowiada głównie za stateczność:",
+    "answers": [{
+        "text": "a. podłużną",
+        "isCorrect": false
+    }, {
+        "text": "b. pionową",
+        "isCorrect": false
+    }, {
+        "text": "c. kierunkową",
+        "isCorrect": true
+    }, {
+        "text": "d. poprzeczną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0204 Statecznik poziomy odpowiada głównie za stateczność:",
+    "answers": [{
+        "text": "a. poziomą",
+        "isCorrect": false
+    }, {
+        "text": "b. poprzeczną",
+        "isCorrect": false
+    }, {
+        "text": "c. kierunkową",
+        "isCorrect": false
+    }, {
+        "text": "d. podłużną",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0205 Stateczność dynamiczna boczna dotyczy:",
+    "answers": [{
+        "text": "a. odchylania i przechylania",
+        "isCorrect": true
+    }, {
+        "text": "b. tylko pochylania",
+        "isCorrect": false
+    }, {
+        "text": "c. tylko odchylania",
+        "isCorrect": false
+    }, {
+        "text": "d. tylko przechylania",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0206 Stateczność dynamiczna podłużna dotyczy:",
+    "answers": [{
+        "text": "a. odchylania",
+        "isCorrect": false
+    }, {
+        "text": "b. odchylania i przechylania",
+        "isCorrect": false
+    }, {
+        "text": "c. pochylania",
+        "isCorrect": true
+    }, {
+        "text": "d. przechylania",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0207 Stateczność dynamiczną boczną można nazwać inaczej:",
+    "answers": [{
+        "text": "a. statecznością poprzeczną",
+        "isCorrect": false
+    }, {
+        "text": "b. statecznością kierunkową",
+        "isCorrect": false
+    }, {
+        "text": "c. statecznością holendrowania",
+        "isCorrect": true
+    }, {
+        "text": "d. statecznością dynamiczną podłużną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0208 Stateczność statyczna kierunkowa dotyczy:",
+    "answers": [{
+        "text": "a. odchylania i przechylania",
+        "isCorrect": false
+    }, {
+        "text": "b. przechylania",
+        "isCorrect": false
+    }, {
+        "text": "c. odchylania",
+        "isCorrect": true
+    }, {
+        "text": "d. pochylania",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0209 Stateczność statyczna podłużna dotyczy:",
+    "answers": [{
+        "text": "a. pochylania",
+        "isCorrect": true
+    }, {
+        "text": "b. przechylania",
+        "isCorrect": false
+    }, {
+        "text": "c. odchylania i przechylania",
+        "isCorrect": false
+    }, {
+        "text": "d. odchylania",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0210 Stateczność statyczna poprzeczna dotyczy:",
+    "answers": [{
+        "text": "a. odchylania",
+        "isCorrect": false
+    }, {
+        "text": "b. przechylania",
+        "isCorrect": true
+    }, {
+        "text": "c. pochylania",
+        "isCorrect": false
+    }, {
+        "text": "d. odchylania i przechylania",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0211 Stosunek drogi S przebytej w czasie t do czasu t to:",
+    "answers": [{
+        "text": "a. przyspieszenie średnie",
+        "isCorrect": false
+    }, {
+        "text": "b. prędkość chwilowa",
+        "isCorrect": false
+    }, {
+        "text": "c. prędkość średnia",
+        "isCorrect": true
+    }, {
+        "text": "d. przyspieszenie chwilowe",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0212 Stosunek powierzchni nośnej skrzydła do jego rozpiętości S/b, jest to:",
+    "answers": [{
+        "text": "a. średnia cięciwa geometryczna",
+        "isCorrect": true
+    }, {
+        "text": "b. skos skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. zbieżność skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "d. wydłużenie skrzydła",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0213 Stosunek zmiany wartości prędkości w czasie t do czasu t to:",
+    "answers": [{
+        "text": "a. przyspieszenie średnie",
+        "isCorrect": true
+    }, {
+        "text": "b. zmiana energii kinetycznej ciała",
+        "isCorrect": false
+    }, {
+        "text": "c. przyspieszenie chwilowe",
+        "isCorrect": false
+    }, {
+        "text": "d. droga przebyta przez ciało w czasie t",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0214 Strzałka profilu to:",
+    "answers": [{
+        "text": "a. największa odległość między linią szkieletową i cięciwą profilu",
+        "isCorrect": true
+    }, {
+        "text": "b. największa odległość między górnym obrysem profilu i cięciwą aerodynamiczną",
+        "isCorrect": false
+    }, {
+        "text": "c. najmniejsza odległość między linią szkieletową i cięciwą profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. największa odległość między górnym i dolnym obrysem profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0215 Szkieletowa profilu to:",
+    "answers": [{
+        "text": "a. linia łącząca środki okręgów wpisanych w obrys profilu lotniczego",
+        "isCorrect": true
+    }, {
+        "text": "b. linia łącząca noski profili płata lotniczego",
+        "isCorrect": false
+    }, {
+        "text": "c. linia łącząca ostrza profili płata lotniczego",
+        "isCorrect": false
+    }, {
+        "text": "d. linia prosta łącząca nosek profilu z ostrzem (spływem) profilu lotniczego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0216 Średnie przyśpieszenie kątowe 'εśr' w ruchu obrotowym jest:",
+    "answers": [{
+        "text": "a. -odwrotnie proporcjonalne do przyrostu prędkości kątowej w czasie pomiaru -wprost proporcjonalne do czasu pomiaru",
+        "isCorrect": false
+    }, {
+        "text": "b. -wprost proporcjonalne do przyrostu prędkości kątowej w czasie pomiaru - wprost proporcjonalne do czasu pomiaru",
+        "isCorrect": false
+    }, {
+        "text": "c. -odwrotnie proporcjonalne do przyrostu prędkości kątowej w czasie pomiaru -odwrotnie proporcjonalna do czasu pomiaru",
+        "isCorrect": false
+    }, {
+        "text": "d. -wprost proporcjonalne do przyrostu prędkości kątowej w czasie pomiaru - odwrotnie proporcjonalne do czasu pomiaru",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0217 Środek aerodynamiczny to punkt:",
+    "answers": [{
+        "text": "a. względem którego moment aerodynamiczny nie zależy od kąta natarcia (w dużym przedziale zmian kąta natarcia)",
+        "isCorrect": true
+    }, {
+        "text": "b. w którym linia działania wypadkowej siły aerodynamicznej przecina cięciwę profilu",
+        "isCorrect": false
+    }, {
+        "text": "c. równoodległy od noska i ostrza (spływu) profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. który w dużym przedziale zmian kąta natarcia pokrywa się z geometrycznym środkiem profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0218 Środek aerodynamiczny wraz ze wzrostem kąta natarcia:",
+    "answers": [{
+        "text": "a. przesuwa się do tyłu",
+        "isCorrect": false
+    }, {
+        "text": "b. w dużym zakresie zmian kąta natarcia nie zmienia swojego położenia",
+        "isCorrect": true
+    }, {
+        "text": "c. przesuwa się do przodu",
+        "isCorrect": false
+    }, {
+        "text": "d. nie zmienia swojego położenia w pełnym zakresie zmian kąta natarcia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0219 Środek parcia to punkt:",
+    "answers": [{
+        "text": "a. który w dużym przedziale zmian kąta natarcia pokrywa się z geometrycznym środkiem profilu",
+        "isCorrect": false
+    }, {
+        "text": "b. względem którego moment aerodynamiczny nie zależy od kąta natarcia (w dużym przedziale zmian kąta natarcia)",
+        "isCorrect": false
+    }, {
+        "text": "c. równoodległy od noska i ostrza (spływu) profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. w którym linia działania wypadkowej siły aerodynamicznej przecina cięciwę profilu",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0220 Tłumienie zmian parametrów lotu ma wpływ na:",
+    "answers": [{
+        "text": "a. równowagą statyczną obojętną",
+        "isCorrect": false
+    }, {
+        "text": "b. równowagą statyczną chwiejną",
+        "isCorrect": false
+    }, {
+        "text": "c. równowagę statyczną stałą",
+        "isCorrect": false
+    }, {
+        "text": "d. równowagę dynamiczną",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0221 Trzepotanie usterzeń to inaczej:",
+    "answers": [{
+        "text": "a. flatter usterzenia",
+        "isCorrect": false
+    }, {
+        "text": "b. buffeting",
+        "isCorrect": true
+    }, {
+        "text": "c. drgania giętno-skrętne",
+        "isCorrect": false
+    }, {
+        "text": "d. flatter lotkowy",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0222 Ujemny skos skrzydła powoduje:",
+    "answers": [{
+        "text": "a. zwiększenie stateczności statycznej podłużnej",
+        "isCorrect": false
+    }, {
+        "text": "b. zmniejszenie stateczności statycznej podłużnej",
+        "isCorrect": true
+    }, {
+        "text": "c. zmniejszenie stateczności statycznej podłużnej na dodatnich kątach natarcia, a zwiększenie na ujemnych",
+        "isCorrect": false
+    }, {
+        "text": "d. zwiększenie stateczności statycznej podłużnej na dodatnich kątach natarcia, a zmniejszenie na ujemnych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0223 Usterzenie kierunku zaprojektowane jest w celu obracania płatowca względem:",
+    "answers": [{
+        "text": "a. ośi OX› i ośi OY›",
+        "isCorrect": false
+    }, {
+        "text": "b. ośi OX›",
+        "isCorrect": false
+    }, {
+        "text": "c. ośi OZ›",
+        "isCorrect": true
+    }, {
+        "text": "d. ośi OY›",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0224 Usterzenie wysokości zaprojektowane jest w celu obracania płatowca względem:",
+    "answers": [{
+        "text": "a. ośi OZ› i ośi OX›",
+        "isCorrect": false
+    }, {
+        "text": "b. ośi OY›",
+        "isCorrect": true
+    }, {
+        "text": "c. ośi OX›",
+        "isCorrect": false
+    }, {
+        "text": "d. ośi OZ›",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0225 W celu zlikwidowania momentu oporowego lotek z reguły stosuje się:",
+    "answers": [{
+        "text": "a. różnicowe wychylenie lotek",
+        "isCorrect": true
+    }, {
+        "text": "b. wychylenie lotek o dokładnie ten sam kąt",
+        "isCorrect": false
+    }, {
+        "text": "c. jak najmniejsze wychylenia lotek",
+        "isCorrect": false
+    }, {
+        "text": "d. dodatkowe wychylenia klapo-lotek",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0226 W codziennym życiu spotykamy się ze stanem równowagi:",
+    "answers": [{
+        "text": "a. - stałej ; - obojętnej; - ruchomej",
+        "isCorrect": false
+    }, {
+        "text": "b. - stałej ; - obojętnej; - chwiejnej",
+        "isCorrect": true
+    }, {
+        "text": "c. - stałej ; - chwiejnej; - ruchomej",
+        "isCorrect": false
+    }, {
+        "text": "d. - nieobojętnej; - obojętnej; - chwiejnej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0227 W jakich warunkach wysokość gęstościowa jest równa wysokości standardowej wg atmosfery ISA?",
+    "answers": [{
+        "text": "a. W warunkach tropikalnych.",
+        "isCorrect": false
+    }, {
+        "text": "b. W warunkach arktycznych",
+        "isCorrect": false
+    }, {
+        "text": "c. W warunkach zgodnych z tabelą Międzynarodowej Atmosfery Wzorcowej ISA.",
+        "isCorrect": true
+    }, {
+        "text": "d. Gdy wysokość standardowa jest równa wysokości elewacji lotniska",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0228 W jakiej proporcji do gęstości powietrza są zależne siły aerodynamiczne na profilu lotniczym?",
+    "answers": [{
+        "text": "a. W proporcji do kwadratu gęstości.",
+        "isCorrect": false
+    }, {
+        "text": "b. Odwrotnie proporcjonalnie.",
+        "isCorrect": false
+    }, {
+        "text": "c. Wprost proporcjonalnie.",
+        "isCorrect": true
+    }, {
+        "text": "d. Są od gęstości powietrza niezależne.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0229 W której grupie znajduje się urządzenie, które nie służy do zmniejszania sił, jakie pilot musi wywierać na drążek sterowy?",
+    "answers": [{
+        "text": "a. - wyważenie masowe; - klapka wyważająca",
+        "isCorrect": true
+    }, {
+        "text": "b. - wyważenie aerodynamiczne; - wyważenie sprężynowe",
+        "isCorrect": false
+    }, {
+        "text": "c. - fletner; - trymer",
+        "isCorrect": false
+    }, {
+        "text": "d. - wzmacniacz hydrauliczny; - klapka odciążająca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0230 W normalnych warunkach lotu siły na sterownicach są :",
+    "answers": [{
+        "text": "a. niezależne od prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "b. zawsze odpowiednio proporcjonalne do zmian ruchu lub zmian stanu lotu",
+        "isCorrect": true
+    }, {
+        "text": "c. zawsze odpowiednio proporcjonalne do wysokości i prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "d. niezależne od wywoływanych zmian ruchu lub zmian stanu lotu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0231 W profilach o normalnym, łukowatym kształcie linii szkieletowej, przy wzroście kąta natarcia wypadkowa siła aerodynamiczna:",
+    "answers": [{
+        "text": "a. nie przesuwa się wzdłuż cięciwy",
+        "isCorrect": false
+    }, {
+        "text": "b. przesuwa się wzdłuż cięciwy do tyłu",
+        "isCorrect": false
+    }, {
+        "text": "c. przesuwa się wzdłuż cięciwy do przodu",
+        "isCorrect": true
+    }, {
+        "text": "d. dla α<0 przesuwa się wzdłuż cięciwy do przodu, a dla α>0 przesuwa się wzdłuż cięciwy do tyłu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0232 W profilach samostatecznych, przy wzroście kąta natarcia wypadkowa siła aerodynamiczna:",
+    "answers": [{
+        "text": "a. nie przesuwa się wzdłuż cięciwy",
+        "isCorrect": false
+    }, {
+        "text": "b. dla α<0 przesuwa się wzdłuż cięciwy do przodu, a dla α>0 przesuwa się wzdłuż cięciwy do tyłu",
+        "isCorrect": false
+    }, {
+        "text": "c. przesuwa się wzdłuż cięciwy do tyłu",
+        "isCorrect": true
+    }, {
+        "text": "d. przesuwa się wzdłuż cięciwy do przodu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0233 W profilach symetrycznych dla kąta natarcia α=0°:",
+    "answers": [{
+        "text": "a. cięciwa geometryczna profilu pokrywa się z cięciwą aerodynamiczną profilu",
+        "isCorrect": true
+    }, {
+        "text": "b. cięciwa geometryczna profilu nie pokrywa się z cięciwą aerodynamiczną profilu",
+        "isCorrect": false
+    }, {
+        "text": "c. cięciwa geometryczna profilu pokrywa się ze średnią cięciwą aerodynamiczną profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. cięciwa geometryczna profilu nie pokrywa się ze średnią cięciwą aerodynamiczną profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0234 W profilach symetrycznych, przy wzroście kąta natarcia wypadkowa siła aerodynamiczna:",
+    "answers": [{
+        "text": "a. dla α<0 przesuwa się wzdłuż cięciwy do przodu, a dla α>0 przesuwa się wzdłuż cięciwy do tyłu",
+        "isCorrect": false
+    }, {
+        "text": "b. przesuwa się wzdłuż cięciwy do przodu",
+        "isCorrect": false
+    }, {
+        "text": "c. nie przesuwa się wzdłuż cięciwy",
+        "isCorrect": true
+    }, {
+        "text": "d. przesuwa się wzdłuż cięciwy do tyłu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0235 W rozwiązaniu konwencjonalnym usterzenie pionowe składa się ze:",
+    "answers": [{
+        "text": "a. -statecznika pionowego stanowiącego tylną, nieruchomą część-steru kierunku stanowiącego przednią ruchomą część",
+        "isCorrect": false
+    }, {
+        "text": "b. -statecznika pionowego stanowiącego przednią, nieruchomą część-steru kierunku stanowiącego tylną ruchomą część",
+        "isCorrect": true
+    }, {
+        "text": "c. -statecznika pionowego stanowiącego przednią, nieruchomą część-steru wysokości stanowiącego tylną ruchomą część",
+        "isCorrect": false
+    }, {
+        "text": "d. -statecznika pionowego stanowiącego przednią, ruchomą część-steru kierunku stanowiącego tylną nieruchomą część",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0236 W rozwiązaniu konwencjonalnym usterzenie wysokości składa się ze:",
+    "answers": [{
+        "text": "a. -statecznika poziomego stanowiącego przednią, nieruchomą część-steru wysokości stanowiącego tylną ruchomą część",
+        "isCorrect": true
+    }, {
+        "text": "b. -statecznika poziomego stanowiącego przednią, ruchomą część-steru wysokości stanowiącego tylną nieruchomą część",
+        "isCorrect": false
+    }, {
+        "text": "c. -statecznika pionowego stanowiącego przednią, nieruchomą część-steru wysokości stanowiącego tylną ruchomą część",
+        "isCorrect": false
+    }, {
+        "text": "d. -statecznika poziomego stanowiącego tylną, nieruchomą część-steru wysokości stanowiącego przednią ruchomą część",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0237 W układzie współrzędnych opisującym ruch statku powietrznego podczas lotu oś OX? nazywamy:",
+    "answers": [{
+        "text": "a. osią pionową",
+        "isCorrect": false
+    }, {
+        "text": "b. osią poprzeczną",
+        "isCorrect": false
+    }, {
+        "text": "c. osią podłużną",
+        "isCorrect": true
+    }, {
+        "text": "d. osią poziomą",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0238 W układzie współrzędnych opisującym ruch statku powietrznego podczas lotu oś OY? nazywamy:",
+    "answers": [{
+        "text": "a. osią pionową",
+        "isCorrect": false
+    }, {
+        "text": "b. osią poziomą",
+        "isCorrect": false
+    }, {
+        "text": "c. osią podłużną",
+        "isCorrect": false
+    }, {
+        "text": "d. osią poprzeczną",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0239 W układzie współrzędnych opisującym ruch statku powietrznego podczas lotu oś OZ? nazywamy:",
+    "answers": [{
+        "text": "a. osią pionową",
+        "isCorrect": true
+    }, {
+        "text": "b. osią poziomą",
+        "isCorrect": false
+    }, {
+        "text": "c. osią podłużną",
+        "isCorrect": false
+    }, {
+        "text": "d. osią poprzeczną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0240 W ustalonym locie pilot wychyla drążek sterowy w prawo. Zakładając, że lotki wychylą się o ten sam kąt, prawdziwe będzie stwierdzenie:",
+    "answers": [{
+        "text": "a. siła oporu na lotce wychylonej w dół będzie mniejsza od siły oporu na drugiej lotce",
+        "isCorrect": false
+    }, {
+        "text": "b. siła oporu na lotce wychylonej w dół będzie większa od siły oporu na drugiej lotce",
+        "isCorrect": true
+    }, {
+        "text": "c. siły oporu na obu lotkach zmaleją o tą samą wartość",
+        "isCorrect": false
+    }, {
+        "text": "d. siły oporu na obu lotkach wzrosną o tą samą wartość",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0241 W wyniku wychylenia lotek w górę i w dół o ten sam kąt powstaje:",
+    "answers": [{
+        "text": "a. niekorzystny moment oporowy lotek",
+        "isCorrect": true
+    }, {
+        "text": "b. niekorzystny moment przechylający",
+        "isCorrect": false
+    }, {
+        "text": "c. korzystny moment oporowy lotek",
+        "isCorrect": false
+    }, {
+        "text": "d. korzystny moment odchylający",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0242 W wyniku zastosowania na końcówkach skrzydeł tak zwanych wingletów maleje opór:",
+    "answers": [{
+        "text": "a. kształtu",
+        "isCorrect": false
+    }, {
+        "text": "b. szczelinowy",
+        "isCorrect": false
+    }, {
+        "text": "c. indukowany",
+        "isCorrect": true
+    }, {
+        "text": "d. interferencyjny",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0243 Warstwa przyścienna profilu lotniczego to warstwa w której:",
+    "answers": [{
+        "text": "a. przepływ ma charakter laminarny",
+        "isCorrect": false
+    }, {
+        "text": "b. zachodzi przejście z opływu turbulentnego w laminarny",
+        "isCorrect": false
+    }, {
+        "text": "c. przepływ ma charakter turbulentny",
+        "isCorrect": false
+    }, {
+        "text": "d. prędkość cząsteczek powietrza jest mniejsza od prędkości przepływu",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0245 Wartość współczynnika siły nośnej Cz dla krytycznego kąta natarcia 'α kr' przyjmuje wartość maksymalną.",
+    "answers": [{
+        "text": "a. zawsze prawda",
+        "isCorrect": true
+    }, {
+        "text": "b. prawda tylko dla profili symetrycznych",
+        "isCorrect": false
+    }, {
+        "text": "c. zawsze fałsz",
+        "isCorrect": false
+    }, {
+        "text": "d. fałsz tylko dla profili symetrycznych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0246 Wartość współczynnika siły oporu Cx dla krytycznego kąta natarcia 'α kr' przyjmuje wartość maksymalną.",
+    "answers": [{
+        "text": "a. prawda tylko dla profili symetrycznych",
+        "isCorrect": false
+    }, {
+        "text": "b. zawsze fałsz",
+        "isCorrect": true
+    }, {
+        "text": "c. zawsze prawda",
+        "isCorrect": false
+    }, {
+        "text": "d. fałsz tylko dla profili symetrycznych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0248 Wewnętrzna kompensacja aerodynamiczna steru odbywa się poprzez zastosowanie:",
+    "answers": [{
+        "text": "a. przepony, która jednocześnie zmniejsza opór szczelinowy",
+        "isCorrect": true
+    }, {
+        "text": "b. dodatkowej powierzchni sterowej przed osią obrotu steru",
+        "isCorrect": false
+    }, {
+        "text": "c. klapki dociążającej",
+        "isCorrect": false
+    }, {
+        "text": "d. klapki odciążającej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0250 Wraz ze wzrostem wysokości gęstość powietrza:",
+    "answers": [{
+        "text": "a. zawsze maleje",
+        "isCorrect": true
+    }, {
+        "text": "b. zawsze rośnie",
+        "isCorrect": false
+    }, {
+        "text": "c. maleje - jeżeli temperatura maleje, a rośnie – jeżeli temperatura wzrasta",
+        "isCorrect": false
+    }, {
+        "text": "d. nie zmienia się",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0251 Współczynnik przeciążenia \"n\" w locie nurkowym wynosi:",
+    "answers": [{
+        "text": "a. n = 1",
+        "isCorrect": false
+    }, {
+        "text": "b. n > 0",
+        "isCorrect": false
+    }, {
+        "text": "c. n = 0",
+        "isCorrect": true
+    }, {
+        "text": "d. n < 0",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0252 Współczynnik przeciążenia w zakręcie zależy od:",
+    "answers": [{
+        "text": "a. Oporu indukowanego",
+        "isCorrect": false
+    }, {
+        "text": "b. Prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "c. Kąta przechylenia i prędkości lotu",
+        "isCorrect": true
+    }, {
+        "text": "d. Wielkości oporu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0253 Wychylenie którego urządzenia nie jest sprzężone mechanicznie z wychyleniami powierzchni sterowej?",
+    "answers": [{
+        "text": "a. klapki wywarzającej",
+        "isCorrect": true
+    }, {
+        "text": "b. klapka odciążającej",
+        "isCorrect": false
+    }, {
+        "text": "c. klapki dociążającej",
+        "isCorrect": false
+    }, {
+        "text": "d. flettnera",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0255 Wykres zależności Cx = f(α) dla profilu symetrycznego jest:",
+    "answers": [{
+        "text": "a. symetryczny względem osi \"Cx\"",
+        "isCorrect": true
+    }, {
+        "text": "b. nie posiada żadnej symetrii",
+        "isCorrect": false
+    }, {
+        "text": "c. symetryczny względem osi 'α'",
+        "isCorrect": false
+    }, {
+        "text": "d. symetryczny względem środka układu współrzędnych",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0256 Wykres zależności Cz = f(Cx) dla profilu symetrycznego jest:",
+    "answers": [{
+        "text": "a. symetryczny względem osi \"Cz\"",
+        "isCorrect": false
+    }, {
+        "text": "b. nie posiada żadnej symetrii",
+        "isCorrect": false
+    }, {
+        "text": "c. symetryczny względem środka układu współrzędnych",
+        "isCorrect": false
+    }, {
+        "text": "d. symetryczny względem osi \"Cx\"",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0257 Wykres zależności Cz = f(Cx) wykonany na podstawie pomiarów w czasie lotu nazywamy:",
+    "answers": [{
+        "text": "a. biegunową prędkości szybowca",
+        "isCorrect": false
+    }, {
+        "text": "b. biegunową profilu",
+        "isCorrect": false
+    }, {
+        "text": "c. biegunową skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "d. biegunową szybowca",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0258 Wykres zależności Cz = f(α) dla profilu symetrycznego jest:",
+    "answers": [{
+        "text": "a. nie posiada żadnej symetrii",
+        "isCorrect": false
+    }, {
+        "text": "b. symetryczny względem osi 'α'",
+        "isCorrect": false
+    }, {
+        "text": "c. symetryczny względem środka układu współrzędnych",
+        "isCorrect": true
+    }, {
+        "text": "d. symetryczny względem osi \"Cz\"",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0259 \"Wykresy jakich zależności dla profilu symetrycznego przechodzą przez\nśrodek układu współrzędnych?\"",
+    "answers": [{
+        "text": "a. Cz = f(α), Cx = f(α)",
+        "isCorrect": false
+    }, {
+        "text": "b. Cz = f(α), Cm = f(α)",
+        "isCorrect": true
+    }, {
+        "text": "c. Cz = f(α), Cz = f(Cx)",
+        "isCorrect": false
+    }, {
+        "text": "d. Cx = f(α), Cm = f(α)",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0260 Wykresy jakich zależności dla profilu symetrycznego są osiowosymetryczne?",
+    "answers": [{
+        "text": "a. tylko Cx = f(α)",
+        "isCorrect": false
+    }, {
+        "text": "b. Cx = f(α), Cz = f(Cx)",
+        "isCorrect": true
+    }, {
+        "text": "c. Cz = f(α), Cx = f(α)",
+        "isCorrect": false
+    }, {
+        "text": "d. tylko Cz = f(Cx)",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0261 Wznios skrzydeł stosowany jest w celu:",
+    "answers": [{
+        "text": "a. zwiększenia doskonałości szybowca",
+        "isCorrect": false
+    }, {
+        "text": "b. zmniejszenia oporu indukowanego szybowca",
+        "isCorrect": false
+    }, {
+        "text": "c. zwiększenia stateczności poprzecznej szybowca",
+        "isCorrect": true
+    }, {
+        "text": "d. poprawienia sterowności poprzecznej szybowca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0262 Wzrost temperatury powietrza na stałej wysokości powoduje:",
+    "answers": [{
+        "text": "a. wzrost gęstości powietrza",
+        "isCorrect": false
+    }, {
+        "text": "b. zmniejszenie gęstości powietrza",
+        "isCorrect": true
+    }, {
+        "text": "c. wzrost wilgotności względnej powietrza",
+        "isCorrect": false
+    }, {
+        "text": "d. nie powoduje zmian gęstości i wilgotności względnej powietrza",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0263 \"Z jakich głównych elementów powstaje opór statku powietrznego zwany\n'szkodliwym'?\"",
+    "answers": [{
+        "text": "a. Z lepkości powietrza i z oporów wirów powstających na bryle statku.",
+        "isCorrect": false
+    }, {
+        "text": "b. Z 'oporu tarcia' powietrza o powierzchnię bryły statku powietrznego i z 'oporu interferencyjnego'..",
+        "isCorrect": false
+    }, {
+        "text": "c. Z 'oporu kształtu' bryły statku powietrznego i z 'oporu tarcia' powietrza o powierzchnię tej bryły.",
+        "isCorrect": true
+    }, {
+        "text": "d. Z 'oporu kształtu' bryły statku powietrznego i z 'oporu indukowanego' powstającego na powierzchni bryły statku.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0265 Zasada ciągłości ruchu powietrza przepływającego przez tunel o zmiennym przekroju mówi, że:",
+    "answers": [{
+        "text": "a. jeżeli przekrój poprzeczny tunelu dwukrotnie się zwiększy, to prędkość powietrza wzrośnie czterokrotnie",
+        "isCorrect": false
+    }, {
+        "text": "b. jeżeli przekrój poprzeczny tunelu dwukrotnie się zwiększy, to prędkość powietrza zmaleje dwukrotnie",
+        "isCorrect": true
+    }, {
+        "text": "c. jeżeli przekrój poprzeczny tunelu dwukrotnie się zwiększy, to prędkość powietrza wzrośnie dwukrotnie",
+        "isCorrect": false
+    }, {
+        "text": "d. jeżeli przekrój poprzeczny tunelu dwukrotnie się zwiększy, to prędkość powietrza zmaleje czterokrotnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0266 Zastosowanie kompensacji aerodynamicznej steru ma za zadanie:",
+    "answers": [{
+        "text": "a. wyważenie powierzchni sterowej w pozycji neutralnej",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększenie momentu zawiasowego",
+        "isCorrect": false
+    }, {
+        "text": "c. wyważenie masowe powierzchni sterowej",
+        "isCorrect": false
+    }, {
+        "text": "d. zmniejszenie momentu zawiasowego",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0268 Zdolność do zachowania stanu równowagi i przeciwdziałania jego zmianom nazywamy:",
+    "answers": [{
+        "text": "a. statecznością statyczną",
+        "isCorrect": true
+    }, {
+        "text": "b. stabilnością statyczną",
+        "isCorrect": false
+    }, {
+        "text": "c. statecznością dynamiczną",
+        "isCorrect": false
+    }, {
+        "text": "d. sterownością dynamiczną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0269 Zdolność do zmiany stanu ustalonego lotu pod wpływem wychylenia odpowiedniego steru nazywamy",
+    "answers": [{
+        "text": "a. stabilnością",
+        "isCorrect": false
+    }, {
+        "text": "b. statecznością dynamiczną",
+        "isCorrect": false
+    }, {
+        "text": "c. statecznością statyczną",
+        "isCorrect": false
+    }, {
+        "text": "d. sterownością",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0270 Zewnętrzna kompensacja aerodynamiczna steru odbywa się poprzez zastosowanie:",
+    "answers": [{
+        "text": "a. klapki odciążającej",
+        "isCorrect": false
+    }, {
+        "text": "b. flettnera",
+        "isCorrect": false
+    }, {
+        "text": "c. dodatkowej powierzchni sterowej przed osią obrotu steru",
+        "isCorrect": true
+    }, {
+        "text": "d. klapki dociążającej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0271 Zjawisko odwrotnego działania lotek polega na:",
+    "answers": [{
+        "text": "a. krzyżowym połączeniu napędu lotek",
+        "isCorrect": false
+    }, {
+        "text": "b. powstawaniu buffetingu",
+        "isCorrect": false
+    }, {
+        "text": "c. powstawaniu drgań samowzbudnych",
+        "isCorrect": false
+    }, {
+        "text": "d. skręceniu skrzydła spowodowanym wychyleniem lotki",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0272 Zwężenie przekroju strugi powietrza oznacza:",
+    "answers": [{
+        "text": "a. wyhamowanie prędkości strugi",
+        "isCorrect": false
+    }, {
+        "text": "b. Malenie statycznego ciśnienia w strudze i wzrost prędkości (+)",
+        "isCorrect": true
+    }, {
+        "text": "c. wzrastanie w strudze ciśnienia spiętrzeniowego",
+        "isCorrect": false
+    }, {
+        "text": "d. wzrost statycznego ciśnienia w strudze i malenie prędkości",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0273 Zwichrzenie aerodynamiczne skrzydła charakteryzuje się tym, że:",
+    "answers": [{
+        "text": "a. skrzydła wygięte są w górę podczas lotu",
+        "isCorrect": false
+    }, {
+        "text": "b. cięciwy profilów geometrycznych w kolejnych przekrojach nie leżą w jednej płaszczyźnie",
+        "isCorrect": false
+    }, {
+        "text": "c. na końcówkach skrzydeł stosuje się profile, na których oderwanie strug dla αkryt jest mniej intensywne",
+        "isCorrect": true
+    }, {
+        "text": "d. skrzydła wygięte są w dół podczas postoju szybowca na ziemi",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0274 Zwichrzenie geometryczne skrzydła charakteryzuje się tym, że:",
+    "answers": [{
+        "text": "a. skrzydła wygięte są w dół podczas postoju szybowca na ziemi",
+        "isCorrect": false
+    }, {
+        "text": "b. cięciwy profili geometrycznych w kolejnych przekrojach nie leżą w jednej płaszczyźnie",
+        "isCorrect": true
+    }, {
+        "text": "c. skrzydła wygięte są w górę podczas lotu",
+        "isCorrect": false
+    }, {
+        "text": "d. na końcówkach skrzydeł stosuje się profile, na których oderwanie strug dla αkryt jest mniej intensywne",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0275 Zwiększająca się siła nośna na skrzydle powoduje zmianę oporu indukowanego na:",
+    "answers": [{
+        "text": "a. nie ma wpływu na opór indukowany",
+        "isCorrect": false
+    }, {
+        "text": "b. mniejszy",
+        "isCorrect": false
+    }, {
+        "text": "c. mniejszy lub większy w zależności od prędkości lotu",
+        "isCorrect": false
+    }, {
+        "text": "d. większy",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0276 Zwiększanie kąta natarcia α > α kr powoduje:",
+    "answers": [{
+        "text": "a. zwiększanie \"Cz\" oraz zmniejszanie \"Cx\"",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększanie \"Cx\" oraz zmniejszanie \"Cz\"",
+        "isCorrect": true
+    }, {
+        "text": "c. zmniejszanie \"Cx\" oraz \"Cz\"",
+        "isCorrect": false
+    }, {
+        "text": "d. zwiększanie \"Cx\" oraz \"Cz\"",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0277 Aby obliczyć moment \"M\" działający na ciało \"D\", wywołany działaniem siły \"P\" należy skorzystać ze wzoru:",
+    "answers": [{
+        "text": "a. M=P*l*cosα",
+        "isCorrect": false
+    }, {
+        "text": "b. M==P*l*sinα",
+        "isCorrect": true
+    }, {
+        "text": "c. M=P*l*tg&alpha;",
+        "isCorrect": false
+    }, {
+        "text": "d. M=P*l",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0278 Aby wyprowadzić szybowiec z wyślizgu w zakręcie i wykonać zakręt prawidłowy należy:",
+    "answers": [{
+        "text": "a. zwiększyć przechylenie lub zmniejszyć prędkość kątową zakrętu",
+        "isCorrect": true
+    }, {
+        "text": "b. zmniejszyć przechylenie lub zmniejszyć prędkość kątową zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "c. zwiększyć przechylenie lub zwiększyć prędkość kątową zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "d. zmniejszyć przechylenie lub zwiększyć prędkość kątową zakrętu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0279 Aby wyprowadzić szybowiec z ześlizgu w zakręcie i wykonać zakręt prawidłowy należy:",
+    "answers": [{
+        "text": "a. zwiększyć przechylenie lub zwiększyć prędkość kątową zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększyć przechylenie lub zmniejszyć prędkość kątową zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "c. zmniejszyć przechylenie lub zmniejszyć prędkość kątową zakrętu",
+        "isCorrect": false
+    }, {
+        "text": "d. zmniejszyć przechylenie lub zwiększyć prędkość kątową zakrętu",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0280 Biegunowa prędkości szybowca to wykres zależności:",
+    "answers": [{
+        "text": "a. wsp. siły nośnej od wsp. siły oporuCz= f(Cx)",
+        "isCorrect": false
+    }, {
+        "text": "b. wsp. siły nośnej od wsp. siły oporuCz",
+        "isCorrect": false
+    }, {
+        "text": "c. opadania od prędkości w=f(u)",
+        "isCorrect": true
+    }, {
+        "text": "d. wsp. siły nośnej od kąta natarcia Cz=f(a)",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0282 Co to za zasada?: 'W tunelu przez który przepływa powietrze iloczyn pola przekroju i prędkości powietrza jest stały S*v=const\"",
+    "answers": [{
+        "text": "a. zasada zachowania pędu",
+        "isCorrect": false
+    }, {
+        "text": "b. zasada Bernouli'ego",
+        "isCorrect": false
+    }, {
+        "text": "c. zasada ciągłości ruchu",
+        "isCorrect": true
+    }, {
+        "text": "d. prawo Bernouli'ego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0283 Co to za zasada?: 'W tunelu, przez który przepływa powietrze, suma ciśnienia statycznego i dynamicznego jest stała w każdym punkcie tego przepływu'",
+    "answers": [{
+        "text": "a. zasada zachowania energii przepływu",
+        "isCorrect": false
+    }, {
+        "text": "b. zasada zachowania ciśnienia przepływu zamkniętego",
+        "isCorrect": false
+    }, {
+        "text": "c. zasada ciągłości ruchu",
+        "isCorrect": false
+    }, {
+        "text": "d. prawo Bernouli'ego",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0285 Dla opisania ruchów statku powietrznego (samolotu, śmigłowca, szybowca etc) w przestrzeni stosowany jest układ osi współrzędnych x-y-z. Jakie oznaczenie nosi oś pionowa?",
+    "answers": [{
+        "text": "a. dowolne.",
+        "isCorrect": false
+    }, {
+        "text": "b. y",
+        "isCorrect": false
+    }, {
+        "text": "c. z",
+        "isCorrect": true
+    }, {
+        "text": "d. x",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0286 Dla opisania ruchów statku powietrznego (samolotu, śmigłowca, szybowca etc) w przestrzeni stosowany jest układ osi współrzędnych x-y-z. Jakie oznaczenie nosi oś podłużna?",
+    "answers": [{
+        "text": "a. y",
+        "isCorrect": false
+    }, {
+        "text": "b. x",
+        "isCorrect": true
+    }, {
+        "text": "c. z",
+        "isCorrect": false
+    }, {
+        "text": "d. nie ma oznaczenia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0287 Dla opisania ruchów statku powietrznego (samolotu, śmigłowca, szybowca etc) w przestrzeni stosowany jest układ osi współrzędnych x-y-z. Jakie oznaczenie nosi oś poprzeczna?",
+    "answers": [{
+        "text": "a. dowolne.",
+        "isCorrect": false
+    }, {
+        "text": "b. z",
+        "isCorrect": false
+    }, {
+        "text": "c. y",
+        "isCorrect": true
+    }, {
+        "text": "d. x",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0288 Doskonałość szybowca jest równa:",
+    "answers": [{
+        "text": "a. zasięgowi szybowca w spokojnym powietrzu, wyrażonym w kilometrach",
+        "isCorrect": false
+    }, {
+        "text": "b. zasięgowi szybowca z wysokości 1000m w spokojnym powietrzu, wyrażonym w kilometrach",
+        "isCorrect": true
+    }, {
+        "text": "c. zasięgowi szybowca z wysokości \"H\" w spokojnym powietrzu, wyrażonym w kilometrach",
+        "isCorrect": false
+    }, {
+        "text": "d. zasięgowi szybowca z wysokości \"H\" w spokojnym powietrzu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0289 Gdy powietrze przepływa przez kanał o zmiennej powierzchni przekroju zmienia się w nim ciśnienie statyczne. Jak?",
+    "answers": [{
+        "text": "a. nie zmienia się wcale",
+        "isCorrect": false
+    }, {
+        "text": "b. zmniejsza się przy zmniejszaniu powierzchni przekroju",
+        "isCorrect": true
+    }, {
+        "text": "c. zmniejsza się przy zwiększaniu powierzchni przekroju",
+        "isCorrect": false
+    }, {
+        "text": "d. zwiększa się przy maleniu powierzchni przekroju",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0290 Jak się zachowuje obiekt (samolot, śmigłowiec, szybowiec, lotnia etc) niestateczny dynamicznie po wytrąceniu z równowagi?",
+    "answers": [{
+        "text": "a. Obiekt przyjmuje pozycję coraz bardziej odległą od położenia równowagi.",
+        "isCorrect": false
+    }, {
+        "text": "b. Obiekt zachowuje położenie po wytrąceniu z równowagi.",
+        "isCorrect": false
+    }, {
+        "text": "c. Obiekt wykonuje ruch, najczęściej harmoniczny, o rosnącej amplitudzie.",
+        "isCorrect": true
+    }, {
+        "text": "d. Obiekt wykonuje ruch, najczęściej harmoniczny, o malejącej amplitudzie.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0291 Jak się zachowuje obiekt (samolot, śmigłowiec, szybowiec, lotnia etc) stateczny dynamicznie po wytrąceniu z równowagi?",
+    "answers": [{
+        "text": "a. Obiekt zachowuje położenie, do którego doszedł po wytrąceniu z równowagi.",
+        "isCorrect": false
+    }, {
+        "text": "b. Wykonuje ruch, najczęściej harmoniczny, o rosnącej amplitudzie.",
+        "isCorrect": false
+    }, {
+        "text": "c. Obiekt wykonuje ruch, najczęściej harmoniczny, o malejącej amplitudzie.",
+        "isCorrect": true
+    }, {
+        "text": "d. Natychmiast po ustaniu impulsu wytrącającego powraca do pozycji równowagi.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0292 Jak zachowuje się szkodliwy opór przy wzroście prędkości lotu?",
+    "answers": [{
+        "text": "a. Pozostaje stały.",
+        "isCorrect": false
+    }, {
+        "text": "b. Maleje proporconalnie do odwrotności prędkości.",
+        "isCorrect": false
+    }, {
+        "text": "c. Waha się.",
+        "isCorrect": false
+    }, {
+        "text": "d. Wzrasta z kwadratem prędkości.",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0293 Jak zachowuje się szkodliwy opór przy wzroście prędkości lotu?",
+    "answers": [{
+        "text": "a. Opór wzrasta z kwadratem prędkości.",
+        "isCorrect": true
+    }, {
+        "text": "b. Opór maleje proporcjonalnie do odwrotności prędkości.",
+        "isCorrect": false
+    }, {
+        "text": "c. Opór waha się.",
+        "isCorrect": false
+    }, {
+        "text": "d. Opór pozostaje stały.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0294 Jak zmieni się siła odśrodkowa przy tej samej prędkości lotu w zakręcie jeśli zmniejszy się jego promień?",
+    "answers": [{
+        "text": "a. Zmniejszy się.",
+        "isCorrect": false
+    }, {
+        "text": "b. Zmaleje do zera.",
+        "isCorrect": false
+    }, {
+        "text": "c. Pozostanie bez zmiany",
+        "isCorrect": false
+    }, {
+        "text": "d. Zwiększy się.",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0295 Jak zmieni się siła odśrodkowa przy tej samej prędkości lotu w zakręcie jeśli zmniejszy się jego promień?",
+    "answers": [{
+        "text": "a. Siła odśrodkowa zmaleje do zera.",
+        "isCorrect": false
+    }, {
+        "text": "b. Siła odśrodkowa pozostanie bez zmiany",
+        "isCorrect": false
+    }, {
+        "text": "c. Siła odśrodkowa zwiększy się.",
+        "isCorrect": true
+    }, {
+        "text": "d. Siła odśrodkowa zmniejszy się.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0301 Jeżeli autorotacja skrzydła nie zostanie zahamowana przez pilota, to:",
+    "answers": [{
+        "text": "a. szybowiec samoczynnie przejdzie w fazę lotu zwaną przeciągnięciem statycznym",
+        "isCorrect": false
+    }, {
+        "text": "b. szybowiec samoczynnie przejdzie w fazę lotu zwaną przeciągnięciem dynamicznym",
+        "isCorrect": false
+    }, {
+        "text": "c. szybowiec samoczynnie przejdzie w fazę lotu zwaną korkociągiem",
+        "isCorrect": true
+    }, {
+        "text": "d. szybowiec samoczynnie przejdzie w fazę ustalonego lotu nurkowego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0303 Jeżeli środek ciężkości szybowca pokrywa się ze środkiem równowagi obojętnej to:",
+    "answers": [{
+        "text": "a. szybowiec jest niestateczny",
+        "isCorrect": false
+    }, {
+        "text": "b. szybowiec nie jest stateczny i nie jest niestateczny",
+        "isCorrect": true
+    }, {
+        "text": "c. szybowiec jest stateczny",
+        "isCorrect": false
+    }, {
+        "text": "d. szybowiec jest niesterowny",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0304 \"Jeżeli środek ciężkości szybowca z profilem klasycznym znajduje się przed\nśrodkiem równowagi obojętnej to:\"",
+    "answers": [{
+        "text": "a. szybowiec jest niestateczny",
+        "isCorrect": false
+    }, {
+        "text": "b. szybowiec jest statycznie obojętny",
+        "isCorrect": false
+    }, {
+        "text": "c. szybowiec nie jest stateczny i nie jest niestateczny",
+        "isCorrect": false
+    }, {
+        "text": "d. szybowiec jest stateczny",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0305 \"Jeżeli środek ciężkości szybowca z profilem klasycznym znajduje się za\nśrodkiem równowagi obojętnej to:\"",
+    "answers": [{
+        "text": "a. szybowiec jest stateczny",
+        "isCorrect": false
+    }, {
+        "text": "b. szybowiec nie jest stateczny i nie jest niestateczny",
+        "isCorrect": false
+    }, {
+        "text": "c. szybowiec jest niestateczny",
+        "isCorrect": true
+    }, {
+        "text": "d. szybowiec jest niesterowny",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0306 Kąt toru lotu na stałym kącie natarcia 'α' podczas wzrostu wysokości:",
+    "answers": [{
+        "text": "a. pozostaje niezmieniony",
+        "isCorrect": true
+    }, {
+        "text": "b. maleje",
+        "isCorrect": false
+    }, {
+        "text": "c. zmienia się i można go odczytać wykreślając biegunową szybowca",
+        "isCorrect": false
+    }, {
+        "text": "d. wzrasta",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0307 Lot odbywa się na kącie natarcia, dla którego współczynnik siły oporu Cx ma wartość minimalną: α=αCxmin. W wyniku niewielkiego zwiększenia kąta natarcia:",
+    "answers": [{
+        "text": "a. doskonałość płatowca nie zmieni się",
+        "isCorrect": false
+    }, {
+        "text": "b. stosunek Cz/Cx wzrośnie",
+        "isCorrect": true
+    }, {
+        "text": "c. stosunek Cz/Cx zmaleje",
+        "isCorrect": false
+    }, {
+        "text": "d. stosunek Cz/Cx nie zmieni się",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0308 Lot odbywa się na kącie natarcia, dla którego współczynnik siły oporu Cx ma wartość minimalną: α=αCxmin. W wyniku niewielkiego zwiększenia kąta natarcia:",
+    "answers": [{
+        "text": "a. stosunek Cz/Cx zmaleje",
+        "isCorrect": false
+    }, {
+        "text": "b. doskonałość płatowca wzrośnie",
+        "isCorrect": true
+    }, {
+        "text": "c. doskonałość płatowca zmaleje",
+        "isCorrect": false
+    }, {
+        "text": "d. doskonałość płatowca nie zmieni się",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0309 Na rodzaj korkociągu główny wpływ mają następujące czynniki:",
+    "answers": [{
+        "text": "a. -położenie środka ciężkości szybowca; -rozłożenie mas na szybowcu; -usytuowanie i wielkość usterzeń",
+        "isCorrect": true
+    }, {
+        "text": "b. -położenie środka ciężkości szybowca; -rozłożenie mas na szybowcu; -ustawienie klapki wyważającej",
+        "isCorrect": false
+    }, {
+        "text": "c. -rozłożenie mas na szybowcu; - ustawienie klapki wyważającej ; - usytuowanie i wielkość usterzeń",
+        "isCorrect": false
+    }, {
+        "text": "d. \"-ustawienie klapki wyważającej ; - położenie środka ciężkości szybowca;\n-usytuowanie i wielkość usterzeń\"",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0310 Najmniejsze opadanie ma szybowiec lecący z prędkością:",
+    "answers": [{
+        "text": "a. minimalną",
+        "isCorrect": false
+    }, {
+        "text": "b. różna, zależną od tego, czy leci 'z wiatrem' czy 'pod wiatr\"",
+        "isCorrect": false
+    }, {
+        "text": "c. ekonomiczną",
+        "isCorrect": true
+    }, {
+        "text": "d. optymalną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0311 Największa odległość między linią szkieletową i cięciwą profilu to:",
+    "answers": [{
+        "text": "a. strzałka profilu",
+        "isCorrect": true
+    }, {
+        "text": "b. cięciwa profilu",
+        "isCorrect": false
+    }, {
+        "text": "c. grubość profilu",
+        "isCorrect": false
+    }, {
+        "text": "d. wysokość profilu",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0312 Największą doskonałość w powietrzu spokojnym ma szybowiec lecący z prędkością:",
+    "answers": [{
+        "text": "a. Mc Credy'ego",
+        "isCorrect": false
+    }, {
+        "text": "b. minimalną",
+        "isCorrect": false
+    }, {
+        "text": "c. optymalną",
+        "isCorrect": true
+    }, {
+        "text": "d. ekonomiczną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0314 Objawem lotu szybowca w fazie przeciągnięcia jest zazwyczaj:",
+    "answers": [{
+        "text": "a. -samoczynne zwiększanie pochylenia; -zmniejszanie prędkości opadania",
+        "isCorrect": false
+    }, {
+        "text": "b. -zmniejszanie prędkości opadania; - samoczynne zwiększanie prędkości postępowej",
+        "isCorrect": false
+    }, {
+        "text": "c. -występowanie drgań szybowca lub sterów; -samoczynne zwiększanie pochylenia",
+        "isCorrect": true
+    }, {
+        "text": "d. -występowanie drgań szybowca lub sterów; -samoczynne zwiększanie prędkości postępowej",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0315 Otworzenie hamulców aerodynamicznych podczas lotu ze stałym wychyleniem drążka sterowego powoduje:",
+    "answers": [{
+        "text": "a. silny moment zadzierający szybowiec",
+        "isCorrect": false
+    }, {
+        "text": "b. znaczące zmniejszenie prędkości postępowej z niewielkim wpływem na opadanie szybowca",
+        "isCorrect": false
+    }, {
+        "text": "c. znaczące zwiększenie opadania i nieznaczny spadek prędkości postępowej szybowca",
+        "isCorrect": true
+    }, {
+        "text": "d. tylko zmniejszenie prędkości postępowej szybowca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0316 Pociągnięcie drążka na siebie powoduje:",
+    "answers": [{
+        "text": "a. wzrost współczynnika obciążenia szybowca \"n\"",
+        "isCorrect": true
+    }, {
+        "text": "b. wzrost współczynnika 'CZ' , co powoduje spadek współczynnika obciążenia \"n\"",
+        "isCorrect": false
+    }, {
+        "text": "c. zmniejszenie współczynnika obciążenia szybowca \"n\"",
+        "isCorrect": false
+    }, {
+        "text": "d. zmianę wartości współczynnika obciążenia \"n\" z dodatniego na ujemny",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0317 Podczas analizy stateczności szybowca niezbędne jest uwzględnienie:",
+    "answers": [{
+        "text": "a. równowagi sił działających na szybowiec",
+        "isCorrect": false
+    }, {
+        "text": "b. tylko rozkładu mas na szybowcu",
+        "isCorrect": false
+    }, {
+        "text": "c. równowagi sił i momentów działających na szybowiec",
+        "isCorrect": true
+    }, {
+        "text": "d. równowagi momentów działających na szybowiec",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0318 Podczas rozbiegu szybowca na holu za samolotem wiatr wieje z prawej strony. Jak będzie się zachowywać szybowiec?",
+    "answers": [{
+        "text": "a. będzie unosił lewe skrzydło i skręcał w prawą stronę",
+        "isCorrect": true
+    }, {
+        "text": "b. będzie unosił prawe skrzydło i skręcał w lewą stronę",
+        "isCorrect": false
+    }, {
+        "text": "c. będzie unosił prawe skrzydło i skręcał w prawą stronę",
+        "isCorrect": false
+    }, {
+        "text": "d. będzie unosił lewe skrzydło i skręcał w lewą stronę",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0319 Podczas rozbiegu szybowca na holu za samolotem wiatr wieje z prawej strony. Jak należy wychylić stery w pierwszej fazie rozbiegu, aby bezpiecznie wystartować?",
+    "answers": [{
+        "text": "a. należy drążek sterowy przechylić w prawo i wcisnąć lewy pedał steru kierunku",
+        "isCorrect": false
+    }, {
+        "text": "b. należy drążek sterowy przechylić w prawo i wcisnąć prawy pedał steru kierunku",
+        "isCorrect": false
+    }, {
+        "text": "c. należy drążek sterowy przechylić w lewo i wcisnąć lewy pedał steru kierunku",
+        "isCorrect": true
+    }, {
+        "text": "d. należy drążek sterowy przechylić w lewo i wcisnąć prawy pedał steru kierunku",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0320 Podczas rozbiegu szybowca przy starcie za wyciągarką wieje silny wiatr z prawej strony. Jak będzie się zachowywać szybowiec?",
+    "answers": [{
+        "text": "a. będzie unosił lewe skrzydło i skręcał w prawą stronę",
+        "isCorrect": false
+    }, {
+        "text": "b. będzie unosił prawe skrzydło i skręcał w prawą stronę",
+        "isCorrect": true
+    }, {
+        "text": "c. będzie unosił prawe skrzydło i skręcał w lewą stronę",
+        "isCorrect": false
+    }, {
+        "text": "d. będzie unosił lewe skrzydło i skręcał w lewą stronę",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0321 Podczas rozbiegu szybowca przy starcie za wyciągarką wieje silny wiatr z prawej strony. Jak należy wychylić stery w pierwszej fazie rozbiegu, aby bezpiecznie wystartować?",
+    "answers": [{
+        "text": "a. należy drążek sterowy przechylić w prawo i wcisnąć prawy pedał steru kierunku",
+        "isCorrect": false
+    }, {
+        "text": "b. należy drążek sterowy przechylić w prawo i wcisnąć lewy pedał steru kierunku",
+        "isCorrect": true
+    }, {
+        "text": "c. należy drążek sterowy przechylić w lewo i wcisnąć lewy pedał steru kierunku",
+        "isCorrect": false
+    }, {
+        "text": "d. należy drążek sterowy przechylić w lewo i wcisnąć prawy pedał steru kierunku",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0322 Przeciągnięciem szybowca nazywamy stan w którym:",
+    "answers": [{
+        "text": "a. lot odbywa się na nadkrytycznym kącie natarcia",
+        "isCorrect": true
+    }, {
+        "text": "b. lot odbywa się na krytycznym kącie natarcia",
+        "isCorrect": false
+    }, {
+        "text": "c. lot odbywa się na podkrytycznym kącie natarcia",
+        "isCorrect": false
+    }, {
+        "text": "d. szybowiec nie reaguje na wychylenia sterów z powodu zbyt małej prędkości",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0325 Przyrost momentu pochylającego szybowiec 'ΔM' powstały w wyniku wychylenia drążka wynosi ΔM = ΔPzh*1h, gdzie:",
+    "answers": [{
+        "text": "a. lH – odległość między środkiem ciężkości szybowca i środkiem aerodynamicznym usterzenia poziomego ΔPZH – przyrost siły nośnej na usterzeniu wysokości",
+        "isCorrect": true
+    }, {
+        "text": "b. lH – odległość między środkiem aerodynamicznym skrzydła i środkiem aerodynamicznym usterzenia poziomego ΔPZH – przyrost siły nośnej na usterzeniu wysokości",
+        "isCorrect": false
+    }, {
+        "text": "c. lH – odległość między środkiem ciężkości szybowca i środkiem aerodynamicznym usterzenia poziomego ΔPZH – przyrost siły aerodynamicznej na usterzeniu wysokości",
+        "isCorrect": false
+    }, {
+        "text": "d. lH – odległość między środkiem aerodynamicznym skrzydła i środkiem aerodynamicznym usterzenia poziomego ΔPZH – przyrost siły aerodynamicznej na usterzeniu wysokości",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0326 Rozpatrując stateczność szybowca w układzie współrzędnych OXYZ zakładamy, że wszystkie trzy osie układu przechodzą przez:",
+    "answers": [{
+        "text": "a. środek aerodynamiczny płata",
+        "isCorrect": false
+    }, {
+        "text": "b. środek równowagi obojętnej szybowca",
+        "isCorrect": false
+    }, {
+        "text": "c. środek ciężkości szybowca",
+        "isCorrect": true
+    }, {
+        "text": "d. środek aerodynamiczny szybowca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0329 Stan równowagi, w której ciało się zwykle znajduje i do której powraca zawsze po wytrąceniu go ze stanu równowagi nazywamy:",
+    "answers": [{
+        "text": "a. równowagą chwiejną",
+        "isCorrect": false
+    }, {
+        "text": "b. równowagą stałą",
+        "isCorrect": true
+    }, {
+        "text": "c. równowagą obojętną",
+        "isCorrect": false
+    }, {
+        "text": "d. równowagą dynamiczną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0330 Stateczność dynamiczna boczna zależy głównie od:",
+    "answers": [{
+        "text": "a. - kąta wzniosu skrzydeł; - powierzchni usterzenia pionowego; - odległości środka aerodynamicznego usterzenia pionowego od środka ciężkości szybowca",
+        "isCorrect": true
+    }, {
+        "text": "b. - kąta wzniosu skrzydeł; - powierzchni usterzenia pionowego; - wielkości usterzenia poziomego",
+        "isCorrect": false
+    }, {
+        "text": "c. - wielkości usterzenia poziomego; - odległości środka aerodynamicznego usterzenia pionowego od środka ciężkości szybowca; - kąta wzniosu skrzydeł",
+        "isCorrect": false
+    }, {
+        "text": "d. - powierzchni usterzenia pionowego; - wielkości usterzenia poziomego; - odległości środka aerodynamicznego usterzenia pionowego od środka ciężkości szybowca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0331 Stateczność dynamiczna podłużna zależy głównie od:",
+    "answers": [{
+        "text": "a. - rozkładu mas na szybowcu; - wielkości statecznika poziomego; - odległości środka aerodynamicznego usterzenia poziomego od środka ciężkości szybowca",
+        "isCorrect": true
+    }, {
+        "text": "b. - wielkości statecznika poziomego; - wielkości usterzenia pionowego; - odległości środka aerodynamicznego usterzenia poziomego od środka ciężkości szybowca",
+        "isCorrect": false
+    }, {
+        "text": "c. - wielkości usterzenia pionowego; - odległości środka aerodynamicznego usterzenia poziomego od środka ciężkości szybowca; - rozkładu mas na szybowcu",
+        "isCorrect": false
+    }, {
+        "text": "d. - rozkładu mas na szybowcu; - wielkości statecznika poziomego; - wielkości usterzenia pionowego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0332 Stateczność dynamiczna to:",
+    "answers": [{
+        "text": "a. zdolność do zachowania stanu równowagi i przeciwdziałania jego zmianom",
+        "isCorrect": false
+    }, {
+        "text": "b. zdolność do utrzymania kontroli nad szybowcem na który działają zewnętrzne obciążenia dynamiczne",
+        "isCorrect": false
+    }, {
+        "text": "c. zdolność do samoczynnego powrotu szybowca do położenia równowagi, gdy przestaną działać zakłócenia",
+        "isCorrect": true
+    }, {
+        "text": "d. zdolność do zmiany stanu ustalonego lotu pod wpływem wychylenia odpowiedniego steru",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0333 Stateczność statyczna kierunkowa zależy głównie od:",
+    "answers": [{
+        "text": "a. - wielkości usterzenia pionowego; - odległości usterzenia od środka ciężkości",
+        "isCorrect": true
+    }, {
+        "text": "b. - odległości usterzenia od środka ciężkości; - ciężaru szybowca",
+        "isCorrect": false
+    }, {
+        "text": "c. - powierzchni skrzydła; - ciężaru szybowca",
+        "isCorrect": false
+    }, {
+        "text": "d. - wielkości usterzenia pionowego; - powierzchni skrzydła",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0334 Stateczność statyczna podłużna zależy głównie od:",
+    "answers": [{
+        "text": "a. - wielkość usterzenia pionowego; - odległości środka aerodynamicznego usterzenia poziomego od środka ciężkości szybowca; - położenia środka ciężkości szybowca",
+        "isCorrect": false
+    }, {
+        "text": "b. - położenia środka ciężkości szybowca; - wielkości statecznika poziomego; - wielkości usterzenia pionowego",
+        "isCorrect": false
+    }, {
+        "text": "c. - położenia środka ciężkości szybowca; - wielkości statecznika poziomego; - odległości środka aerodynamicznego usterzenia poziomego od środka ciężkości szybowca",
+        "isCorrect": true
+    }, {
+        "text": "d. - wielkości statecznika poziomego; - wielkość usterzenia pionowego; - odległości środka aerodynamicznego usterzenia poziomego od środka ciężkości szybowca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0335 Stateczność statyczna poprzeczna zależy głównie od:",
+    "answers": [{
+        "text": "a. - kąta wzniosu skrzydła; - wielkości usterzenia pionowego; - układu grzbietopłata lub dolnopłata",
+        "isCorrect": true
+    }, {
+        "text": "b. - położenia środka ciężkości szybowca; - układu grzbietopłata lub dolnopłata; - kąta wzniosu skrzydła",
+        "isCorrect": false
+    }, {
+        "text": "c. - kąta wzniosu skrzydła; - wielkości usterzenia pionowego; - położenia środka ciężkości szybowca",
+        "isCorrect": false
+    }, {
+        "text": "d. \"- wielkości usterzenia pionowego; - położenia środka ciężkości szybowca;\n- układu grzbietopłata lub dolnopłata\"",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0336 Stateczność statyczna to:",
+    "answers": [{
+        "text": "a. zdolność do zachowania stanu równowagi i przeciwdziałania jego zmianom",
+        "isCorrect": true
+    }, {
+        "text": "b. zdolność do utrzymania kontroli nad szybowcem na który działają zewnętrzne obciążenia dynamiczne",
+        "isCorrect": false
+    }, {
+        "text": "c. zdolność do zmiany stanu ustalonego lotu pod wpływem wychylenia odpowiedniego steru",
+        "isCorrect": false
+    }, {
+        "text": "d. zdolność do samoczynnego powrotu szybowca do położenia równowagi, gdy przestaną działać zakłócenia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0337 Sterowność to:",
+    "answers": [{
+        "text": "a. zdolność do zachowania stanu równowagi i przeciwdziałania jego zmianom",
+        "isCorrect": false
+    }, {
+        "text": "b. zdolność do wykonywania obszernych ruchów drążkiem sterowym i orczykami",
+        "isCorrect": false
+    }, {
+        "text": "c. zdolność do zmiany stanu ustalonego lotu pod wpływem wychylenia odpowiedniego steru",
+        "isCorrect": true
+    }, {
+        "text": "d. zdolność do samoczynnego powrotu szybowca do położenia równowagi, gdy przestaną działać zakłócenia",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0338 Szybowce stosowane w lotnictwie sportowym są zazwyczaj konstruowane tak, aby:",
+    "answers": [{
+        "text": "a. po wejściu w korkociąg, był to korkociąg stromy",
+        "isCorrect": true
+    }, {
+        "text": "b. po wejściu w korkociąg, był to korkociąg płaski",
+        "isCorrect": false
+    }, {
+        "text": "c. momentalnie, samoczynnie następowało wyprowadzenie z korkociągu",
+        "isCorrect": false
+    }, {
+        "text": "d. nie dało się ich wprowadzić w korkociąg",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0339 Szybowiec podczas lotu w fazie przeciągnięcia jest:",
+    "answers": [{
+        "text": "a. niestateczny statycznie poprzecznie i podłużnie",
+        "isCorrect": true
+    }, {
+        "text": "b. tylko niestateczny statycznie podłużnie",
+        "isCorrect": false
+    }, {
+        "text": "c. stateczny statycznie poprzecznie i podłużnie",
+        "isCorrect": false
+    }, {
+        "text": "d. tylko niestateczny statycznie poprzecznie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0340 Szybowiec w fazie autorotacji charakteryzuje się:",
+    "answers": [{
+        "text": "a. niestatecznością statyczną poprzeczną",
+        "isCorrect": true
+    }, {
+        "text": "b. zmniejszoną statecznością statyczną poprzeczną",
+        "isCorrect": false
+    }, {
+        "text": "c. zwiększoną statecznością statyczną poprzeczną",
+        "isCorrect": false
+    }, {
+        "text": "d. statecznością statyczną poprzeczną obojętną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0341 W celu wyprowadzenia szybowca z fazy autorotacji należy w kolejności:",
+    "answers": [{
+        "text": "a. -wychylić ster kierunku w stronę przeciwną do kierunku przechylania; - pociągnąć drążek sterowy",
+        "isCorrect": false
+    }, {
+        "text": "b. -wychylić ster kierunku w stronę przeciwną do kierunku przechylania; - odepchnąć drążek sterowy",
+        "isCorrect": true
+    }, {
+        "text": "c. -wychylić lotki w stronę przeciwną do kierunku przechylania; -pociągnąć drążek sterowy",
+        "isCorrect": false
+    }, {
+        "text": "d. -wychylić lotki w stronę przeciwną do kierunku przechylania; -odepchnąć drążek sterowy",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0342 W celu wyprowadzenia szybowca z fazy przeciągnięcia do lotu ustalonego należy:",
+    "answers": [{
+        "text": "a. zmniejszyć siłę nośną na skrzydle poprzez oddanie drążka sterowego",
+        "isCorrect": false
+    }, {
+        "text": "b. zwiększyć siłę nośną na skrzydle poprzez oddanie drążka sterowego",
+        "isCorrect": true
+    }, {
+        "text": "c. zwiększyć siłę nośną na skrzydle poprzez pociągnięcie drążka sterowego",
+        "isCorrect": false
+    }, {
+        "text": "d. zmniejszyć siłę nośną na skrzydle poprzez pociągnięcie drążka sterowego",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0343 W celu wyprowadzenia szybowca z korkociągu należy w kolejności:",
+    "answers": [{
+        "text": "a. -wychylić lotki w stronę przeciwną do kierunku przechylania; -odepchnąć drążek sterowy; -po ustaniu obrotów rozpędzić szybowiec i wyprowadzić z lotu nurkowego",
+        "isCorrect": false
+    }, {
+        "text": "b. -wychylić ster kierunku w stronę przeciwną do kierunku przechylania; - pociągnąć drążek sterowy; -po ustaniu obrotów rozpędzić szybowiec i wyprowadzić z lotu nurkowego",
+        "isCorrect": false
+    }, {
+        "text": "c. -wychylić lotki w stronę przeciwną do kierunku przechylania; -pociągnąć drążek sterowy; -po ustaniu obrotów rozpędzić szybowiec i wyprowadzić z lotu nurkowego",
+        "isCorrect": false
+    }, {
+        "text": "d. -wychylić ster kierunku w stronę przeciwną do kierunku przechylania; - odepchnąć drążek sterowy; -po ustaniu obrotów rozpędzić szybowiec i wyprowadzić z lotu nurkowego",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0344 W celu zmniejszenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. przyrost momentu pochylającego szybowiec musi mieć wartość dodatnią",
+        "isCorrect": false
+    }, {
+        "text": "b. należy wychylić drążek sterowy na siebie",
+        "isCorrect": true
+    }, {
+        "text": "c. należy wychylić ster wysokości w dół",
+        "isCorrect": false
+    }, {
+        "text": "d. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w górę'\"",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0345 W celu zmniejszenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w górę'\"",
+        "isCorrect": false
+    }, {
+        "text": "b. należy wychylić ster wysokości w dół",
+        "isCorrect": false
+    }, {
+        "text": "c. należy wychylić drążek sterowy od siebie",
+        "isCorrect": false
+    }, {
+        "text": "d. przyrost momentu pochylającego szybowiec musi mieć wartość do ujemną",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0346 W celu zmniejszenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. należy wychylić ster wysokości w dół",
+        "isCorrect": false
+    }, {
+        "text": "b. przyrost momentu pochylającego szybowiec musi mieć wartość dodatnią",
+        "isCorrect": false
+    }, {
+        "text": "c. należy wychylić drążek sterowy od siebie",
+        "isCorrect": false
+    }, {
+        "text": "d. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w dół'\"",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0347 W celu zmniejszenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. należy wychylić ster wysokości w górę",
+        "isCorrect": true
+    }, {
+        "text": "b. przyrost momentu pochylającego szybowiec musi mieć wartość dodatnią",
+        "isCorrect": false
+    }, {
+        "text": "c. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w górę'\"",
+        "isCorrect": false
+    }, {
+        "text": "d. należy wychylić drążek sterowy od siebie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0348 W celu zwiększenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. należy wychylić drążek sterowy od siebie",
+        "isCorrect": true
+    }, {
+        "text": "b. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w dół'\"",
+        "isCorrect": false
+    }, {
+        "text": "c. przyrost momentu pochylającego szybowiec musi mieć wartość do ujemną",
+        "isCorrect": false
+    }, {
+        "text": "d. należy wychylić ster wysokości do góry",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0349 W celu zwiększenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w dół'\"",
+        "isCorrect": false
+    }, {
+        "text": "b. należy wychylić drążek sterowy na siebie",
+        "isCorrect": false
+    }, {
+        "text": "c. należy wychylić ster wysokości w dół",
+        "isCorrect": true
+    }, {
+        "text": "d. przyrost momentu pochylającego szybowiec musi mieć wartość do ujemną",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0350 W celu zwiększenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. należy wychylić drążek sterowy na siebie",
+        "isCorrect": false
+    }, {
+        "text": "b. przyrost momentu pochylającego szybowiec musi mieć wartość do ujemną",
+        "isCorrect": false
+    }, {
+        "text": "c. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w górę'\"",
+        "isCorrect": true
+    }, {
+        "text": "d. należy wychylić ster wysokości do góry",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0351 W celu zwiększenia pochylenia szybowca:",
+    "answers": [{
+        "text": "a. przyrost momentu pochylającego szybowiec musi mieć wartość dodatnią",
+        "isCorrect": true
+    }, {
+        "text": "b. należy wychylić drążek sterowy od siebie",
+        "isCorrect": false
+    }, {
+        "text": "c. \"wektor przyrostu siły nośnej na usterzeniu poziomym musi mieć zwrot\n'w górę'\"",
+        "isCorrect": false
+    }, {
+        "text": "d. należy wychylić ster wysokości w dół",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0352 W jakim dokumencie zawarte są informacje o osiągach statku powietrznego (śmigłowca, samolotu, szybowca etc)?",
+    "answers": [{
+        "text": "a. W rozporządzeniach Urzędu Lotnictwa Cywilnego.",
+        "isCorrect": false
+    }, {
+        "text": "b. W instrukcji użytkowania w locie.",
+        "isCorrect": true
+    }, {
+        "text": "c. W technicznym opisie obsługi.",
+        "isCorrect": false
+    }, {
+        "text": "d. W biuletynach bezpieczeństwa IKCSP.",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0353 W jakim profilu wywoływana zmianami kąta natarcia wędrówka środka parcia jest najmniejsza ?",
+    "answers": [{
+        "text": "a. w profilu laminarnym",
+        "isCorrect": false
+    }, {
+        "text": "b. w profilu symetrycznym",
+        "isCorrect": true
+    }, {
+        "text": "c. w profilu niesymetrycznym",
+        "isCorrect": false
+    }, {
+        "text": "d. w profilu wklęsło-wypukłym",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0354 W spokojnym powietrzu, optymalny kąt toru lotu 'ϒ', podczas wzrostu ciężaru szybowca:",
+    "answers": [{
+        "text": "a. maleje",
+        "isCorrect": false
+    }, {
+        "text": "b. wzrasta",
+        "isCorrect": false
+    }, {
+        "text": "c. pozostaje niezmieniony",
+        "isCorrect": true
+    }, {
+        "text": "d. zmienia się i można go odczytać wykreślając biegunową szybowca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0355 W ustalonym locie poziomym prostoliniowym współczynnik obciążenia szybowca 'n' wynosi:",
+    "answers": [{
+        "text": "a. n=1",
+        "isCorrect": true
+    }, {
+        "text": "b. n<1",
+        "isCorrect": false
+    }, {
+        "text": "c. n=0",
+        "isCorrect": false
+    }, {
+        "text": "d. n>1",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0356 W ustalonym zakręcie współczynnik obciążenia szybowca 'n' wynosi:",
+    "answers": [{
+        "text": "a. n>1",
+        "isCorrect": true
+    }, {
+        "text": "b. 0<n<1",
+        "isCorrect": false
+    }, {
+        "text": "c. n<1",
+        "isCorrect": false
+    }, {
+        "text": "d. n=1",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0357 W wyniku niewielkiego zwiększania kąta natarcia α=α optymalne :",
+    "answers": [{
+        "text": "a. procentowe zwiększenie \"Cx\" będzie takie same jak procentowe zwiększenia \"Cz\"",
+        "isCorrect": false
+    }, {
+        "text": "b. procentowe zwiększenie \"Cz\" będzie większe od procentowego zwiększenia \"Cx\"",
+        "isCorrect": false
+    }, {
+        "text": "c. doskonałość profilu nieznacznie wzrośnie",
+        "isCorrect": false
+    }, {
+        "text": "d. procentowe zwiększenie \"Cx\" będzie większe od procentowego zwiększenia \"Cz\"",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0358 W wyniku niewielkiego zwiększania kąta natarcia α=α optymalne :",
+    "answers": [{
+        "text": "a. stosunek Cz/Cx wzrośnie",
+        "isCorrect": false
+    }, {
+        "text": "b. stosunek Cz/Cx zmaleje",
+        "isCorrect": true
+    }, {
+        "text": "c. stosunek Cz/Cx nie zmieni się",
+        "isCorrect": false
+    }, {
+        "text": "d. doskonałość profilu nieznacznie wzrośnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0359 W wyniku niewielkiego zwiększania kąta natarcia α=α optymalne :",
+    "answers": [{
+        "text": "a. doskonałość profilu nie zmieni się",
+        "isCorrect": false
+    }, {
+        "text": "b. doskonałość profilu zmaleje",
+        "isCorrect": true
+    }, {
+        "text": "c. stosunek Cz/Cx wzrośnie",
+        "isCorrect": false
+    }, {
+        "text": "d. doskonałość profilu wzrośnie",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0362 Wychylenie lotek o jednakowy kąt w lewo podczas lotu w fazie przeciągnięcia najczęściej spowoduje:",
+    "answers": [{
+        "text": "a. przechylanie się szybowca w prawo do chwili powrotu drążka do neutrum",
+        "isCorrect": false
+    }, {
+        "text": "b. przechylenie się szybowca w lewo",
+        "isCorrect": false
+    }, {
+        "text": "c. przechylenie się szybowca w prawo i rozpoczęcie autorotacji",
+        "isCorrect": true
+    }, {
+        "text": "d. przechylenie się szybowca w lewo; do chwili powrotu drążka do neutrum",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0363 Wychyleniu klap towarzyszy zwykle:",
+    "answers": [{
+        "text": "a. - wzrost Cz; - wzrost Cx; - wzrost doskonałości szybowca",
+        "isCorrect": false
+    }, {
+        "text": "b. - wzrost Cz; - wzrost Cx; - nie zmieniona doskonałość szybowca",
+        "isCorrect": false
+    }, {
+        "text": "c. - wzrost Cz; - wzrost Cx; - spadek doskonałości szybowca",
+        "isCorrect": true
+    }]
+}, {
+    "question": "PL080-0364 Wykres zależności prędkości opadania szybowca w funkcji promienia zakrętu w = f(R) nazywamy:",
+    "answers": [{
+        "text": "a. biegunową wyrwania szybowca",
+        "isCorrect": false
+    }, {
+        "text": "b. biegunową prędkości szybowca",
+        "isCorrect": false
+    }, {
+        "text": "c. biegunową krążenia szybowca",
+        "isCorrect": true
+    }, {
+        "text": "d. biegunową szybowca",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0365 Wysunięcie płyt hamulców aerodynamicznych powoduje:",
+    "answers": [{
+        "text": "a. spadek siły nośnej na skrzydle i wzrost siły oporu",
+        "isCorrect": true
+    }, {
+        "text": "b. wzrost siły oporu, a siła nośna nie zmienia się",
+        "isCorrect": false
+    }, {
+        "text": "c. silny moment zadzierający szybowiec",
+        "isCorrect": false
+    }, {
+        "text": "d. spadek siły nośnej na skrzydle, a siła oporu nie zmienia się",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0369 Z jaką właściwością związany jest spadek prędkości powietrza w warstwie przyściennej profilu lotniczego",
+    "answers": [{
+        "text": "a. lepkością powietrza",
+        "isCorrect": true
+    }, {
+        "text": "b. gęstością powietrza",
+        "isCorrect": false
+    }, {
+        "text": "c. bezwładnością powietrza",
+        "isCorrect": false
+    }, {
+        "text": "d. chwiejnością powietrza",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0371 Zapas stateczności statycznej podłużnej szybowca to:",
+    "answers": [{
+        "text": "a. odległość pomiędzy środkiem równowagi obojętnej i środkiem aerodynamicznym płata",
+        "isCorrect": false
+    }, {
+        "text": "b. odległość pomiędzy środkiem aerodynamicznym usterzenia i środkiem aerodynamicznym płata",
+        "isCorrect": false
+    }, {
+        "text": "c. odległość pomiędzy środkiem ciężkości szybowca i środkiem równowagi obojętnej",
+        "isCorrect": true
+    }, {
+        "text": "d. odległość pomiędzy środkiem ciężkości szybowca i środkiem aerodynamicznym płata",
+        "isCorrect": false
+    }]
+}, {
+    "question": "PL080-0372 Zdolność do samoczynnego powrotu szybowca do położenia równowagi, gdy przestaną działać zakłócenia, które tę równowagę naruszyły nazywamy:",
+    "answers": [{
+        "text": "a. statecznością statyczną",
+        "isCorrect": false
+    }, {
+        "text": "b. sterownością dynamiczną",
+        "isCorrect": false
+    }, {
+        "text": "c. statecznością dynamiczną",
+        "isCorrect": true
+    }, {
+        "text": "d. stabilnością statyczną",
+        "isCorrect": false
+    }]
+}];
+
+data.forEach(function(q){
+
+	var qGr = new GlideRecord('x_84446_examer_question');
+	qGr.initialize();
+
+	qGr.question = q.question;
+	qGr.category = category;
+	var qId = qGr.insert();
+
+	q.answers.forEach(function(ans){
+
+		var ansGr = new GlideRecord('x_84446_examer_answer');
+		ansGr.initialize();
+
+		ansGr.question = qId;
+		ansGr.answer= ans.text;
+		ansGr.correct= ans.isCorrect;
+		ansGr.insert();
+
+	});
+
+});
+
+
+
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-19 20:35:12</sys_created_on>
+        <sys_id>e56210c2dbc7001006fc7b60399619d0</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Load Exam Data</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_script_fix_e56210c2dbc7001006fc7b60399619d0</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-23 21:45:34</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_84446_examer.slack_question_frequency</name>
+        <read_roles/>
+        <suffix>slack_question_frequency</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-03-07 16:26:59</sys_created_on>
+        <sys_id>df6cb29fdb1f401006fc7b603996192f</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>x_84446_examer.slack_question_frequency</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_properties_df6cb29fdb1f401006fc7b603996192f</sys_update_name>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2020-09-02 12:36:53</sys_updated_on>
+        <type>integer</type>
+        <value>99999</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=df6cb29fdb1f401006fc7b603996192f"/>
+</record_update>

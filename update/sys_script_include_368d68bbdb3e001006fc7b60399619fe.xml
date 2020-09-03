@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_84446_examer.Process</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Process</name>
+        <script><![CDATA[var Process = Class.create();
+Process.prototype = {
+	initialize: function () {},
+
+	postRandomQuestionToDialogflow: function () {
+
+		var textToSay = "";
+		var catProp = gs.getProperty('x_84446_examer.slack_question_category');
+		var query = 'categoryLIKE' + catProp;
+		var qList = [];
+
+		var rec = new GlideRecord('x_84446_examer_question');
+		rec.addEncodedQuery(query);
+		rec.query();
+
+		while (rec.next()) {
+			qList.push(rec.getValue('sys_id'));
+		}
+
+		var random = Math.floor((Math.random() * qList.length));
+		var sys_id = qList[random];
+
+		var questionGr = new GlideRecord('x_84446_examer_question');
+		questionGr.setLimit(1);
+		questionGr.addQuery('sys_id', sys_id);
+		questionGr.query();
+
+		if (questionGr.next()) {
+			
+			var category = questionGr.getValue('category');
+		
+			var qText = questionGr.getValue('question');
+			// remove the id part PL090-0065
+			if (qText.startsWith("PL"))
+				qText = qText.slice(11);
+
+			// replace ending : with . for cleaner reading
+			if (qText.endsWith(":"))
+				qText = qText.slice(0, -1) + '?';
+
+			var categoryText = "Kategoria: " + category;
+
+			textToSay = categoryText + ". " + qText + " ";
+
+			var qId = questionGr.getValue('sys_id');
+
+			var ansGr = new GlideRecord('x_84446_examer_answer');
+			ansGr.addQuery('question', qId);
+			ansGr.orderBy('answer');
+			ansGr.query();
+
+			while (ansGr.next()) {
+				textToSay += ansGr.getValue('answer') + ". ";
+			}
+		}
+
+		var emptyAnsInstance = new GlideRecord("x_84446_examer_answer_instance");
+		emptyAnsInstance.initialize();
+		emptyAnsInstance.question = sys_id;
+		emptyAnsInstance.insert();
+
+		return textToSay;
+	},
+
+	postRandomQuestion: function (channel) {
+		try {
+			var payload = {
+				//CQ2S1L1D2 - test
+				//GQ2CSJ0VD - snc
+				"channel": "CUJG03E2G",
+
+				"blocks": [{
+						"type": "section",
+						"text": {
+							"type": "plain_text",
+							"text": "Whoops. You should see a question here instead!",
+							"emoji": true
+						}
+					},
+					{
+						"type": "divider"
+					}
+				]
+
+			};
+
+			payload.channel = channel || 'CUJG03E2G';
+			var qList = [];
+
+			var catProp = gs.getProperty('x_84446_examer.slack_question_category');
+			var query = 'categoryLIKE' + catProp;
+			
+			gs.info("MAREKLOG "+query);
+
+			var rec = new GlideRecord('x_84446_examer_question');
+			rec.addEncodedQuery(query);
+			rec.query();
+
+			while (rec.next()) {
+				qList.push(rec.getValue('sys_id'));
+			}
+
+			var random = Math.floor((Math.random() * qList.length));
+			var sys_id = qList[random];
+			//gs.info(sys_id);
+
+			var questionGr = new GlideRecord('x_84446_examer_question');
+			questionGr.setLimit(1);
+			questionGr.addQuery('sys_id', sys_id);
+			questionGr.query();
+
+			if (questionGr.next()) {
+				var category = questionGr.getValue('category');
+				
+				gs.info("MAREKLOG " + category);
+				var qText = questionGr.getValue('question');
+				payload.blocks[0].text.text = "Kategoria: " + category + '\n' + qText;
+
+				var qId = questionGr.getValue('sys_id');
+
+				var ansGr = new GlideRecord('x_84446_examer_answer');
+				ansGr.addQuery('question', qId);
+				ansGr.orderBy('answer');
+				ansGr.query();
+
+				var alphabet = "abcdefghijklmnopqrstuvwxyz";
+				var alphaUpperArray = alphabet.toUpperCase().split("");
+				var i = 0;
+
+				while (ansGr.next()) {
+					var templateAnsSection = {
+						"type": "section",
+						"text": {
+							"type": "mrkdwn",
+							"text": "WHoops. You should see an answer here instead!"
+						},
+						"accessory": {
+							"type": "button",
+							"text": {
+								"type": "plain_text",
+								"text": "A",
+								"emoji": true
+							},
+							"value": "click_me_123",
+							"action_id": "dupa"
+						}
+					};
+
+					var ansText = ansGr.getValue('answer');
+					var ansNum = ansGr.getValue('number');
+					//gs.info(ansText);
+					templateAnsSection.text.text = ansText;
+					templateAnsSection.accessory.text.text = alphaUpperArray[i];
+					templateAnsSection.accessory.value = ansNum;
+					templateAnsSection.accessory.action_id = 'answer.' + alphaUpperArray[i];
+
+					payload.blocks.push(templateAnsSection);
+
+					i++;
+				}
+
+				//gs.info(JSON.stringify(payload));
+
+			}
+
+
+			var payloadString = JSON.stringify(payload);
+
+			var sender = new x_84446_vector.SlackMessageSender().postBlock(payloadString);
+			//gs.info(sender);
+
+		} catch (e) {
+			gs.error(e);
+		}
+	},
+
+	postQuestion: function (channel, questionGr) {
+		try {
+			var payload = {
+				//CQ2S1L1D2 - test
+				//GQ2CSJ0VD - snc
+				"channel": "CUJG03E2G",
+
+				"blocks": [{
+						"type": "section",
+						"text": {
+							"type": "plain_text",
+							"text": "WHoops. You should see a question here instead!",
+							"emoji": true
+						}
+					},
+					{
+						"type": "divider"
+					}
+				]
+
+			};
+
+			payload.channel = channel || 'CUJG03E2G';
+			var qList = [];
+
+			var category = questionGr.getValue('category');
+			var qText = questionGr.getValue('question');
+			payload.blocks[0].text.text = "Kategoria: " + category + '\n' + qText;
+
+			var qId = questionGr.getValue('sys_id');
+
+			var ansGr = new GlideRecord('x_84446_examer_answer');
+			ansGr.addQuery('question', qId);
+			ansGr.orderBy('answer');
+			ansGr.query();
+
+			var alphabet = "abcdefghijklmnopqrstuvwxyz";
+			var alphaUpperArray = alphabet.toUpperCase().split("");
+			var i = 0;
+
+			while (ansGr.next()) {
+				var templateAnsSection = {
+					"type": "section",
+					"text": {
+						"type": "mrkdwn",
+						"text": "WHoops. You should see an answer here instead!"
+					},
+					"accessory": {
+						"type": "button",
+						"text": {
+							"type": "plain_text",
+							"text": "A",
+							"emoji": true
+						},
+						"value": "click_me_123",
+						"action_id": "dupa"
+					}
+				};
+
+				var ansText = ansGr.getValue('answer');
+				var ansNum = ansGr.getValue('number');
+				//gs.info(ansText);
+				templateAnsSection.text.text = ansText;
+				templateAnsSection.accessory.text.text = alphaUpperArray[i];
+				templateAnsSection.accessory.value = ansNum;
+				templateAnsSection.accessory.action_id = 'answer.' + alphaUpperArray[i];
+
+				payload.blocks.push(templateAnsSection);
+
+				i++;
+			}
+
+			//gs.info(JSON.stringify(payload));
+
+
+			var payloadString = JSON.stringify(payload);
+
+			var sender = new x_84446_vector.SlackMessageSender().postBlock(payloadString);
+			//gs.info(sender);
+
+		} catch (e) {
+			gs.info(e);
+		}
+	},
+
+	evaluateDialogflowAnswer: function (answer) {
+
+		try {
+			var questionId = null;
+			var response = "";
+
+			// find latest answer instance with no answer
+			var ansInstanceGr = new GlideRecord('x_84446_examer_answer_instance');
+			ansInstanceGr.addEncodedQuery("answer=NULL");
+			ansInstanceGr.orderByDesc('sys_created_on');
+			ansInstanceGr.setLimit(1);
+			ansInstanceGr.query();
+			if (ansInstanceGr.next()) {
+				questionId = ansInstanceGr.getValue('question');
+			}
+
+
+			if (questionId) {
+
+				var ansGr = new GlideRecord('x_84446_examer_answer');
+				ansGr.addQuery("question", questionId);
+				ansGr.addQuery("answer", "STARTSWITH", answer);
+				ansGr.setLimit(1);
+				ansGr.query();
+				if (ansGr.next()) {
+					var isCorrect = ansGr.getValue('correct');
+
+					if (isCorrect === '1') {
+						response = 'TAK! ';
+
+						ansInstanceGr.answer = ansGr.getValue("sys_id");
+						ansInstanceGr.correct = isCorrect;
+						ansInstanceGr.update();
+
+					} else {
+
+						response = 'Hehe, Lama! ŹLE! ';
+
+						// find the right answer
+						var ansGr2 = new GlideRecord('x_84446_examer_answer');
+						ansGr2.addQuery("question", questionId);
+						ansGr2.addQuery("correct", true);
+						ansGr2.setLimit(1);
+						ansGr2.query();
+
+						if (ansGr2.next()) {
+							response += "Poprawna odpowiedź to " + ansGr2.getValue("answer") + ". ";
+						}
+
+						ansInstanceGr.answer = ansGr.getValue("sys_id");
+						ansInstanceGr.update();
+
+					}
+				}
+
+			}
+
+			response += "Jeszcze jedno?";
+
+			return response;
+
+		} catch (ex) {
+			var message = ex.message;
+			//outputs.error = message;
+			gs.error(message);
+		}
+	},
+
+	evaluateAnswer: function (eventGr) {
+		try {
+
+			var oldPayload = eventGr.getValue('payload');
+			var jsn = JSON.parse(oldPayload);
+			jsn = jsn.message.blocks;
+
+			// find if answer correct and return message 
+			var ans = eventGr.getValue('action');
+			//gs.info("ans " + ans);
+			//var ans = 'answer.A';
+
+			jsn.forEach(function (el) {
+
+				if (el.accessory) {
+
+					if (el.accessory.action_id === ans) {
+
+						var ansNum = el.accessory.value;
+						//gs.info("ansNum " + ansNum);
+
+						var ansGr = new GlideRecord('x_84446_examer_answer');
+						ansGr.addQuery("number", ansNum);
+						ansGr.setLimit(1);
+						ansGr.query();
+						if (ansGr.next()) {
+							var isCorrect = ansGr.getValue('correct');
+
+							//gs.info("isCorrect " + isCorrect);
+							//gs.info("isCorrect typeof " + typeof isCorrect);
+							//gs.info("test if isCorrect is 1" + isCorrect === '1');
+
+							if (isCorrect === '1') {
+								el.accessory.text.text = 'TAK!';
+							} else {
+								el.accessory.text.text = 'ŹLE!';
+							}
+
+							// create answer instance
+							var ansInstance = new GlideRecord('x_84446_examer_answer_instance');
+							ansInstance.initialize();
+							ansInstance.correct = isCorrect;
+							ansInstance.answer = ansGr.sys_id;
+							ansInstance.question = ansGr.question;
+							ansInstance.insert();
+
+						}
+					}
+				}
+
+			});
+
+			//jsn[0].text.text += "HE";
+
+			var body = {
+				"blocks": jsn
+			};
+
+			body = JSON.stringify(body);
+
+			//gs.info("body " + body);
+
+			var url = eventGr.getValue('webhook');
+
+			var r = new sn_ws.RESTMessageV2();
+			r.setRequestHeader("Content-Type", "application/json");
+			r.setEndpoint(url);
+			r.setHttpMethod("post");
+			r.setRequestBody(body);
+
+			var response = r.execute();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			//gs.info("response html " + JSON.stringify(responseBody));
+
+
+		} catch (ex) {
+			var message = ex.message;
+			//outputs.error = message;
+			gs.error(message);
+		}
+	},
+
+	type: 'Process'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-12 22:48:55</sys_created_on>
+        <sys_id>368d68bbdb3e001006fc7b60399619fe</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Process</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_script_include_368d68bbdb3e001006fc7b60399619fe</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-08-31 19:00:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

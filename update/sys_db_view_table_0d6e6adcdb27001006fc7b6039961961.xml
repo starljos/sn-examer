@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-03-10 17:59:51</sys_created_on>
+        <sys_id>0d6e6adcdb27001006fc7b6039961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_84446_examer_answer</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_db_view_table_0d6e6adcdb27001006fc7b6039961961</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-03-10 17:59:51</sys_updated_on>
+        <table>x_84446_examer_answer</table>
+        <variable_prefix>answer</variable_prefix>
+        <view display_value="x_84446_examer_spl">040e26d8db67001006fc7b6039961968</view>
+        <where_clause>question.sys_id=answer.question</where_clause>
+    </sys_db_view_table>
+</record_update>

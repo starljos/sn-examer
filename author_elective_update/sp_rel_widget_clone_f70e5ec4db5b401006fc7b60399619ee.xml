@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="DELETE">
+        <child display_value="Hello Marek">3f0e5ec4db5b401006fc7b60399619e9</child>
+        <cloned>2020-02-26 11:53:06</cloned>
+        <last_validated>2020-02-26 11:53:06</last_validated>
+        <parent display_value="Hello World 3">403fd3b35b3112000d7ec7ad31f91ac2</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sample&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+	var c = this;	
+	c.display = function() {						
+		c.server.update().then(function(data) {		
+			console.log("message", data.message)
+		})		
+	}
+	
+	c.display();
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;h1 {
+color: #428bca;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"data": {
+		"sometext": "world"
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;hello-world-3&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, element) {	
+	var el = $(element[0]).find('input');	
+	scope.$evalAsync(function() {
+		el.focus();	
+	});
+}]]&gt;&lt;/link&gt;&lt;name&gt;Hello World 3&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {	
+	if (input) {
+		data.message = (input.sometext.length &gt; 0) ? "Hello " + input.sometext + "!" : "";
+  }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-03-03 21:22:36&lt;/sys_created_on&gt;&lt;sys_id&gt;403fd3b35b3112000d7ec7ad31f91ac2&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hello World 3&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;f66ddd7c74e0330078509adcc48c87da&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_403fd3b35b3112000d7ec7ad31f91ac2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-24 19:04:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+ Enter your name:
+ &lt;input type="text" ng-model="c.data.sometext" ng-model-options="{debounce: 50}" ng-change="c.display()"/&gt;
+ &lt;h1&gt;{{ c.data.message }}&lt;/h1&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 11:53:06</sys_created_on>
+        <sys_id>f70e5ec4db5b401006fc7b60399619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3f0e5ec4db5b401006fc7b60399619e9</sys_name>
+        <sys_package display_value="Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_f70e5ec4db5b401006fc7b60399619ee</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 11:53:06</sys_updated_on>
+    </sp_rel_widget_clone>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</application>
+        <file_path/>
+        <instance_id>c6c265c7db783f0042b321c40596199a</instance_id>
+        <instance_name>dev81817</instance_name>
+        <name>sp_rel_widget_clone_f70e5ec4db5b401006fc7b60399619ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="Hello Marek">3f0e5ec4db5b401006fc7b60399619e9</child><cloned>2020-02-26 11:53:06</cloned><last_validated>2020-02-26 11:53:06</last_validated><parent display_value="Hello World 3">403fd3b35b3112000d7ec7ad31f91ac2</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sample&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+	var c = this;	
+	c.display = function() {						
+		c.server.update().then(function(data) {		
+			console.log("message", data.message)
+		})		
+	}
+	
+	c.display();
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;h1 {
+color: #428bca;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"data": {
+		"sometext": "world"
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;hello-world-3&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, element) {	
+	var el = $(element[0]).find('input');	
+	scope.$evalAsync(function() {
+		el.focus();	
+	});
+}]]&gt;&lt;/link&gt;&lt;name&gt;Hello World 3&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {	
+	if (input) {
+		data.message = (input.sometext.length &gt; 0) ? "Hello " + input.sometext + "!" : "";
+  }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-03-03 21:22:36&lt;/sys_created_on&gt;&lt;sys_id&gt;403fd3b35b3112000d7ec7ad31f91ac2&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hello World 3&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;f66ddd7c74e0330078509adcc48c87da&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_403fd3b35b3112000d7ec7ad31f91ac2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-24 19:04:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+ Enter your name:
+ &lt;input type="text" ng-model="c.data.sometext" ng-model-options="{debounce: 50}" ng-change="c.display()"/&gt;
+ &lt;h1&gt;{{ c.data.message }}&lt;/h1&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>marek.polasik</sys_created_by><sys_created_on>2020-02-26 11:53:06</sys_created_on><sys_id>f70e5ec4db5b401006fc7b60399619ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3f0e5ec4db5b401006fc7b60399619e9</sys_name><sys_package display_value="Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package><sys_policy/><sys_scope display_value="Examer">163db7a7db7a001006fc7b603996198f</sys_scope><sys_update_name>sp_rel_widget_clone_f70e5ec4db5b401006fc7b60399619ee</sys_update_name><sys_updated_by>marek.polasik</sys_updated_by><sys_updated_on>2020-02-26 11:53:06</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
+        <payload_hash>377786806</payload_hash>
+        <record_name>3f0e5ec4db5b401006fc7b60399619e9</record_name>
+        <reverted_from/>
+        <source>623d77a7db7a001006fc7b60399619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 11:53:06</sys_created_on>
+        <sys_id>8c1e5ec4db5b401006fc7b60399619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1708157e7f60000001</sys_recorded_at>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 11:53:06</sys_updated_on>
+        <type>Widget Clone</type>
+        <update_guid>841e5ec4105b40105fcf73589c8be1f0</update_guid>
+        <update_guid_history>841e5ec4105b40105fcf73589c8be1f0:377786806</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7bb7e6c4db9b401006fc7b60399619cd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-26 12:35:25</sys_created_on>
+        <sys_db_object display_value="" name="sp_rel_widget_clone">sp_rel_widget_clone</sys_db_object>
+        <sys_id>0e4502bc55314fb485d4d904620596e4</sys_id>
+        <sys_metadata>f70e5ec4db5b401006fc7b60399619ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3f0e5ec4db5b401006fc7b60399619e9</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_scope_delete display_value="">263069dd00f64bf8ae7d6c4f81b09040</sys_scope_delete>
+        <sys_update_name>sp_rel_widget_clone_f70e5ec4db5b401006fc7b60399619ee</sys_update_name>
+        <sys_update_version display_value="sp_rel_widget_clone_f70e5ec4db5b401006fc7b60399619ee">8c1e5ec4db5b401006fc7b60399619f0</sys_update_version>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-26 12:35:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

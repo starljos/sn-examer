@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2020-09-02 11:43:56</change_date>
+        <changed_by display_value="Marek Polasik">63984c83db92330006fc7b6039961991</changed_by>
+        <content display_value="HR Guided Setup">8cf18484538212005d5ba5f4a11c0817</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-09-02 11:43:56</sys_created_on>
+        <sys_id>9870b7f8db07d01006fc7b60399619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2020-09-02 11:43:56</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>gsw_change_log_9870b7f8db07d01006fc7b60399619b7</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-09-02 11:43:56</sys_updated_on>
+        <type>1</type>
+    </gsw_change_log>
+</record_update>

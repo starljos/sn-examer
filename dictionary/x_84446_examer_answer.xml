@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Answer" max_length="40" name="x_84446_examer_answer" sizeclass="5373" type="collection">
+        <element label="Answer" max_length="500" name="answer" type="string"/>
+        <element default="0" label="Correct" max_length="1" name="correct" type="boolean"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element label="Question" max_length="32" name="question" reference="x_84446_examer_question" type="reference"/>
+        <index name="index">
+            <element name="question"/>
+        </index>
+    </element>
+</database>
