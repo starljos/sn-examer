@@ -16,6 +16,7 @@
         <latest_snapshot>c31f54e0db17001006fc7b6039961920</latest_snapshot>
         <master_snapshot>f929383bdb7e001006fc7b60399619f9</master_snapshot>
         <name>Post Random Question</name>
+        <natlang/>
         <outputs/>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
@@ -193,6 +194,7 @@
         <label_cache>[]</label_cache>
         <master>true</master>
         <name>Post Random Question</name>
+        <natlang/>
         <outputs/>
         <parent_action display_value="Post Random Question">8c09303bdb7e001006fc7b6039961964</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>

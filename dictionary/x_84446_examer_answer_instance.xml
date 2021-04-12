@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Answer Instance" max_length="40" name="x_84446_examer_answer_instance" type="collection">
+    <element label="Answer Instance" max_length="40" name="x_84446_examer_answer_instance" sizeclass="1529" type="collection">
         <element label="Answer" max_length="32" name="answer" reference="x_84446_examer_answer" type="reference"/>
         <element label="Correct?" max_length="40" name="correct" type="boolean"/>
         <element label="Question" max_length="32" name="question" reference="x_84446_examer_question" type="reference"/>

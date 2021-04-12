@@ -6,6 +6,7 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
+        <compiler_build/>
         <copied_from>a0ae9b17dbb8c01006fc7b60399619a9</copied_from>
         <copied_from_name>Gdzie żeś ty bywał</copied_from_name>
         <description>Moved to scheduled job
@@ -15,9 +16,11 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <latest_snapshot>17d3cfd7db5f401006fc7b603996195a</latest_snapshot>
         <master_snapshot>f8f232f3db76401006fc7b603996198f</master_snapshot>
         <name>Random Exam Question Scheduled</name>
+        <natlang/>
         <outputs/>
         <remote_trigger_id>4df232f3db76401006fc7b60399619b5</remote_trigger_id>
         <run_as>system</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -68,9 +71,14 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
     </sys_flow_timer_trigger>
     <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
         <active>true</active>
+        <business_calendar/>
+        <can_iterate>false</can_iterate>
         <condition/>
         <conditional>false</conditional>
+        <entered_time/>
         <name>Trigger:4df232f3db76401006fc7b60399619b5</name>
+        <offset/>
+        <offset_type>0</offset_type>
         <run_as display_value="Marek Polasik">63984c83db92330006fc7b6039961991</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
@@ -80,6 +88,8 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <run_time/>
         <run_type>periodically</run_type>
         <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('4df232f3db76401006fc7b60399619b5');]]></script>
+        <source_filter/>
+        <source_table/>
         <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
         <sys_created_on>2020-02-13 08:30:12</sys_created_on>
@@ -92,6 +102,7 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <sys_update_name/>
         <sys_updated_by>marek.polasik</sys_updated_by>
         <sys_updated_on>2020-03-07 16:54:17</sys_updated_on>
+        <time_zone/>
         <trigger display_value="">4df232f3db76401006fc7b60399619b5</trigger>
         <upgrade_safe>false</upgrade_safe>
     </sys_flow_trigger_auto_script>
@@ -128,6 +139,7 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="Random Exam Question Scheduled">eab8fcf7db7e001006fc7b6039961989</flow>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -306,6 +318,7 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="Random Exam Question Scheduled">eab8fcf7db7e001006fc7b6039961989</flow>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -381,10 +394,12 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <label_cache>[{"name":"ba52f5e2-df79-477b-b797-970747184460.variable","label":"1➛is_in_schedule","reference_display":"is_in_schedule","type":"boolean","base_type":"boolean"}]</label_cache>
         <master>true</master>
         <name>Random Exam Question Scheduled</name>
+        <natlang/>
         <outputs/>
         <parent_flow display_value="Random Exam Question Scheduled">eab8fcf7db7e001006fc7b6039961989</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
@@ -414,6 +429,7 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="Random Exam Question Scheduled">f8f232f3db76401006fc7b603996198f</flow>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -617,6 +633,7 @@ https://dev81817.service-now.com/nav_to.do?uri=sysauto_script.do?sys_id=746307d7
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="Random Exam Question Scheduled">f8f232f3db76401006fc7b603996198f</flow>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>

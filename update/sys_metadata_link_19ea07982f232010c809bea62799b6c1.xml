@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>dd161053db07001006fc7b6039961901</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_84446_examer_question">
+    <x_84446_examer_question action="INSERT_OR_UPDATE">
+        <category>SPL Prawo Lotnicze</category>
+        <number>Q00847</number>
+        <question>PL010-0001 Członkowie załogi oraz inne osoby mają zakaz wnoszenia na pokład statku powietrznego:</question>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-23 18:03:33</sys_created_on>
+        <sys_id>dd161053db07001006fc7b6039961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-23 18:03:33</sys_updated_on>
+    </x_84446_examer_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2021-04-12 12:25:28</sys_created_on>
+        <sys_id>19ea07982f232010c809bea62799b6c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Q00847</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_metadata_link_19ea07982f232010c809bea62799b6c1</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2021-04-12 12:25:28</sys_updated_on>
+        <tablename>x_84446_examer_question</tablename>
+    </sys_metadata_link>
+</record_update>

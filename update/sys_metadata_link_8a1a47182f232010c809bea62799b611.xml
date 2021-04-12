@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>19a7904adbc7001006fc7b603996191b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_84446_examer_question">
+    <x_84446_examer_question action="INSERT_OR_UPDATE">
+        <category>SPL Łączność</category>
+        <number>Q00468</number>
+        <question>PL090-0015 Treść korespondencji od stacji naziemnej zawierająca zezwolenia, instrukcje, parametry lotu i inne ważne informacje winna być:</question>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-19 20:57:59</sys_created_on>
+        <sys_id>19a7904adbc7001006fc7b603996191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-19 20:57:59</sys_updated_on>
+    </x_84446_examer_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2021-04-12 12:21:59</sys_created_on>
+        <sys_id>8a1a47182f232010c809bea62799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Q00468</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_metadata_link_8a1a47182f232010c809bea62799b611</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2021-04-12 12:21:59</sys_updated_on>
+        <tablename>x_84446_examer_question</tablename>
+    </sys_metadata_link>
+</record_update>

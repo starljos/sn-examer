@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
     <sysauto_script action="INSERT_OR_UPDATE">
         <active>true</active>
+        <business_calendar/>
+        <can_iterate>false</can_iterate>
         <condition/>
         <conditional>false</conditional>
+        <entered_time/>
         <name>Post Examer Question to Slack</name>
+        <offset/>
+        <offset_type>0</offset_type>
         <run_as display_value="Marek Polasik">63984c83db92330006fc7b6039961991</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
@@ -23,6 +28,8 @@ if (sec % freq === 0){
 	var process = new x_84446_examer.Process();
 	process.postRandomQuestion('CUJG03E2G');
 }]]></script>
+        <source_filter/>
+        <source_table/>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
         <sys_created_on>2020-03-07 17:00:16</sys_created_on>
@@ -35,6 +42,7 @@ if (sec % freq === 0){
         <sys_update_name>sysauto_script_746307d7db5f401006fc7b6039961932</sys_update_name>
         <sys_updated_by>marek.polasik</sys_updated_by>
         <sys_updated_on>2020-03-07 17:03:30</sys_updated_on>
+        <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

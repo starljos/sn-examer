@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2da7904adbc7001006fc7b603996192a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_84446_examer_answer">
+    <x_84446_examer_answer action="INSERT_OR_UPDATE">
+        <answer>d. Procedura specjalna w przypadku braku odbioru ze stacji, z którą chcemy się skomunikować polegająca na dwukrotnym przekazaniu treści depeszy na częstotliwości podstawowej i zapasowej z użyciem słów 'Nadaję na ślepo'</answer>
+        <correct>true</correct>
+        <number>ANS01750</number>
+        <question display_value="Q00474">21a7904adbc7001006fc7b6039961929</question>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-19 20:57:59</sys_created_on>
+        <sys_id>2da7904adbc7001006fc7b603996192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-19 20:57:59</sys_updated_on>
+    </x_84446_examer_answer>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2021-04-12 12:28:24</sys_created_on>
+        <sys_id>549b031c2f232010c809bea62799b63b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ANS01750</sys_name>
+        <sys_package display_value="Kuna Examer" source="x_84446_examer">163db7a7db7a001006fc7b603996198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Examer">163db7a7db7a001006fc7b603996198f</sys_scope>
+        <sys_update_name>sys_metadata_link_549b031c2f232010c809bea62799b63b</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2021-04-12 12:28:24</sys_updated_on>
+        <tablename>x_84446_examer_answer</tablename>
+    </sys_metadata_link>
+</record_update>
